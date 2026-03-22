@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clear Local Edge — Google Maps Marketing for Local Service Businesses</title>
-  <meta name="description" content="We help local service businesses in SW Florida dominate Google Maps and get more calls — without paid ads. Free Google Audit available.">
-  <meta name="keywords" content="Google Business Profile optimization, local SEO, Google Maps marketing, SW Florida, Cape Coral, Fort Myers, Naples">
+  <title>Clear Local Edge — Google Business Profile Optimization & Local SEO for Service Businesses</title>
+  <meta name="description" content="We help local service businesses dominate Google Maps and Google Business Profile rankings — more reviews, more visibility, more calls. No paid ads. Free Google Audit.">
+  <meta name="keywords" content="Google Business Profile optimization, local SEO, Google Maps marketing, GBP management, local search ranking, Google reviews, near me search, local service business marketing">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Clear Local Edge — Get Found on Google Maps">
-  <meta property="og:description" content="We help local service businesses show up first on Google Maps — without paid ads.">
+  <meta property="og:title" content="Clear Local Edge — Dominate Google Maps & Get More Calls">
+  <meta property="og:description" content="Google Business Profile optimization for local service businesses. More reviews, higher rankings, more calls — without paid ads.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://clearlocaledge.com">
 
@@ -28,24 +28,22 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
     "name": "Clear Local Edge",
-    "description": "Google Business Profile marketing agency for local service businesses",
+    "description": "Google Business Profile optimization and local SEO agency helping service businesses rank higher on Google Maps, generate more reviews, and get more calls — without paid ads.",
     "email": "chris@clearlocaledge.com",
     "url": "https://clearlocaledge.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Westlake",
-      "addressRegion": "OH"
+      "addressRegion": "OH",
+      "addressCountry": "US"
     },
-    "areaServed": [
-      "Cape Coral, FL",
-      "Fort Myers, FL",
-      "Naples, FL",
-      "Bonita Springs, FL",
-      "Sarasota, FL",
-      "Bradenton, FL"
-    ]
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": ["Google Business Profile Optimization", "Local SEO", "Review Generation", "Google Maps Marketing"]
   }
   </script>
 
@@ -113,11 +111,7 @@
 
     /* ========== NAV ========== */
     .nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       background: rgba(255,255,255,0.97);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid #e8ecf0;
@@ -126,13 +120,6 @@
     }
     .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
     .nav .container { display: flex; justify-content: space-between; align-items: center; }
-    .nav-logo {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 1.35rem;
-      color: #1F4E79;
-    }
-    .nav-logo span { color: #00B050; }
     .nav-logo img { height: 42px; width: auto; }
     .nav-links { display: flex; gap: 1.8rem; align-items: center; }
     .nav-links a { font-size: 0.9rem; font-weight: 500; color: #595959; transition: color 0.2s; }
@@ -145,375 +132,196 @@
     .hero {
       padding: 9rem 0 4rem;
       background: linear-gradient(160deg, #EEF2F7 0%, #DAE3F3 40%, #FFFFFF 100%);
-      position: relative;
-      overflow: hidden;
+      position: relative; overflow: hidden;
     }
     .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -20%;
-      width: 600px;
-      height: 600px;
+      content: ''; position: absolute; top: -50%; right: -20%;
+      width: 600px; height: 600px;
       background: radial-gradient(circle, rgba(0,176,80,0.06) 0%, transparent 70%);
       border-radius: 50%;
     }
     .hero .container { position: relative; z-index: 1; }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .hero-illustration {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .hero-illustration img {
-      max-width: 100%;
-      height: auto;
-      max-height: 480px;
-      filter: drop-shadow(0 10px 30px rgba(31,78,121,0.1));
-    }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center; }
+    .hero-illustration { display: flex; justify-content: center; align-items: center; }
+    .hero-illustration img { max-width: 100%; height: auto; max-height: 480px; filter: drop-shadow(0 10px 30px rgba(31,78,121,0.1)); }
     .hero h1 { color: #1F4E79; max-width: 700px; margin-bottom: 1.25rem; }
     .hero h1 em { font-style: normal; color: #00B050; }
-    .hero-sub {
-      font-size: 1.2rem;
-      color: #595959;
-      max-width: 580px;
-      margin-bottom: 2.2rem;
-      line-height: 1.7;
-    }
+    .hero-sub { font-size: 1.2rem; color: #595959; max-width: 580px; margin-bottom: 2.2rem; line-height: 1.7; }
     .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
-    .trust-bar {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      padding-top: 2.5rem;
-      border-top: 1px solid rgba(31,78,121,0.1);
-      flex-wrap: wrap;
-    }
+    .trust-bar { display: flex; align-items: center; gap: 2rem; padding-top: 2.5rem; border-top: 1px solid rgba(31,78,121,0.1); flex-wrap: wrap; }
     .trust-bar-label { font-size: 0.85rem; color: #595959; font-weight: 500; }
     .trust-icons { display: flex; gap: 1.5rem; }
     .trust-icons i { font-size: 1.4rem; color: #1F4E79; opacity: 0.5; }
 
+    /* ========== STATS BANNER ========== */
+    .stats-banner {
+      background: linear-gradient(135deg, #1F4E79 0%, #163a5c 100%);
+      padding: 3rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .stats-banner::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative; z-index: 1; }
+    .stat-item { text-align: center; color: #fff; }
+    .stat-number {
+      font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.5rem;
+      color: #00B050; margin-bottom: 0.25rem;
+    }
+    .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+
     /* ========== PROBLEM ========== */
     .problem { background: #FFFFFF; }
     .problem h2 { margin-bottom: 0.75rem; }
-    .problem-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-top: 3rem;
-    }
+    .problem-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
     .problem-card {
-      background: #EEF2F7;
-      border-radius: 12px;
-      padding: 2.2rem 1.8rem;
-      border-left: 4px solid #FF6600;
-      transition: transform 0.2s;
+      background: #EEF2F7; border-radius: 12px; padding: 2.2rem 1.8rem;
+      border-left: 4px solid #FF6600; transition: transform 0.2s;
     }
     .problem-card:hover { transform: translateY(-4px); }
     .problem-card .icon {
-      width: 48px;
-      height: 48px;
-      background: rgba(255,102,0,0.1);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.2rem;
+      width: 48px; height: 48px; background: rgba(255,102,0,0.1);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem;
     }
     .problem-card .icon i { font-size: 1.2rem; color: #FF6600; }
     .problem-card h3 { margin-bottom: 0.6rem; color: #1F4E79; }
     .problem-card p { color: #595959; font-size: 0.95rem; }
-    .problem-transition {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 1.05rem;
-      color: #595959;
-      font-style: italic;
+    .problem-transition { text-align: center; margin-top: 3rem; font-size: 1.05rem; color: #595959; font-style: italic; }
+
+    /* ========== INDUSTRIES ========== */
+    .industries { background: #FFFFFF; padding-top: 1rem; }
+    .industries-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .industry-card {
+      text-align: center; padding: 2rem 1.2rem; background: #EEF2F7;
+      border-radius: 12px; transition: transform 0.2s, box-shadow 0.2s;
+      border: 2px solid transparent;
     }
+    .industry-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-color: #00B050; }
+    .industry-icon {
+      width: 64px; height: 64px; background: #1F4E79;
+      border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem; transition: background 0.2s;
+    }
+    .industry-card:hover .industry-icon { background: #00B050; }
+    .industry-icon i { font-size: 1.5rem; color: #fff; }
+    .industry-card h3 { font-size: 1rem; color: #1F4E79; margin-bottom: 0.4rem; }
+    .industry-card p { font-size: 0.8rem; color: #595959; line-height: 1.4; }
 
     /* ========== HOW IT WORKS ========== */
     .how-it-works { background: #EEF2F7; }
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
-      margin-top: 3rem;
-    }
+    .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 3rem; }
     .step-card { text-align: center; }
     .step-number {
-      width: 60px;
-      height: 60px;
-      background: #1F4E79;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 1.5rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.2rem;
+      width: 60px; height: 60px; background: #1F4E79; color: #fff;
+      font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;
     }
     .step-card h3 { color: #1F4E79; margin-bottom: 0.6rem; }
     .step-card p { color: #595959; font-size: 0.95rem; max-width: 300px; margin: 0 auto; }
 
     /* ========== ABOUT ========== */
     .about { background: #FFFFFF; }
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.3fr;
-      gap: 3rem;
-      align-items: center;
-      margin-top: 2.5rem;
-    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; align-items: center; margin-top: 2.5rem; }
     .about-photo {
-      background: #DAE3F3;
-      border-radius: 12px;
-      aspect-ratio: 1/1;
-      max-width: 320px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #1F4E79;
-      font-weight: 600;
-      font-size: 0.95rem;
-      border: 2px dashed rgba(31,78,121,0.2);
+      background: #DAE3F3; border-radius: 12px; aspect-ratio: 1/1; max-width: 320px;
+      display: flex; align-items: center; justify-content: center;
     }
     .about-content p { color: #595959; margin-bottom: 1.2rem; line-height: 1.7; }
     .about-bullets { margin: 1.5rem 0; }
-    .about-bullets li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      margin-bottom: 0.8rem;
-      color: #111111;
-      font-weight: 500;
-    }
+    .about-bullets li { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.8rem; color: #111111; font-weight: 500; }
     .about-bullets li i { color: #00B050; margin-top: 0.25rem; }
 
     /* ========== CASE STUDY ========== */
     .case-study { background: #EEF2F7; }
     .case-card {
-      background: #FFFFFF;
-      border-radius: 16px;
-      padding: 3rem;
-      max-width: 900px;
-      margin: 2.5rem auto 0;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      background: #FFFFFF; border-radius: 16px; padding: 3rem; max-width: 900px;
+      margin: 2.5rem auto 0; box-shadow: 0 4px 24px rgba(0,0,0,0.06);
     }
     .case-card h3 { color: #1F4E79; margin-bottom: 0.5rem; font-size: 1.3rem; }
     .case-label { color: #595959; font-size: 0.9rem; margin-bottom: 2rem; }
-    .heatmap-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
+    .heatmap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
     .heatmap-placeholder {
-      background: #EEF2F7;
-      border-radius: 10px;
-      aspect-ratio: 4/3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 2px dashed rgba(31,78,121,0.15);
-      color: #1F4E79;
-      font-weight: 600;
-      font-size: 0.9rem;
-      gap: 0.5rem;
+      background: #EEF2F7; border-radius: 10px; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 0.5rem;
     }
-    .heatmap-placeholder i { font-size: 2rem; opacity: 0.4; }
-    .case-metrics {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .metric {
-      text-align: center;
-      padding: 1.2rem;
-      background: #EEF2F7;
-      border-radius: 10px;
-    }
-    .metric .number {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 1.8rem;
-      color: #00B050;
-    }
+    .case-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+    .metric { text-align: center; padding: 1.2rem; background: #EEF2F7; border-radius: 10px; }
+    .metric .number { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.8rem; color: #00B050; }
     .metric .label { font-size: 0.85rem; color: #595959; margin-top: 0.25rem; }
-    .case-quote {
-      font-style: italic;
-      color: #1F4E79;
-      font-size: 1.05rem;
-      border-left: 3px solid #00B050;
-      padding-left: 1.2rem;
-      margin-top: 1.5rem;
-    }
+    .case-quote { font-style: italic; color: #1F4E79; font-size: 1.05rem; border-left: 3px solid #00B050; padding-left: 1.2rem; margin-top: 1.5rem; }
 
     /* ========== PRICING ========== */
     .pricing { background: #FFFFFF; }
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-top: 3rem;
-      align-items: start;
-    }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; align-items: start; }
     .price-card {
-      background: #FFFFFF;
-      border: 2px solid #e8ecf0;
-      border-radius: 16px;
-      padding: 2.5rem 2rem;
-      text-align: center;
-      transition: transform 0.2s;
-      position: relative;
+      background: #FFFFFF; border: 2px solid #e8ecf0; border-radius: 16px;
+      padding: 2.5rem 2rem; text-align: center; transition: transform 0.2s; position: relative;
     }
     .price-card:hover { transform: translateY(-4px); }
-    .price-card.featured {
-      border-color: #00B050;
-      box-shadow: 0 8px 40px rgba(0,176,80,0.15);
-      transform: scale(1.04);
-    }
+    .price-card.featured { border-color: #00B050; box-shadow: 0 8px 40px rgba(0,176,80,0.15); transform: scale(1.04); }
     .price-card.featured:hover { transform: scale(1.04) translateY(-4px); }
     .popular-badge {
-      position: absolute;
-      top: -14px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #00B050;
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.35rem 1.2rem;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: #00B050; color: #fff; font-size: 0.75rem; font-weight: 600;
+      padding: 0.35rem 1.2rem; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;
     }
-    .price-tier {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #00B050;
-      margin-bottom: 0.3rem;
-    }
+    .price-tier { font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #00B050; margin-bottom: 0.3rem; }
     .price-card h3 { color: #1F4E79; margin-bottom: 1rem; font-size: 1.35rem; }
-    .price-amount {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: #1F4E79;
-    }
+    .price-amount { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.5rem; color: #1F4E79; }
     .price-amount span { font-size: 1rem; font-weight: 500; color: #595959; }
     .price-setup { font-size: 0.85rem; color: #595959; margin-bottom: 1.5rem; }
-    .price-features {
-      text-align: left;
-      margin-bottom: 2rem;
-    }
-    .price-features li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      padding: 0.45rem 0;
-      font-size: 0.9rem;
-      color: #595959;
-    }
+    .price-features { text-align: left; margin-bottom: 2rem; }
+    .price-features li { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.45rem 0; font-size: 0.9rem; color: #595959; }
     .price-features li i { color: #00B050; margin-top: 0.2rem; flex-shrink: 0; }
     .price-card .btn { width: 100%; }
 
     /* ========== FAQ ========== */
     .faq { background: #EEF2F7; }
-    .faq-list {
-      max-width: 750px;
-      margin: 3rem auto 0;
-    }
-    .faq-item {
-      background: #FFFFFF;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      overflow: hidden;
-      border: 1px solid #e8ecf0;
-    }
+    .faq-list { max-width: 750px; margin: 3rem auto 0; }
+    .faq-item { background: #FFFFFF; border-radius: 10px; margin-bottom: 0.75rem; overflow: hidden; border: 1px solid #e8ecf0; }
     .faq-question {
-      width: 100%;
-      background: none;
-      border: none;
-      padding: 1.2rem 1.5rem;
-      text-align: left;
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 1rem;
-      color: #1F4E79;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      width: 100%; background: none; border: none; padding: 1.2rem 1.5rem;
+      text-align: left; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1rem;
+      color: #1F4E79; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
       transition: background 0.2s;
     }
     .faq-question:hover { background: #f8f9fb; }
     .faq-question i { transition: transform 0.3s; color: #00B050; }
     .faq-item.active .faq-question i { transform: rotate(180deg); }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.35s ease;
-    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
     .faq-item.active .faq-answer { max-height: 300px; }
-    .faq-answer-inner {
-      padding: 0 1.5rem 1.2rem;
-      color: #595959;
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
+    .faq-answer-inner { padding: 0 1.5rem 1.2rem; color: #595959; font-size: 0.95rem; line-height: 1.7; }
 
     /* ========== FINAL CTA ========== */
     .final-cta {
       background: linear-gradient(160deg, #1F4E79 0%, #163a5c 100%);
-      color: #fff;
-      text-align: center;
-      padding: 5rem 0;
+      color: #fff; text-align: center; padding: 5rem 0;
+      position: relative; overflow: hidden;
     }
+    .final-cta::before {
+      content: ''; position: absolute; bottom: -40%; left: -10%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(0,176,80,0.08) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .final-cta .container { position: relative; z-index: 1; }
     .final-cta h2 { color: #fff; margin-bottom: 1rem; font-size: 2.2rem; }
     .final-cta p { color: rgba(255,255,255,0.85); font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 540px; margin-left: auto; margin-right: auto; }
     .final-cta .email-fallback { margin-top: 1.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.7); }
     .final-cta .email-fallback a { color: #00B050; font-weight: 500; }
-    .final-cta .urgency {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.6);
-      font-style: italic;
-    }
+    .final-cta .urgency { margin-top: 2rem; font-size: 0.85rem; color: rgba(255,255,255,0.6); font-style: italic; }
 
     /* ========== FOOTER ========== */
-    .footer {
-      background: #0e1f2f;
-      color: rgba(255,255,255,0.5);
-      text-align: center;
-      padding: 2.5rem 0;
-      font-size: 0.85rem;
-    }
+    .footer { background: #0e1f2f; color: rgba(255,255,255,0.5); text-align: center; padding: 2.5rem 0; font-size: 0.85rem; }
     .footer a { color: #00B050; }
     .footer-links { margin-bottom: 0.5rem; }
     .footer-links a { margin: 0 0.75rem; }
 
     /* ========== SCROLL ANIMATIONS ========== */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
 
     /* ========== RESPONSIVE ========== */
     @media (max-width: 900px) {
@@ -521,6 +329,8 @@
       .hero-illustration { order: -1; margin-bottom: 1rem; }
       .hero-illustration img { max-height: 300px; }
       .problem-grid, .steps-grid, .pricing-grid, .case-metrics { grid-template-columns: 1fr; }
+      .industries-grid { grid-template-columns: repeat(3, 1fr); }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
       .heatmap-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; }
       .about-photo { aspect-ratio: 16/9; }
@@ -534,19 +344,14 @@
       .hero { padding: 7rem 0 3.5rem; }
       .nav-links { display: none; }
       .nav-links.open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        padding: 1.5rem;
-        border-bottom: 1px solid #e8ecf0;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        display: flex; flex-direction: column; position: absolute;
+        top: 100%; left: 0; right: 0; background: #fff; padding: 1.5rem;
+        border-bottom: 1px solid #e8ecf0; box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       }
       .hamburger { display: block; }
       .trust-bar { justify-content: center; text-align: center; }
+      .industries-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-number { font-size: 2rem; }
       .case-card { padding: 2rem 1.5rem; }
       .final-cta h2 { font-size: 1.6rem; }
     }
@@ -559,6 +364,7 @@
     <div class="container">
       <a href="#" class="nav-logo"><img src="CLE_Website_Logo.png" alt="Clear Local Edge" height="42"></a>
       <div class="nav-links" id="navLinks">
+        <a href="#industries">Industries</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#about">About</a>
         <a href="#pricing">Pricing</a>
@@ -576,9 +382,9 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <p class="accent-label">Google Maps Marketing for SW Florida Service Businesses</p>
+          <p class="accent-label">Google Business Profile Optimization for Local Service Businesses</p>
           <h1>Your Customers Are Searching.<br>Are They <em>Finding You</em>?</h1>
-          <p class="hero-sub">We help local service businesses in Southwest Florida dominate Google Maps and get more calls — without running a single ad.</p>
+          <p class="hero-sub">We help local service businesses rank higher on Google Maps, generate more 5-star reviews, and turn local searches into real phone calls — without spending a dime on ads.</p>
           <div class="hero-buttons">
             <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Google Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
             <a href="#how-it-works" class="btn btn-secondary">See How It Works <i class="fas fa-arrow-down" style="margin-left:0.4rem"></i></a>
@@ -589,13 +395,37 @@
         </div>
       </div>
       <div class="trust-bar">
-        <span class="trust-bar-label">Trusted by SW Florida service businesses</span>
+        <span class="trust-bar-label">Trusted by local service businesses nationwide</span>
         <div class="trust-icons">
           <i class="fas fa-spray-can-sparkles" title="Pressure Washers"></i>
           <i class="fas fa-faucet-drip" title="Plumbers"></i>
           <i class="fas fa-wind" title="HVAC"></i>
           <i class="fas fa-broom" title="Window Cleaners"></i>
           <i class="fas fa-house-chimney" title="Roofers"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BANNER ========== -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Rankings Improved</div>
+        </div>
+        <div class="stat-item fade-up">
+          <div class="stat-number" data-target="10000">0</div>
+          <div class="stat-label">Reviews Generated</div>
+        </div>
+        <div class="stat-item fade-up">
+          <div class="stat-number" data-target="30">0</div>
+          <div class="stat-label">Day Avg. to Results</div>
+        </div>
+        <div class="stat-item fade-up">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">% Organic — No Ads</div>
         </div>
       </div>
     </div>
@@ -610,20 +440,57 @@
         <div class="problem-card fade-up">
           <div class="icon"><i class="fas fa-arrow-trend-down"></i></div>
           <h3>Competitors Are Outranking You</h3>
-          <p>That pressure washing company that started last year? They already have more Google reviews than you — and they're getting the calls you should be getting.</p>
+          <p>That company that started last year? They already have more Google reviews than you — and they're getting the calls that should be going to your business.</p>
         </div>
         <div class="problem-card fade-up">
           <div class="icon"><i class="fas fa-magnifying-glass-location"></i></div>
-          <h3>Customers Can't Find You</h3>
-          <p>When someone searches "[your service] near me," they find everyone except you. If you're not in the top 3 on Google Maps, you basically don't exist.</p>
+          <h3>You're Invisible in Local Search</h3>
+          <p>When someone searches "[your service] near me," Google shows your competitors first. If you're not in the top 3 on Google Maps, you basically don't exist to local customers.</p>
         </div>
         <div class="problem-card fade-up">
           <div class="icon"><i class="fas fa-phone-slash"></i></div>
-          <h3>You're Leaving Money on the Table</h3>
-          <p>Every day your Google profile isn't optimized, you're losing $5,000–$15,000/month in calls to competitors who simply show up first.</p>
+          <h3>You're Losing $5K–$15K/Month</h3>
+          <p>Every day your Google Business Profile isn't optimized, you're losing thousands in potential calls to competitors who simply rank higher in local search results.</p>
         </div>
       </div>
-      <p class="problem-transition">It's not your fault. Google rewards businesses that play the game.<br>We teach you — and play it for you.</p>
+      <p class="problem-transition">It's not your fault. Google rewards businesses that optimize their profile.<br>We handle the optimization — you handle the jobs.</p>
+    </div>
+  </section>
+
+  <!-- ========== INDUSTRIES ========== -->
+  <section class="industries" id="industries">
+    <div class="container text-center">
+      <p class="accent-label">Who We Help</p>
+      <h2>Google Business Profile Optimization<br>for Local Service Businesses</h2>
+      <p class="section-sub">We specialize in helping hands-on, owner-operated service businesses dominate their local Google Maps results and get more calls.</p>
+      <div class="industries-grid">
+        <div class="industry-card fade-up">
+          <div class="industry-icon"><i class="fas fa-spray-can-sparkles"></i></div>
+          <h3>Pressure Washers</h3>
+          <p>House washing, concrete cleaning, roof cleaning</p>
+        </div>
+        <div class="industry-card fade-up">
+          <div class="industry-icon"><i class="fas fa-faucet-drip"></i></div>
+          <h3>Plumbers</h3>
+          <p>Emergency plumbing, drain cleaning, water heaters</p>
+        </div>
+        <div class="industry-card fade-up">
+          <div class="industry-icon"><i class="fas fa-wind"></i></div>
+          <h3>HVAC</h3>
+          <p>AC repair, heating, duct cleaning, installations</p>
+        </div>
+        <div class="industry-card fade-up">
+          <div class="industry-icon"><i class="fas fa-broom"></i></div>
+          <h3>Window Cleaners</h3>
+          <p>Residential & commercial window cleaning</p>
+        </div>
+        <div class="industry-card fade-up">
+          <div class="industry-icon"><i class="fas fa-house-chimney"></i></div>
+          <h3>Roofers</h3>
+          <p>Roof repair, replacement, inspections</p>
+        </div>
+      </div>
+      <p style="margin-top:2rem; color:#595959; font-size:0.95rem;">Don't see your trade? If you're a local service business that wants more calls from Google, <a href="https://cal.com/clearlocaledge/audit" style="color:#00B050; font-weight:600;" target="_blank" rel="noopener">let's talk</a>.</p>
     </div>
   </section>
 
@@ -636,17 +503,17 @@
         <div class="step-card fade-up">
           <div class="step-number">1</div>
           <h3>Free Google Audit</h3>
-          <p>We run a 15-minute heatmap analysis showing exactly where you show up on Google — and where you don't. No cost, no commitment.</p>
+          <p>We run a 15-minute Google Maps heatmap analysis showing exactly where your business ranks — and where you're invisible. No cost, no commitment.</p>
         </div>
         <div class="step-card fade-up">
           <div class="step-number">2</div>
-          <h3>We Optimize Your Profile</h3>
-          <p>We fix your Google Business Profile from top to bottom — categories, descriptions, photos, posts, Q&A, review strategy. You don't lift a finger.</p>
+          <h3>We Optimize Your Google Business Profile</h3>
+          <p>We optimize every inch of your GBP — categories, description, photos, Google Posts, Q&A, review strategy, and citation building. You don't lift a finger.</p>
         </div>
         <div class="step-card fade-up">
           <div class="step-number">3</div>
           <h3>You Get More Calls</h3>
-          <p>Within 30–60 days, you'll see measurable improvement in your Google Maps ranking — and more calls from real local customers. No ads, no gimmicks.</p>
+          <p>Within 30–60 days, you'll see measurable improvement in your Google Maps ranking and local search visibility — and more calls from real customers.</p>
         </div>
       </div>
       <div style="margin-top:3rem">
@@ -665,13 +532,13 @@
           <img src="Chris%20Gallagher.jpg" alt="Chris Gallagher, founder of Clear Local Edge" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
         </div>
         <div class="about-content">
-          <p>I'm Chris Gallagher, and I actually run a pressure washing company in Ohio — PressureWays Power Cleaning. I'm not some marketing agency that's never gotten their hands dirty.</p>
-          <p>I've spent years figuring out how to make Google work for local service businesses — because I had to. When I saw how many great businesses were invisible on Google Maps, I built Clear Local Edge to fix that.</p>
-          <p>I only work with local service businesses because that's what I know. No generic marketing agency fluff — just real strategies that get real results for real businesses.</p>
+          <p>I'm Chris Gallagher, and I actually run a pressure washing company — PressureWays Power Cleaning in Ohio. I'm not some marketing agency that's never gotten their hands dirty.</p>
+          <p>I spent years figuring out how to make Google Business Profile work for my own local service business — because I had to. When I saw how many great businesses were invisible on Google Maps, I built Clear Local Edge to fix that.</p>
+          <p>I only work with local service businesses because that's what I know. No generic marketing fluff — just proven Google Maps optimization strategies that generate real calls from real local customers.</p>
           <ul class="about-bullets">
             <li><i class="fas fa-check-circle"></i> 10+ years in sales and business development</li>
             <li><i class="fas fa-check-circle"></i> Owner-operator — I know your daily challenges firsthand</li>
-            <li><i class="fas fa-check-circle"></i> Specialized in local service businesses only</li>
+            <li><i class="fas fa-check-circle"></i> Specialized in local service business GBP optimization</li>
             <li><i class="fas fa-check-circle"></i> No long-term contracts — we earn your business every month</li>
           </ul>
         </div>
@@ -683,35 +550,35 @@
   <section class="case-study" id="results">
     <div class="container text-center">
       <p class="accent-label">Proof</p>
-      <h2>Real Results for Real Businesses</h2>
+      <h2>Real Google Maps Results for Real Businesses</h2>
       <div class="case-card fade-up">
         <h3>PressureWays — Pressure Washing, Westlake, OH</h3>
-        <p class="case-label">We used the exact same system on our own business first. Here's what happened.</p>
+        <p class="case-label">We used our exact Google Business Profile optimization system on our own company first. Here's what happened.</p>
         <div class="heatmap-grid">
           <div class="heatmap-placeholder" style="border:none; padding:0; overflow:hidden;">
             <span style="font-weight:600; color:#1F4E79; font-size:0.85rem; margin-bottom:0.5rem; display:block; text-align:center;">BEFORE</span>
-            <img src="heatmap-before.png" alt="Before: Poor Google Maps rankings showing mostly red and orange" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;">
+            <img src="heatmap-before.png" alt="Before: Poor Google Maps rankings showing mostly red and orange positions" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;">
           </div>
           <div class="heatmap-placeholder" style="border:none; padding:0; overflow:hidden;">
             <span style="font-weight:600; color:#00B050; font-size:0.85rem; margin-bottom:0.5rem; display:block; text-align:center;">AFTER</span>
-            <img src="heatmap-after.png" alt="After: Dominant Google Maps rankings showing mostly green" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;">
+            <img src="heatmap-after.png" alt="After: Dominant Google Maps rankings showing top 3 positions across the service area" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;">
           </div>
         </div>
         <div class="case-metrics">
           <div class="metric">
             <div class="number">56</div>
-            <div class="label">5-Star Reviews</div>
+            <div class="label">5-Star Google Reviews</div>
           </div>
           <div class="metric">
             <div class="number">3x</div>
-            <div class="label">Map Visibility</div>
+            <div class="label">Google Maps Visibility</div>
           </div>
           <div class="metric">
             <div class="number">+40%</div>
-            <div class="label">Calls Increase</div>
+            <div class="label">Increase in Calls</div>
           </div>
         </div>
-        <p class="case-quote">"We used the exact same system on our own business first. Here's what happened."</p>
+        <p class="case-quote">"We built this system for our own service business first. The results spoke for themselves — so we started helping other businesses do the same."</p>
       </div>
     </div>
   </section>
@@ -721,26 +588,22 @@
     <div class="container text-center">
       <p class="accent-label">Pricing</p>
       <h2>Simple, Transparent Pricing</h2>
-      <p class="section-sub">No long-term contracts. No hidden fees. Cancel anytime.</p>
+      <p class="section-sub">No long-term contracts. No hidden fees. Cancel anytime. Every plan includes Google Business Profile optimization, review strategy, and monthly ranking reports.</p>
       <div class="pricing-grid">
-
-        <!-- Starter -->
         <div class="price-card fade-up">
           <p class="price-tier">Starter</p>
           <h3>Get Found</h3>
           <div class="price-amount">$297<span>/mo</span></div>
           <p class="price-setup">+ $497 one-time setup</p>
           <ul class="price-features">
-            <li><i class="fas fa-check"></i> GMB profile optimization</li>
-            <li><i class="fas fa-check"></i> Citation building</li>
+            <li><i class="fas fa-check"></i> Google Business Profile optimization</li>
+            <li><i class="fas fa-check"></i> Local citation building</li>
             <li><i class="fas fa-check"></i> 4 Google Posts/month</li>
             <li><i class="fas fa-check"></i> Review request templates</li>
-            <li><i class="fas fa-check"></i> Monthly heatmap ranking report</li>
+            <li><i class="fas fa-check"></i> Monthly Google Maps heatmap report</li>
           </ul>
           <a href="https://cal.com/clearlocaledge/audit" class="btn btn-secondary" target="_blank" rel="noopener">Get Started <i class="fas fa-arrow-right"></i></a>
         </div>
-
-        <!-- Growth (Featured) -->
         <div class="price-card featured fade-up">
           <div class="popular-badge">Most Popular</div>
           <p class="price-tier">Growth</p>
@@ -751,15 +614,13 @@
             <li><i class="fas fa-check"></i> Everything in Starter, plus:</li>
             <li><i class="fas fa-check"></i> Automated review generation system</li>
             <li><i class="fas fa-check"></i> 8 Google Posts/month</li>
-            <li><i class="fas fa-check"></i> Competitor monitoring</li>
-            <li><i class="fas fa-check"></i> Photo optimization</li>
+            <li><i class="fas fa-check"></i> Local competitor monitoring</li>
+            <li><i class="fas fa-check"></i> GBP photo optimization</li>
             <li><i class="fas fa-check"></i> Q&A management</li>
             <li><i class="fas fa-check"></i> Priority support</li>
           </ul>
           <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary" target="_blank" rel="noopener">Get Started <i class="fas fa-arrow-right"></i></a>
         </div>
-
-        <!-- Dominate -->
         <div class="price-card fade-up">
           <p class="price-tier">Dominate</p>
           <h3>Get Everywhere</h3>
@@ -768,7 +629,7 @@
           <ul class="price-features">
             <li><i class="fas fa-check"></i> Everything in Growth, plus:</li>
             <li><i class="fas fa-check"></i> Professional website (built in 24 hrs)</li>
-            <li><i class="fas fa-check"></i> 1 SEO blog post/month</li>
+            <li><i class="fas fa-check"></i> 1 local SEO blog post/month</li>
             <li><i class="fas fa-check"></i> Social media cross-posting</li>
             <li><i class="fas fa-check"></i> Quarterly strategy call</li>
           </ul>
@@ -785,32 +646,32 @@
       <h2>Got Questions? We've Got Answers.</h2>
       <div class="faq-list">
         <div class="faq-item">
-          <button class="faq-question">How long before I see results? <i class="fas fa-chevron-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Most clients see visible improvements in their Google Maps ranking within 30–60 days. Some industries and markets move faster. We'll show you exactly where you stand with monthly heatmap reports so you can track progress.</div></div>
+          <button class="faq-question">How long before I see results from Google Business Profile optimization? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Most clients see visible improvements in their Google Maps ranking within 30–60 days. Some industries and markets move faster. We'll show you exactly where you stand with monthly heatmap reports so you can track your local search progress.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Do I need to run Google Ads? <i class="fas fa-chevron-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Nope. Everything we do is 100% organic. We optimize your Google Business Profile so you rank higher in Maps results naturally — no ad spend required.</div></div>
+          <button class="faq-question">Do I need to run Google Ads to rank on Google Maps? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Nope. Everything we do is 100% organic Google Business Profile optimization. We improve your GBP so you rank higher in Maps results naturally — no ad spend required. Your improved ranking drives free, organic calls.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">What if I already have a marketing person? <i class="fas fa-chevron-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Great — we're not here to replace them. We specialize specifically in Google Business Profile optimization. Most marketing agencies focus on websites, social media, or paid ads. We focus on the one thing that drives local calls: your Google Maps presence.</div></div>
+          <button class="faq-question">What if I already have a marketing person or agency? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">We're not here to replace them. We specialize specifically in Google Business Profile optimization and local search ranking. Most marketing agencies focus on websites, social media, or paid ads. We focus on the one thing that drives local calls: your Google Maps presence.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">How much of my time does this take? <i class="fas fa-chevron-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">About 15 minutes per month. We handle everything — you just keep doing what you do best. We might occasionally ask you to approve a post or respond to a review, but that's it.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">About 15 minutes per month. We handle all the Google Business Profile optimization, review strategy, Google Posts, and ranking analysis. You just keep running your business. We might occasionally ask you to approve a post or respond to a review, but that's it.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Can I cancel anytime? <i class="fas fa-chevron-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes. No long-term contracts, no cancellation fees. We earn your business every month. If you're not seeing results, you can walk away — but we're confident you won't want to.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. No long-term contracts, no cancellation fees. We earn your business every month through measurable Google Maps ranking improvements. If you're not seeing results, you can walk away — but we're confident you won't want to.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">What industries do you work with? <i class="fas fa-chevron-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">We work exclusively with local service businesses — window cleaners, pressure washers, plumbers, HVAC companies, roofers, and similar trades. If you serve local customers and want more calls from Google, we're built for you.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">We work exclusively with local service businesses — pressure washers, plumbers, HVAC companies, window cleaners, roofers, electricians, landscapers, and similar trades. If you serve local customers and want more calls from Google Maps, we're built for you.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">Do you work outside of SW Florida? <i class="fas fa-chevron-down"></i></button>
-          <div class="faq-answer"><div class="faq-answer-inner">We're launching in SW Florida first — Cape Coral, Fort Myers, Naples, Bonita Springs, Sarasota, and Bradenton. We'll be expanding to other markets soon. Drop us a line if you're interested and we'll keep you posted.</div></div>
+          <button class="faq-question">Do you work in my area? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes — we work with local service businesses across the United States. Google Business Profile optimization works the same everywhere. Whether you're in Texas, Florida, Ohio, or California, we can help you rank higher on Google Maps in your local market.</div></div>
         </div>
       </div>
     </div>
@@ -819,8 +680,8 @@
   <!-- ========== FINAL CTA ========== -->
   <section class="final-cta">
     <div class="container">
-      <h2>Ready to Stop Being Invisible on Google?</h2>
-      <p>Get your free Google Audit in 15 minutes. No pitch. No pressure. Just data.</p>
+      <h2>Ready to Stop Being Invisible on Google Maps?</h2>
+      <p>Get your free Google Business Profile audit in 15 minutes. See exactly where you rank, where you're missing, and how to fix it. No pitch. No pressure. Just data.</p>
       <a href="https://cal.com/clearlocaledge/audit" class="btn btn-orange btn-large" target="_blank" rel="noopener">Book Your Free Audit Now <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
       <p class="email-fallback">Or email us at <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a></p>
       <p class="urgency">Limited spots available — we only take on 10 new clients per month to ensure quality results.</p>
@@ -834,7 +695,7 @@
         <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a>
         <a href="https://cal.com/clearlocaledge/audit" target="_blank" rel="noopener">Book an Audit</a>
       </div>
-      <p>Clear Local Edge &middot; Westlake, OH &middot; Serving SW Florida</p>
+      <p>Clear Local Edge &middot; Westlake, OH &middot; Serving Local Businesses Nationwide</p>
       <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge. All rights reserved.</p>
     </div>
   </footer>
@@ -850,8 +711,6 @@
       icon.classList.toggle('fa-bars');
       icon.classList.toggle('fa-xmark');
     });
-
-    // Close mobile menu on link click
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -876,11 +735,32 @@
       });
     });
 
-    // Scroll fade-in animation
+    // Animated counter
+    function animateCounters() {
+      document.querySelectorAll('.stat-number[data-target]').forEach(counter => {
+        if (counter.dataset.animated) return;
+        const target = parseInt(counter.dataset.target);
+        const duration = 2000;
+        const start = performance.now();
+        counter.dataset.animated = 'true';
+        function update(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.floor(eased * target);
+          counter.textContent = current.toLocaleString() + (target === 100 ? '%' : '+');
+          if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      });
+    }
+
+    // Scroll fade-in animation + counter trigger
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          if (entry.target.closest('.stats-banner')) animateCounters();
           observer.unobserve(entry.target);
         }
       });
