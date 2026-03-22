@@ -148,10 +148,32 @@
     .hero h1 em { font-style: normal; color: #00B050; }
     .hero-sub { font-size: 1.2rem; color: #595959; max-width: 580px; margin-bottom: 2.2rem; line-height: 1.7; }
     .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
-    .trust-bar { display: flex; align-items: center; gap: 2rem; padding-top: 2.5rem; border-top: 1px solid rgba(31,78,121,0.1); flex-wrap: wrap; }
-    .trust-bar-label { font-size: 0.85rem; color: #595959; font-weight: 500; }
-    .trust-icons { display: flex; gap: 1.5rem; }
-    .trust-icons i { font-size: 1.4rem; color: #1F4E79; opacity: 0.5; }
+    .hero-proof {
+      display: flex; align-items: center; gap: 0.6rem; margin-bottom: 2.5rem;
+      font-size: 0.9rem; color: #595959;
+    }
+    .hero-proof i { color: #00B050; font-size: 1rem; }
+    .hero-proof .stars { color: #f5a623; letter-spacing: 1px; }
+    .hero-proof strong { color: #1F4E79; }
+    .trade-bar {
+      padding-top: 2.5rem; border-top: 1px solid rgba(31,78,121,0.1);
+    }
+    .trade-bar-label {
+      font-size: 0.8rem; color: #595959; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.5px; margin-bottom: 1.2rem; text-align: center;
+    }
+    .trade-bar-grid {
+      display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;
+    }
+    .trade-bar-item {
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    }
+    .trade-bar-icon {
+      width: 52px; height: 52px; background: #1F4E79; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .trade-bar-icon i { font-size: 1.2rem; color: #fff; }
+    .trade-bar-item span { font-size: 0.75rem; color: #595959; font-weight: 500; }
 
     /* ========== STATS BANNER ========== */
     .stats-banner {
@@ -375,7 +397,9 @@
         border-bottom: none;
       }
       .hamburger { display: block; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
-      .trust-bar { justify-content: center; text-align: center; flex-direction: column; gap: 0.75rem; }
+      .trade-bar-grid { gap: 1.5rem; }
+      .trade-bar-icon { width: 44px; height: 44px; }
+      .hero-proof { font-size: 0.8rem; flex-wrap: wrap; }
       .industries-grid { grid-template-columns: repeat(2, 1fr); }
       .stat-number { font-size: 2rem; }
       .case-card { padding: 2rem 1.5rem; }
@@ -413,6 +437,11 @@
       .section-sub { font-size: 0.95rem; }
       .final-cta h2 { font-size: 1.3rem; }
       .final-cta p { font-size: 0.95rem; }
+      .trade-bar-grid { gap: 1rem; }
+      .trade-bar-icon { width: 40px; height: 40px; border-radius: 10px; }
+      .trade-bar-icon i { font-size: 1rem; }
+      .trade-bar-item span { font-size: 0.7rem; }
+      .hero-proof { font-size: 0.75rem; }
     }
   </style>
 </head>
@@ -448,19 +477,38 @@
             <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Google Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
             <a href="#how-it-works" class="btn btn-secondary">See How It Works <i class="fas fa-arrow-down" style="margin-left:0.4rem"></i></a>
           </div>
+          <div class="hero-proof">
+            <i class="fas fa-check-circle"></i>
+            <span>Built on our own business first — <strong>60 five-star Google reviews</strong> <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> and counting</span>
+          </div>
         </div>
         <div class="hero-illustration">
           <img src="CLE_Site_Pic.png" alt="Google Maps local search optimization illustration showing map pins, magnifying glass, and growth arrows">
         </div>
       </div>
-      <div class="trust-bar">
-        <span class="trust-bar-label">Trusted by local service businesses nationwide</span>
-        <div class="trust-icons">
-          <i class="fas fa-spray-can-sparkles" title="Pressure Washers"></i>
-          <i class="fas fa-faucet-drip" title="Plumbers"></i>
-          <i class="fas fa-wind" title="HVAC"></i>
-          <i class="fas fa-broom" title="Window Cleaners"></i>
-          <i class="fas fa-house-chimney" title="Roofers"></i>
+      <div class="trade-bar">
+        <p class="trade-bar-label">Built for local service businesses</p>
+        <div class="trade-bar-grid">
+          <div class="trade-bar-item">
+            <div class="trade-bar-icon"><i class="fas fa-spray-can-sparkles"></i></div>
+            <span>Pressure Washers</span>
+          </div>
+          <div class="trade-bar-item">
+            <div class="trade-bar-icon"><i class="fas fa-faucet-drip"></i></div>
+            <span>Plumbers</span>
+          </div>
+          <div class="trade-bar-item">
+            <div class="trade-bar-icon"><i class="fas fa-wind"></i></div>
+            <span>HVAC</span>
+          </div>
+          <div class="trade-bar-item">
+            <div class="trade-bar-icon"><i class="fas fa-broom"></i></div>
+            <span>Window Cleaners</span>
+          </div>
+          <div class="trade-bar-item">
+            <div class="trade-bar-icon"><i class="fas fa-house-chimney"></i></div>
+            <span>Roofers</span>
+          </div>
         </div>
       </div>
     </div>
@@ -625,7 +673,7 @@
         </div>
         <div class="case-metrics">
           <div class="metric">
-            <div class="number">56</div>
+            <div class="number">60</div>
             <div class="label">5-Star Google Reviews</div>
           </div>
           <div class="metric">
