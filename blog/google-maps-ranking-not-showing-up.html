@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps Ranking: Why You're Not Showing Up and How to Fix It — Clear Local Edge</title>
+  <meta name="description" content="Not showing up on Google Maps? Here are the 7 most common reasons local businesses are invisible in Maps results — and exactly how to fix each one.">
+  <meta name="keywords" content="Google Maps ranking, not showing up on Google Maps, local pack ranking, Google Business Profile optimization, local SEO, map pack ranking">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Google Maps Ranking: Why You're Not Showing Up and How to Fix It">
+  <meta property="og:description" content="Not showing up on Google Maps? Here are the 7 most common reasons local businesses are invisible in Maps results — and exactly how to fix each one.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://clearlocaledge.com/blog/google-maps-ranking-not-showing-up.html">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Google Maps Ranking: Why You're Not Showing Up and How to Fix It",
+    "description": "Not showing up on Google Maps? Here are the 7 most common reasons local businesses are invisible in Maps results — and exactly how to fix each one.",
+    "author": {
+      "@type": "Person",
+      "name": "Chris Gallagher"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Clear Local Edge"
+    },
+    "datePublished": "2026-03-22",
+    "dateModified": "2026-03-22",
+    "mainEntityOfPage": "https://clearlocaledge.com/blog/google-maps-ranking-not-showing-up.html"
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../CLE_Icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: #111111;
+      background: #FFFFFF;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ========== TYPOGRAPHY ========== */
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1 { font-size: 2.2rem; color: #1F4E79; }
+    h2 { font-size: 1.6rem; color: #1F4E79; margin-top: 2.5rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.25rem; color: #1F4E79; margin-top: 2rem; margin-bottom: 0.75rem; }
+
+    /* ========== LAYOUT ========== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .btn-primary { background: #00B050; color: #fff; }
+    .btn-primary:hover { background: #009a45; }
+
+    /* ========== NAV ========== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e8ecf0;
+      padding: 0.9rem 0;
+      transition: box-shadow 0.3s;
+    }
+    .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo img { height: 42px; width: auto; }
+    .nav-links { display: flex; gap: 1.8rem; align-items: center; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #595959; transition: color 0.2s; }
+    .nav-links a:hover { color: #1F4E79; }
+    .nav-links a.active { color: #1F4E79; font-weight: 600; }
+    .nav-links a.nav-cta { font-size: 0.85rem; padding: 0.55rem 1.3rem; color: #fff; }
+    .nav-links a.nav-cta:hover { color: #fff; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.5rem; color: #1F4E79; cursor: pointer; }
+
+    /* ========== ARTICLE HERO ========== */
+    .article-hero {
+      padding: 8rem 0 3rem;
+      background: linear-gradient(160deg, #EEF2F7 0%, #DAE3F3 40%, #FFFFFF 100%);
+    }
+    .article-hero .container { max-width: 760px; }
+    .article-breadcrumb {
+      font-size: 0.85rem; color: #595959; margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+    .article-breadcrumb a { color: #00B050; font-weight: 500; }
+    .article-breadcrumb a:hover { text-decoration: underline; }
+    .article-tag {
+      display: inline-block;
+      background: #00B050; color: #fff;
+      font-size: 0.7rem; font-weight: 600;
+      padding: 0.25rem 0.75rem; border-radius: 20px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+    }
+    .article-hero h1 { margin-bottom: 1rem; }
+    .article-meta {
+      font-size: 0.9rem; color: #595959;
+      display: flex; align-items: center; gap: 1.5rem;
+    }
+    .article-meta span { display: flex; align-items: center; gap: 0.4rem; }
+    .article-meta i { font-size: 0.8rem; color: #00B050; }
+
+    /* ========== ARTICLE BODY ========== */
+    .article-body {
+      padding: 3rem 0 4rem;
+    }
+    .article-body .container { max-width: 760px; }
+    .article-body p {
+      color: #333; font-size: 1.05rem; line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .article-body ul, .article-body ol {
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+    }
+    .article-body ul { list-style: disc; }
+    .article-body ol { list-style: decimal; }
+    .article-body li {
+      color: #333; font-size: 1.05rem; line-height: 1.8;
+      margin-bottom: 0.75rem;
+    }
+    .article-body strong { color: #1F4E79; }
+    .article-body blockquote {
+      border-left: 4px solid #00B050;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: #f8faf9;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #1F4E79;
+      font-size: 1.05rem;
+    }
+    .key-takeaway {
+      background: #EEF2F7;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+      border-left: 4px solid #1F4E79;
+    }
+    .key-takeaway h3 { margin-top: 0; color: #1F4E79; font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .key-takeaway p { margin-bottom: 0; font-size: 1rem; }
+
+    /* ========== ARTICLE CTA ========== */
+    .article-cta {
+      background: linear-gradient(160deg, #1F4E79 0%, #163a5c 100%);
+      color: #fff; text-align: center; padding: 4rem 0;
+    }
+    .article-cta h2 { color: #fff; margin-top: 0; margin-bottom: 1rem; }
+    .article-cta p { color: rgba(255,255,255,0.85); font-size: 1.05rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    /* ========== FOOTER ========== */
+    .footer { background: #0e1f2f; color: rgba(255,255,255,0.5); text-align: center; padding: 2.5rem 0; font-size: 0.85rem; }
+    .footer a { color: #00B050; }
+    .footer-links { margin-bottom: 0.5rem; }
+    .footer-links a { margin: 0 0.75rem; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.7rem; }
+      h2 { font-size: 1.4rem; }
+      .article-hero { padding: 6.5rem 0 2.5rem; }
+      .article-body p, .article-body li { font-size: 1rem; }
+      .nav-links {
+        display: flex; flex-direction: column; position: absolute;
+        top: 100%; left: 0; right: 0; background: #fff;
+        border-bottom: 1px solid #e8ecf0; box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        gap: 0; max-height: 0; overflow: hidden; padding: 0 1.5rem;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+      }
+      .nav-links.open { padding: 0 1.5rem; }
+      .nav-links.animating { max-height: 400px; padding: 1rem 1.5rem; }
+      .nav-links.open a {
+        padding: 0.75rem 0; min-height: 44px;
+        display: flex; align-items: center;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .nav-links.open a:last-child { border-bottom: none; }
+      .nav-links.open a.nav-cta { margin-top: 0.5rem; justify-content: center; min-height: 48px; border-bottom: none; }
+      .hamburger { display: block; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      .article-meta { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+      .footer-links a { margin: 0; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.45rem; }
+      .article-hero { padding: 5.5rem 0 2rem; }
+      .container { padding: 0 1rem; }
+      .article-cta h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="../" class="nav-logo"><img src="../CLE_Website_Logo.png" alt="Clear Local Edge" height="42"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="../#industries">Industries</a>
+        <a href="../#how-it-works">How It Works</a>
+        <a href="../#about">About</a>
+        <a href="../#pricing">Pricing</a>
+        <a href="../#faq">FAQ</a>
+        <a href="./" class="active">Blog</a>
+        <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Free Audit</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== ARTICLE HERO ========== -->
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-breadcrumb">
+        <a href="../">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;color:#999"></i>
+        <a href="./">Blog</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;color:#999"></i>
+        <span>Rankings</span>
+      </div>
+      <span class="article-tag">Rankings</span>
+      <h1>Google Maps Ranking: Why You're Not Showing Up and How to Fix It</h1>
+      <div class="article-meta">
+        <span><i class="fas fa-user"></i> Chris Gallagher</span>
+        <span><i class="fas fa-calendar"></i> March 22, 2026</span>
+        <span><i class="fas fa-clock"></i> 8 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLE BODY ========== -->
+  <article class="article-body">
+    <div class="container">
+
+      <p>You do great work. Your customers love you. But when someone in your area searches for the service you provide, you're nowhere to be found on Google Maps. Meanwhile, a competitor who's been in business half as long is sitting right there in the top results, getting the calls that should be going to you.</p>
+
+      <p>If that sounds familiar, you're not alone. This is one of the most common frustrations I hear from local service business owners. The good news is that it's almost always fixable once you understand what's going on behind the scenes.</p>
+
+      <p>Let's walk through how Google Maps ranking actually works, why your business might not be showing up, and what you can do about it starting today.</p>
+
+      <h2>How Google Maps Ranking Works</h2>
+
+      <p>Google uses three main factors to decide which businesses show up in Maps results:</p>
+
+      <ul>
+        <li><strong>Relevance</strong> — How well does your listing match what the person is searching for? If someone searches "roof cleaning near me" and your Google Business Profile doesn't mention roof cleaning, Google has no reason to show you.</li>
+        <li><strong>Distance</strong> — How close is your business to the person searching? Google tries to show results that are geographically relevant. This is why you might rank well in your immediate area but disappear a few miles away.</li>
+        <li><strong>Prominence</strong> — How well-known and trusted is your business online? This comes from reviews, citations, website authority, and overall online presence. A business with 80 reviews and consistent listings across the web will outrank one with 5 reviews and no other online footprint.</li>
+      </ul>
+
+      <p>All three factors work together. You can't just nail one and ignore the others. A complete, relevant profile with strong reviews and consistent online presence is what moves you up in the rankings.</p>
+
+      <h2>The Local Pack: Why the Top 3 Matter So Much</h2>
+
+      <p>When someone searches for a local service on Google, the first thing they see (after any ads) is the <strong>Local Pack</strong> — that map with three business listings underneath it. Those three spots get the vast majority of clicks and calls from local searches.</p>
+
+      <p>If you're not in that top 3, most people will never see your business. They'll call one of the three that are showing, and you'll never even know you lost that customer. That's why ranking in the Local Pack isn't just a nice-to-have — it's where your next customers are coming from.</p>
+
+      <h2>7 Reasons You're Not Showing Up on Google Maps</h2>
+
+      <p>After working with local service businesses on their Google Maps presence, I see the same issues over and over. Here are the seven most common reasons your business isn't ranking — and exactly how to fix each one.</p>
+
+      <h3>1. Incomplete Google Business Profile</h3>
+
+      <p>This is the most common one, and it's the easiest to fix. If your Google Business Profile is half-filled out — missing services, no business description, no hours, no service area defined — Google simply doesn't have enough information to rank you confidently.</p>
+
+      <p><strong>How to fix it:</strong> Log into your Google Business Profile and fill out every single field. Business description, services, hours (including special hours), service area, attributes, the works. Google rewards completeness. Think of every empty field as a missed signal you're sending to Google.</p>
+
+      <h3>2. Wrong Primary Category</h3>
+
+      <p>Your primary category is one of the biggest ranking factors in Google Maps, and a surprising number of businesses get it wrong. If you're a pressure washing company but your primary category is set to "Cleaning Service," you're competing in the wrong arena.</p>
+
+      <p><strong>How to fix it:</strong> Make sure your primary category is the most specific, accurate description of your main service. Then add secondary categories for your other services. Don't pick broad categories when a specific one exists. For example, "Pressure Washing Service" is better than "Cleaning Service" if pressure washing is your main business.</p>
+
+      <h3>3. NAP Inconsistencies</h3>
+
+      <p>NAP stands for Name, Address, and Phone number. If your business name, address, or phone number is listed differently across the internet — even small differences like "St." vs. "Street" or a different phone number on Yelp than on your website — Google loses confidence in your listing.</p>
+
+      <p><strong>How to fix it:</strong> Pick one exact version of your business name, address, and phone number and make sure it's identical everywhere: your website, Google Business Profile, Facebook, Yelp, Angi, BBB, and every other directory you're listed on. Consistency tells Google you're a legitimate, established business.</p>
+
+      <h3>4. Not Enough Reviews (or No Recent Ones)</h3>
+
+      <p>Reviews are one of the strongest ranking signals for Google Maps. If you have fewer reviews than your competitors, or your last review was six months ago, that's a problem. Google wants to recommend businesses that customers are actively using and happy with.</p>
+
+      <p><strong>How to fix it:</strong> Build a simple system for asking every happy customer for a review. Send a follow-up text or email with a direct link to your Google review page after every completed job. Consistency matters more than volume — two new reviews per week beats getting ten in one week and then nothing for three months. And always respond to every review, good or bad.</p>
+
+      <h3>5. No Google Posts or Fresh Content</h3>
+
+      <p>Google Posts are those short updates you can publish directly on your Google Business Profile. Most businesses never use them. But they're a free way to signal to Google that your business is active and engaged — and they show up right in your listing when customers find you.</p>
+
+      <p><strong>How to fix it:</strong> Publish a Google Post at least once a week. Share a recent job you completed, a seasonal tip, a special offer, or a before-and-after photo. It doesn't need to be fancy. It just needs to be consistent. Google notices when a business is regularly active versus dormant.</p>
+
+      <h3>6. Missing Citations (Directory Listings)</h3>
+
+      <p>Citations are mentions of your business on other websites — directories like Yelp, Yellow Pages, BBB, Angi, industry-specific directories, and local chamber of commerce sites. These listings build your online authority and give Google more confidence that your business is real and established.</p>
+
+      <p><strong>How to fix it:</strong> Get your business listed on the top 30-50 directories relevant to your industry and location. Start with the big ones: Yelp, Facebook, BBB, Angi, Thumbtack, Yellow Pages, Apple Maps, and Bing Places. Then add industry-specific and local directories. Make sure your NAP is consistent across all of them.</p>
+
+      <h3>7. No Website or Poorly Optimized Website</h3>
+
+      <p>While your Google Business Profile is the star of local search, having a website that backs it up matters. Google looks at your website for additional signals about what you do and where you do it. If you don't have one, or if it's a single page with no real content, you're leaving ranking power on the table.</p>
+
+      <p><strong>How to fix it:</strong> At minimum, your website should have your services clearly listed, your service area mentioned, your NAP matching your Google Business Profile exactly, and individual pages for your main services. Make sure it loads fast and works well on mobile. You don't need anything fancy — you need something solid and relevant.</p>
+
+      <div class="key-takeaway">
+        <h3><i class="fas fa-lightbulb" style="color:#FF6600; margin-right:0.5rem"></i> Key Takeaway</h3>
+        <p>Ranking on Google Maps isn't about any single trick or secret. It's about getting the fundamentals right: a complete profile, the right categories, consistent information across the web, steady reviews, regular activity, solid citations, and a decent website. Businesses that do all seven of these things consistently will outrank competitors who only do one or two.</p>
+      </div>
+
+      <h2>How Long Does It Take to See Improvement?</h2>
+
+      <p>This is the question everyone asks, and I'll give you a straight answer: <strong>most businesses start seeing meaningful movement in 30 to 60 days</strong> after making these changes, assuming you're consistent about it.</p>
+
+      <p>Some fixes — like completing your profile and fixing your categories — can have an impact within days. Others — like building up reviews and citations — take weeks to compound. Google doesn't move overnight, but it does reward businesses that put in steady, consistent effort.</p>
+
+      <p>The businesses that get frustrated and give up after two weeks are the ones that stay invisible. The ones that commit to doing this right for 60 to 90 days are the ones that start getting calls they weren't getting before.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>If you're not showing up on Google Maps, it's not because Google has it out for you. It's because there are specific things your listing is missing or getting wrong — and your competitors are getting them right. The good news is that every single issue on this list is fixable, and most of them don't cost a dime.</p>
+
+      <p>Start with the basics. Complete your profile. Fix your categories. Get your NAP consistent. Then build momentum with reviews, posts, and citations. It works because Google is designed to surface legitimate, active, well-documented businesses. Be that business.</p>
+
+      <blockquote>At Clear Local Edge, we help local service businesses fix exactly these problems. We've done it for our own business, and we do it every day for businesses like yours. If your phone should be ringing more than it is, your Google Maps presence is the first place to look.</blockquote>
+
+    </div>
+  </article>
+
+  <!-- ========== ARTICLE CTA ========== -->
+  <section class="article-cta">
+    <div class="container">
+      <h2>Want to See Exactly Where You Rank?</h2>
+      <p>We'll run a free heatmap analysis showing your Google Maps rankings across your entire service area.</p>
+      <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Heatmap <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a>
+        <a href="https://cal.com/clearlocaledge/audit" target="_blank" rel="noopener">Book an Audit</a>
+        <a href="../">Home</a>
+        <a href="./">Blog</a>
+      </div>
+      <p>Clear Local Edge &middot; Westlake, OH &middot; Serving Local Businesses Nationwide</p>
+      <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.contains('open');
+      if (isOpen) {
+        navLinks.classList.remove('animating');
+        setTimeout(() => navLinks.classList.remove('open'), 350);
+      } else {
+        navLinks.classList.add('open');
+        requestAnimationFrame(() => navLinks.classList.add('animating'));
+      }
+      const icon = hamburger.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('animating');
+        setTimeout(() => navLinks.classList.remove('open'), 350);
+        const icon = hamburger.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-xmark');
+      });
+    });
+
+    // Nav shadow on scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+</body>
+</html>
