@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations — Clear Local Edge | Google Business Profile Optimization Nationwide</title>
+  <meta name="description" content="Google Business Profile optimization for local service businesses across the United States. Find your city and see how we can help you dominate Google Maps.">
+
+  <meta property="og:title" content="Locations — Clear Local Edge">
+  <meta property="og:description" content="Google Business Profile optimization for local service businesses nationwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clearlocaledge.com/locations">
+
+  <link rel="icon" type="image/png" href="../CLE_Icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; font-weight: 400; color: #111; background: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    h1, h2, h3 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1 { font-size: 2.4rem; color: #1F4E79; }
+    h2 { font-size: 1.6rem; color: #1F4E79; }
+    .accent-label { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #00B050; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+
+    .btn { display: inline-block; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1rem; padding: 0.9rem 2rem; border-radius: 8px; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .btn-primary { background: #00B050; color: #fff; }
+    .btn-primary:hover { background: #009a45; }
+
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.97); backdrop-filter: blur(10px); border-bottom: 1px solid #e8ecf0; padding: 0.9rem 0; transition: box-shadow 0.3s; }
+    .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo img { height: 42px; width: auto; }
+    .nav-links { display: flex; gap: 1.8rem; align-items: center; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #595959; transition: color 0.2s; }
+    .nav-links a:hover { color: #1F4E79; }
+    .nav-links a.nav-cta { font-size: 0.85rem; padding: 0.55rem 1.3rem; color: #fff; }
+    .nav-links a.nav-cta:hover { color: #fff; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.5rem; color: #1F4E79; cursor: pointer; }
+
+    .locations-hero { padding: 8rem 0 3rem; background: linear-gradient(160deg, #EEF2F7 0%, #DAE3F3 40%, #FFFFFF 100%); text-align: center; }
+    .locations-hero p.sub { color: #595959; font-size: 1.1rem; max-width: 600px; margin: 1rem auto 0; }
+
+    .locations-section { padding: 4rem 0 5rem; }
+    .region-group { margin-bottom: 3rem; }
+    .region-group h2 { margin-top: 0; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #EEF2F7; }
+    .region-group h2 i { margin-right: 0.5rem; color: #00B050; }
+    .city-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .city-card {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.25rem 1.5rem; background: #fff; border: 2px solid #e8ecf0;
+      border-radius: 12px; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .city-card:hover { transform: translateY(-3px); border-color: #00B050; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+    .city-card i { font-size: 1.2rem; color: #1F4E79; flex-shrink: 0; }
+    .city-card .city-info h3 { font-size: 1.05rem; color: #1F4E79; margin: 0; }
+    .city-card .city-info p { font-size: 0.8rem; color: #595959; margin: 0.2rem 0 0; }
+
+    .locations-cta { background: linear-gradient(160deg, #1F4E79 0%, #163a5c 100%); color: #fff; text-align: center; padding: 4rem 0; }
+    .locations-cta h2 { color: #fff; margin-top: 0; margin-bottom: 1rem; }
+    .locations-cta p { color: rgba(255,255,255,0.85); font-size: 1.05rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    .footer { background: #0e1f2f; color: rgba(255,255,255,0.5); text-align: center; padding: 2.5rem 0; font-size: 0.85rem; }
+    .footer a { color: #00B050; }
+    .footer-links { margin-bottom: 0.5rem; }
+    .footer-links a { margin: 0 0.75rem; }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .locations-hero { padding: 6.5rem 0 2.5rem; }
+      .city-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links {
+        display: flex; flex-direction: column; position: absolute;
+        top: 100%; left: 0; right: 0; background: #fff;
+        border-bottom: 1px solid #e8ecf0; box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        gap: 0; max-height: 0; overflow: hidden; padding: 0 1.5rem;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+      }
+      .nav-links.open { padding: 0 1.5rem; }
+      .nav-links.animating { max-height: 400px; padding: 1rem 1.5rem; }
+      .nav-links.open a { padding: 0.75rem 0; min-height: 44px; display: flex; align-items: center; border-bottom: 1px solid #f0f0f0; }
+      .nav-links.open a:last-child { border-bottom: none; }
+      .nav-links.open a.nav-cta { margin-top: 0.5rem; justify-content: center; min-height: 48px; border-bottom: none; }
+      .hamburger { display: block; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+      .footer-links a { margin: 0; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      .locations-hero { padding: 5.5rem 0 2rem; }
+      .city-grid { grid-template-columns: 1fr; }
+      .container { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="../" class="nav-logo"><img src="../CLE_Website_Logo.png" alt="Clear Local Edge" height="42"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="../#industries">Industries</a>
+        <a href="../#how-it-works">How It Works</a>
+        <a href="../#about">About</a>
+        <a href="../#pricing">Pricing</a>
+        <a href="../blog/">Blog</a>
+        <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Free Audit</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <section class="locations-hero">
+    <div class="container">
+      <p class="accent-label">Locations</p>
+      <h1>Google Business Profile Optimization<br>Across the United States</h1>
+      <p class="sub">We help local service businesses dominate Google Maps in their market. Find your city below or book a free audit to get started.</p>
+    </div>
+  </section>
+
+  <section class="locations-section">
+    <div class="container">
+
+      <div class="region-group">
+        <h2><i class="fas fa-sun"></i> Southwest Florida</h2>
+        <div class="city-grid">
+          <a href="cape-coral-fl.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Cape Coral, FL</h3>
+              <p>Lee County &middot; 200K+ residents</p>
+            </div>
+          </a>
+          <a href="fort-myers-fl.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Fort Myers, FL</h3>
+              <p>Lee County seat &middot; River District</p>
+            </div>
+          </a>
+          <a href="naples-fl.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Naples, FL</h3>
+              <p>Collier County &middot; Premium market</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="region-group">
+        <h2><i class="fas fa-snowflake"></i> Ohio / Cleveland Area</h2>
+        <div class="city-grid">
+          <a href="cleveland-oh.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Cleveland, OH</h3>
+              <p>Cuyahoga County &middot; Major metro</p>
+            </div>
+          </a>
+          <a href="westlake-oh.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Westlake, OH</h3>
+              <p>CLE Home Base &middot; West side suburb</p>
+            </div>
+          </a>
+          <a href="avon-oh.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Avon, OH</h3>
+              <p>Lorain County &middot; Fast-growing</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="region-group">
+        <h2><i class="fas fa-flag-usa"></i> Nationwide</h2>
+        <div class="city-grid">
+          <a href="tampa-fl.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Tampa, FL</h3>
+              <p>Hillsborough County &middot; Major metro</p>
+            </div>
+          </a>
+          <a href="dallas-tx.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Dallas, TX</h3>
+              <p>DFW metroplex &middot; Booming growth</p>
+            </div>
+          </a>
+          <a href="phoenix-az.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Phoenix, AZ</h3>
+              <p>Maricopa County &middot; Desert market</p>
+            </div>
+          </a>
+          <a href="charlotte-nc.html" class="city-card">
+            <i class="fas fa-map-pin"></i>
+            <div class="city-info">
+              <h3>Charlotte, NC</h3>
+              <p>Mecklenburg County &middot; Southeast hub</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="locations-cta">
+    <div class="container">
+      <h2>Don't See Your City?</h2>
+      <p>We work with local service businesses nationwide. Book a free audit and we'll analyze your Google Maps rankings wherever you are.</p>
+      <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary" target="_blank" rel="noopener">Get Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a>
+        <a href="https://cal.com/clearlocaledge/audit" target="_blank" rel="noopener">Book an Audit</a>
+        <a href="../">Home</a>
+        <a href="../blog/">Blog</a>
+      </div>
+      <p>Clear Local Edge &middot; Serving Local Businesses Nationwide</p>
+      <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.contains('open');
+      if (isOpen) { navLinks.classList.remove('animating'); setTimeout(() => navLinks.classList.remove('open'), 350); }
+      else { navLinks.classList.add('open'); requestAnimationFrame(() => navLinks.classList.add('animating')); }
+      const icon = hamburger.querySelector('i');
+      icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-xmark');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('animating'); setTimeout(() => navLinks.classList.remove('open'), 350);
+        const icon = hamburger.querySelector('i'); icon.classList.add('fa-bars'); icon.classList.remove('fa-xmark');
+      });
+    });
+    window.addEventListener('scroll', () => { document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20); });
+  </script>
+</body>
+</html>
