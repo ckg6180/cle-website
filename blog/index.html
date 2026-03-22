@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Clear Local Edge | Google Business Profile Tips & Local SEO Guides</title>
+  <meta name="description" content="Practical Google Business Profile optimization tips, local SEO strategies, and Google Maps ranking guides for local service businesses. Written by a business owner, for business owners.">
+  <meta name="keywords" content="Google Business Profile tips, local SEO blog, Google Maps ranking guide, GBP optimization, local service business marketing">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog — Clear Local Edge | GBP Tips & Local SEO Guides">
+  <meta property="og:description" content="Practical Google Business Profile optimization tips and local SEO strategies for local service businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clearlocaledge.com/blog">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../CLE_Icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: #111111;
+      background: #FFFFFF;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ========== TYPOGRAPHY ========== */
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1 { font-size: 2.4rem; color: #1F4E79; }
+    h2 { font-size: 1.8rem; color: #1F4E79; }
+    h3 { font-size: 1.25rem; }
+    .accent-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #00B050;
+    }
+
+    /* ========== LAYOUT ========== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .btn-primary { background: #00B050; color: #fff; }
+    .btn-primary:hover { background: #009a45; }
+
+    /* ========== NAV ========== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e8ecf0;
+      padding: 0.9rem 0;
+      transition: box-shadow 0.3s;
+    }
+    .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo img { height: 42px; width: auto; }
+    .nav-links { display: flex; gap: 1.8rem; align-items: center; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #595959; transition: color 0.2s; }
+    .nav-links a:hover { color: #1F4E79; }
+    .nav-links a.active { color: #1F4E79; font-weight: 600; }
+    .nav-links a.nav-cta { font-size: 0.85rem; padding: 0.55rem 1.3rem; color: #fff; }
+    .nav-links a.nav-cta:hover { color: #fff; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.5rem; color: #1F4E79; cursor: pointer; }
+
+    /* ========== BLOG HERO ========== */
+    .blog-hero {
+      padding: 8rem 0 3rem;
+      background: linear-gradient(160deg, #EEF2F7 0%, #DAE3F3 40%, #FFFFFF 100%);
+      text-align: center;
+    }
+    .blog-hero p { color: #595959; font-size: 1.1rem; max-width: 600px; margin: 1rem auto 0; }
+
+    /* ========== BLOG GRID ========== */
+    .blog-section { padding: 4rem 0 5rem; }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .blog-card {
+      background: #fff;
+      border: 2px solid #e8ecf0;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border-color: #00B050;
+    }
+    .blog-card-img {
+      height: 180px;
+      background: linear-gradient(135deg, #1F4E79 0%, #163a5c 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .blog-card-img i { font-size: 2.5rem; color: rgba(255,255,255,0.3); }
+    .blog-card-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: #00B050;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .blog-card-body { padding: 1.5rem; }
+    .blog-card-body h3 {
+      color: #1F4E79;
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.4;
+    }
+    .blog-card-body p {
+      color: #595959;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .blog-card-meta {
+      font-size: 0.8rem;
+      color: #999;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .blog-card-meta i { font-size: 0.75rem; }
+    .read-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #00B050;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+      transition: gap 0.2s;
+    }
+    .read-link:hover { gap: 0.7rem; }
+
+    /* ========== CTA BANNER ========== */
+    .blog-cta {
+      background: linear-gradient(160deg, #1F4E79 0%, #163a5c 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    .blog-cta h2 { color: #fff; margin-bottom: 1rem; }
+    .blog-cta p { color: rgba(255,255,255,0.85); font-size: 1.05rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    /* ========== FOOTER ========== */
+    .footer { background: #0e1f2f; color: rgba(255,255,255,0.5); text-align: center; padding: 2.5rem 0; font-size: 0.85rem; }
+    .footer a { color: #00B050; }
+    .footer-links { margin-bottom: 0.5rem; }
+    .footer-links a { margin: 0 0.75rem; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 900px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .blog-hero { padding: 6.5rem 0 2.5rem; }
+      .nav-links {
+        display: flex; flex-direction: column; position: absolute;
+        top: 100%; left: 0; right: 0; background: #fff;
+        border-bottom: 1px solid #e8ecf0; box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        gap: 0; max-height: 0; overflow: hidden; padding: 0 1.5rem;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+      }
+      .nav-links.open { padding: 0 1.5rem; }
+      .nav-links.animating { max-height: 400px; padding: 1rem 1.5rem; }
+      .nav-links.open a {
+        padding: 0.75rem 0; min-height: 44px;
+        display: flex; align-items: center;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .nav-links.open a:last-child { border-bottom: none; }
+      .nav-links.open a.nav-cta { margin-top: 0.5rem; justify-content: center; min-height: 48px; border-bottom: none; }
+      .hamburger { display: block; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+      .footer-links a { margin: 0; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      .blog-hero { padding: 5.5rem 0 2rem; }
+      .blog-hero p { font-size: 0.95rem; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .blog-card-img { height: 140px; }
+      .container { padding: 0 1rem; }
+      .blog-cta h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="../" class="nav-logo"><img src="../CLE_Website_Logo.png" alt="Clear Local Edge" height="42"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="../#industries">Industries</a>
+        <a href="../#how-it-works">How It Works</a>
+        <a href="../#about">About</a>
+        <a href="../#pricing">Pricing</a>
+        <a href="../#faq">FAQ</a>
+        <a href="./" class="active">Blog</a>
+        <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Free Audit</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== BLOG HERO ========== -->
+  <section class="blog-hero">
+    <div class="container">
+      <p class="accent-label">Blog</p>
+      <h1>Google Business Profile Tips &<br>Local SEO Guides</h1>
+      <p>Practical strategies to help your local service business rank higher on Google Maps and get more calls. No fluff — just what works.</p>
+    </div>
+  </section>
+
+  <!-- ========== BLOG GRID ========== -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Article 1 -->
+        <a href="what-is-google-business-profile.html" class="blog-card">
+          <div class="blog-card-img">
+            <i class="fas fa-store"></i>
+            <span class="blog-card-tag">GBP Basics</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>What Is Google Business Profile and Why It Matters for Local Service Businesses</h3>
+            <p>Your Google Business Profile is the single most important tool for getting found by local customers. Here's what it is, why it matters, and what most businesses get wrong.</p>
+            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="how-to-get-more-google-reviews.html" class="blog-card">
+          <div class="blog-card-img">
+            <i class="fas fa-star"></i>
+            <span class="blog-card-tag">Reviews</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>How to Get More Google Reviews (Without Begging)</h3>
+            <p>Reviews are the #1 factor in local search ranking. Here's a simple, repeatable system to generate more 5-star reviews from your happiest customers.</p>
+            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Article 3 -->
+        <a href="google-maps-ranking-not-showing-up.html" class="blog-card">
+          <div class="blog-card-img">
+            <i class="fas fa-map-location-dot"></i>
+            <span class="blog-card-tag">Rankings</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Google Maps Ranking: Why You're Not Showing Up and How to Fix It</h3>
+            <p>If you're not in the top 3 on Google Maps, you're invisible to local customers. Here are the most common reasons — and exactly how to fix each one.</p>
+            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Article 4 -->
+        <a href="google-business-profile-mistakes.html" class="blog-card">
+          <div class="blog-card-img">
+            <i class="fas fa-triangle-exclamation"></i>
+            <span class="blog-card-tag">Mistakes</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>5 Google Business Profile Mistakes Killing Your Local Visibility</h3>
+            <p>Most local businesses make the same GBP mistakes without realizing it. These five errors are costing you rankings, reviews, and real revenue.</p>
+            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Article 5 -->
+        <a href="local-seo-vs-paid-ads.html" class="blog-card">
+          <div class="blog-card-img">
+            <i class="fas fa-scale-balanced"></i>
+            <span class="blog-card-tag">Strategy</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Local SEO vs. Paid Ads: Which One Gets You More Calls?</h3>
+            <p>Should you invest in Google Ads or organic local SEO? We break down the cost, timeline, and ROI of each approach for local service businesses.</p>
+            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="blog-cta">
+    <div class="container">
+      <h2>Want to See Where You Rank on Google Maps?</h2>
+      <p>Get a free 15-minute Google Business Profile audit. We'll show you exactly where you stand — and what to fix first.</p>
+      <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a>
+        <a href="https://cal.com/clearlocaledge/audit" target="_blank" rel="noopener">Book an Audit</a>
+        <a href="../">Home</a>
+      </div>
+      <p>Clear Local Edge &middot; Westlake, OH &middot; Serving Local Businesses Nationwide</p>
+      <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.contains('open');
+      if (isOpen) {
+        navLinks.classList.remove('animating');
+        setTimeout(() => navLinks.classList.remove('open'), 350);
+      } else {
+        navLinks.classList.add('open');
+        requestAnimationFrame(() => navLinks.classList.add('animating'));
+      }
+      const icon = hamburger.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('animating');
+        setTimeout(() => navLinks.classList.remove('open'), 350);
+        const icon = hamburger.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-xmark');
+      });
+    });
+
+    // Nav shadow on scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+</body>
+</html>
