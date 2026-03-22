@@ -175,6 +175,17 @@
     .trade-bar-icon i { font-size: 1.2rem; color: #fff; }
     .trade-bar-item span { font-size: 0.75rem; color: #595959; font-weight: 500; }
 
+    /* ========== SECTION ILLUSTRATIONS ========== */
+    .section-illust {
+      display: block; max-width: 280px; max-height: 280px; margin: 0 auto 2rem;
+      filter: drop-shadow(0 4px 12px rgba(31,78,121,0.08));
+    }
+    .section-illust-sm { max-width: 200px; max-height: 200px; }
+    .stats-illust {
+      position: absolute; right: 2rem; top: 50%; transform: translateY(-50%);
+      width: 140px; height: 140px; opacity: 0.15; z-index: 0;
+    }
+
     /* ========== STATS BANNER ========== */
     .stats-banner {
       background: linear-gradient(135deg, #1F4E79 0%, #163a5c 100%);
@@ -410,6 +421,9 @@
       .hero-buttons .btn { width: 100%; text-align: center; }
       .faq-answer.active-answer { max-height: 500px; }
       .faq-question { min-height: 48px; padding: 1rem 1.2rem; }
+      .section-illust { max-width: 200px; max-height: 200px; }
+      .section-illust-sm { max-width: 150px; max-height: 150px; }
+      .stats-illust { display: none; }
       .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
       .footer-links a { margin: 0; }
     }
@@ -422,6 +436,8 @@
       .hero-sub { font-size: 1rem; }
       .hero { padding: 5.5rem 0 2rem; }
       .hero-illustration img { max-height: 160px; }
+      .section-illust { max-width: 150px; max-height: 150px; margin-bottom: 1rem; }
+      .section-illust-sm { max-width: 120px; max-height: 120px; }
       section { padding: 2.5rem 0; }
       .container { padding: 0 1rem; }
       .industries-grid { grid-template-columns: 1fr; }
@@ -517,6 +533,7 @@
 
   <!-- ========== STATS BANNER ========== -->
   <section class="stats-banner">
+    <img src="illust-stats.png" alt="" class="stats-illust" aria-hidden="true">
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item fade-up">
@@ -542,6 +559,7 @@
   <!-- ========== PROBLEM ========== -->
   <section class="problem" id="problem">
     <div class="container text-center">
+      <img src="illust-problem.png" alt="Business struggling with Google visibility" class="section-illust fade-up">
       <p class="accent-label">The Problem</p>
       <h2>You're Great at What You Do.<br>Google Just Doesn't Know It Yet.</h2>
       <div class="problem-grid">
@@ -568,6 +586,7 @@
   <!-- ========== INDUSTRIES ========== -->
   <section class="industries" id="industries">
     <div class="container text-center">
+      <img src="illust-industries.png" alt="Local service trade workers connected" class="section-illust fade-up">
       <p class="accent-label">Built for Local Service Trades, by a Local Service Trade</p>
       <h2>Google Business Profile Optimization<br>for Local Service Businesses</h2>
       <p class="section-sub">We specialize in helping hands-on, owner-operated service businesses dominate their local Google Maps results and get more calls.</p>
@@ -605,6 +624,7 @@
   <!-- ========== HOW IT WORKS ========== -->
   <section class="how-it-works" id="how-it-works">
     <div class="container text-center">
+      <img src="illust-how-it-works.png" alt="Three step optimization process" class="section-illust fade-up">
       <p class="accent-label">How It Works</p>
       <h2>Three Steps to Dominating Local Search</h2>
       <div class="steps-grid">
@@ -694,6 +714,7 @@
   <!-- ========== PRICING ========== -->
   <section class="pricing" id="pricing">
     <div class="container text-center">
+      <img src="illust-pricing.png" alt="Simple transparent pricing tiers" class="section-illust section-illust-sm fade-up">
       <p class="accent-label">Pricing</p>
       <h2>Simple, Transparent Pricing</h2>
       <p class="section-sub">No long-term contracts. No hidden fees. Cancel anytime. Every plan includes Google Business Profile optimization, review strategy, and monthly ranking reports.</p>
