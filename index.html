@@ -268,7 +268,7 @@
     .about { background: #FFFFFF; }
     .about-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; align-items: center; margin-top: 2.5rem; }
     .about-photo {
-      background: #DAE3F3; border-radius: 12px; aspect-ratio: 1/1; max-width: 320px;
+      background: transparent; border-radius: 12px; max-width: 450px;
       display: flex; align-items: center; justify-content: center;
     }
     .about-content p { color: #595959; margin-bottom: 1.2rem; line-height: 1.7; }
@@ -378,7 +378,7 @@
       .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
       .heatmap-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; }
-      .about-photo { aspect-ratio: 16/9; max-width: 100%; margin: 0 auto; }
+      .about-photo { max-width: 100%; margin: 0 auto; }
       .price-card.featured { transform: none; }
       .price-card.featured:hover { transform: translateY(-4px); }
     }
@@ -459,7 +459,7 @@
       .case-card { padding: 1.5rem 1rem; }
       .case-metrics { gap: 0.75rem; }
       .metric .number { font-size: 1.4rem; }
-      .about-photo { aspect-ratio: 4/3; }
+      .about-photo { max-width: 100%; }
       .section-sub { font-size: 0.95rem; }
       .final-cta h2 { font-size: 1.3rem; }
       .final-cta p { font-size: 0.95rem; }
@@ -667,7 +667,7 @@
       <h2 class="text-center">Built by a Business Owner, For Business Owners</h2>
       <div class="about-grid fade-up">
         <div class="about-photo" style="border:none; padding:0; overflow:hidden;">
-          <img src="Chris%20Gallagher.jpg" alt="Chris Gallagher, founder of Clear Local Edge" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+          <img src="Chris%20Gallagher.jpg" alt="Chris Gallagher, founder of Clear Local Edge" style="width:100%; height:auto; border-radius:12px;">
         </div>
         <div class="about-content">
           <p>I'm Chris Gallagher, and I actually run a pressure washing company — PressureWays Power Cleaning in Ohio. I'm not some marketing agency that's never gotten their hands dirty.</p>
