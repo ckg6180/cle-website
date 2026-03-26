@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
 
@@ -25,8 +26,6 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://clearlocaledge.com">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="CLE_Icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -364,6 +363,9 @@
     .footer a { color: #00B050; }
     .footer-links { margin-bottom: 0.5rem; }
     .footer-links a { margin: 0 0.75rem; }
+    .footer-social { margin-bottom: 0.75rem; }
+    .footer-social a { color: #00B050; font-size: 1.4rem; margin: 0 0.5rem; transition: color 0.2s; text-decoration: none; }
+    .footer-social a:hover { color: #33cc66; }
 
     /* ========== SCROLL ANIMATIONS ========== */
     .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -514,7 +516,40 @@
           </div>
         </div>
         <div class="hero-illustration">
-          <img src="CLE_Site_Pic.png" alt="Google Maps local search optimization illustration showing map pins, magnifying glass, and growth arrows">
+          <svg viewBox="0 0 400 360" role="img" aria-label="Google Maps local search optimization illustration showing map pins, magnifying glass, and growth arrows" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+            <!-- Map background -->
+            <rect x="40" y="40" width="320" height="240" rx="18" fill="#EEF2F7" stroke="#1F4E79" stroke-width="2"/>
+            <!-- Grid lines -->
+            <line x1="120" y1="40" x2="120" y2="280" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
+            <line x1="200" y1="40" x2="200" y2="280" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
+            <line x1="280" y1="40" x2="280" y2="280" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
+            <line x1="40" y1="120" x2="360" y2="120" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
+            <line x1="40" y1="200" x2="360" y2="200" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
+            <!-- Map pin 1 (large, green) -->
+            <path d="M200 80c-16 0-28 12-28 28 0 22 28 44 28 44s28-22 28-44c0-16-12-28-28-28z" fill="#00B050"/>
+            <circle cx="200" cy="108" r="10" fill="#fff"/>
+            <!-- Map pin 2 (small, navy) -->
+            <path d="M120 130c-10 0-18 8-18 18 0 14 18 28 18 28s18-14 18-28c0-10-8-18-18-18z" fill="#1F4E79"/>
+            <circle cx="120" cy="148" r="6" fill="#fff"/>
+            <!-- Map pin 3 (small, orange) -->
+            <path d="M300 110c-10 0-18 8-18 18 0 14 18 28 18 28s18-14 18-28c0-10-8-18-18-18z" fill="#FF6600"/>
+            <circle cx="300" cy="128" r="6" fill="#fff"/>
+            <!-- Magnifying glass -->
+            <circle cx="290" cy="230" r="30" fill="none" stroke="#1F4E79" stroke-width="4"/>
+            <line x1="312" y1="252" x2="340" y2="280" stroke="#1F4E79" stroke-width="5" stroke-linecap="round"/>
+            <text x="290" y="236" text-anchor="middle" font-family="Poppins,sans-serif" font-size="14" font-weight="700" fill="#00B050">#1</text>
+            <!-- Growth arrow -->
+            <polyline points="70,250 130,210 190,230 250,180" fill="none" stroke="#00B050" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <polygon points="250,170 260,185 245,185" fill="#00B050"/>
+            <!-- Stars -->
+            <g transform="translate(140,300)" fill="#FF6600">
+              <polygon points="10,0 12.4,7.6 20,7.6 13.8,12.4 16.2,20 10,15.2 3.8,20 6.2,12.4 0,7.6 7.6,7.6"/>
+              <polygon points="35,0 37.4,7.6 45,7.6 38.8,12.4 41.2,20 35,15.2 28.8,20 31.2,12.4 25,7.6 32.6,7.6"/>
+              <polygon points="60,0 62.4,7.6 70,7.6 63.8,12.4 66.2,20 60,15.2 53.8,20 56.2,12.4 50,7.6 57.6,7.6"/>
+              <polygon points="85,0 87.4,7.6 95,7.6 88.8,12.4 91.2,20 85,15.2 78.8,20 81.2,12.4 75,7.6 82.6,7.6"/>
+              <polygon points="110,0 112.4,7.6 120,7.6 113.8,12.4 116.2,20 110,15.2 103.8,20 106.2,12.4 100,7.6 107.6,7.6"/>
+            </g>
+          </svg>
         </div>
       </div>
       <div class="trade-bar">
@@ -547,7 +582,13 @@
 
   <!-- ========== STATS BANNER ========== -->
   <section class="stats-banner">
-    <img src="illust-stats.png" alt="" class="stats-illust" aria-hidden="true">
+    <svg class="stats-illust" viewBox="0 0 140 140" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="90" width="20" height="40" rx="3" fill="#fff" fill-opacity="0.3"/>
+      <rect x="40" y="60" width="20" height="70" rx="3" fill="#fff" fill-opacity="0.3"/>
+      <rect x="70" y="40" width="20" height="90" rx="3" fill="#fff" fill-opacity="0.3"/>
+      <rect x="100" y="20" width="20" height="110" rx="3" fill="#fff" fill-opacity="0.3"/>
+      <polyline points="20,85 50,55 80,35 110,15" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.4" stroke-linecap="round"/>
+    </svg>
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item fade-up">
@@ -573,7 +614,42 @@
   <!-- ========== PROBLEM ========== -->
   <section class="problem" id="problem">
     <div class="container text-center">
-      <img src="illust-problem.png" alt="Business struggling with Google visibility" class="section-illust section-illust-wide fade-up" width="1584" height="700" loading="lazy">
+      <svg class="section-illust section-illust-wide fade-up" viewBox="0 0 600 260" role="img" aria-label="Business struggling with Google visibility" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+        <!-- Phone screen -->
+        <rect x="30" y="20" width="160" height="220" rx="20" fill="#1F4E79"/>
+        <rect x="40" y="50" width="140" height="160" rx="4" fill="#fff"/>
+        <!-- Search bar -->
+        <rect x="50" y="60" width="120" height="20" rx="10" fill="#EEF2F7"/>
+        <circle cx="64" cy="70" r="5" fill="none" stroke="#595959" stroke-width="1.5"/>
+        <line x1="68" y1="74" x2="72" y2="78" stroke="#595959" stroke-width="1.5"/>
+        <!-- Competitor results (visible) -->
+        <rect x="50" y="90" width="120" height="16" rx="3" fill="#00B050" fill-opacity="0.15"/>
+        <rect x="56" y="95" width="60" height="6" rx="2" fill="#00B050"/>
+        <rect x="50" y="112" width="120" height="16" rx="3" fill="#00B050" fill-opacity="0.1"/>
+        <rect x="56" y="117" width="50" height="6" rx="2" fill="#00B050" fill-opacity="0.6"/>
+        <rect x="50" y="134" width="120" height="16" rx="3" fill="#00B050" fill-opacity="0.05"/>
+        <rect x="56" y="139" width="45" height="6" rx="2" fill="#00B050" fill-opacity="0.4"/>
+        <!-- Your business (missing / low) -->
+        <rect x="50" y="160" width="120" height="16" rx="3" fill="#FF6600" fill-opacity="0.1" stroke="#FF6600" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="110" y="172" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#FF6600" font-weight="600">Your Business?</text>
+        <!-- Arrow pointing down -->
+        <line x1="220" y1="130" x2="260" y2="130" stroke="#FF6600" stroke-width="2" stroke-dasharray="4,3"/>
+        <!-- Frustrated person -->
+        <circle cx="320" cy="90" r="28" fill="#1F4E79"/>
+        <circle cx="320" cy="82" r="14" fill="#EEF2F7"/>
+        <ellipse cx="320" cy="118" rx="20" ry="14" fill="#EEF2F7"/>
+        <!-- Question marks -->
+        <text x="370" y="80" font-family="Poppins,sans-serif" font-size="28" font-weight="700" fill="#FF6600">?</text>
+        <text x="390" y="60" font-family="Poppins,sans-serif" font-size="18" font-weight="700" fill="#FF6600" opacity="0.5">?</text>
+        <!-- Trend down arrow -->
+        <g transform="translate(430,40)">
+          <rect width="140" height="180" rx="12" fill="#EEF2F7" stroke="#1F4E79" stroke-width="1.5"/>
+          <text x="70" y="30" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#595959" font-weight="600">YOUR VISIBILITY</text>
+          <polyline points="20,50 50,70 80,90 110,140" fill="none" stroke="#FF6600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <polygon points="115,145 120,130 108,135" fill="#FF6600"/>
+          <text x="70" y="170" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#FF6600" font-weight="700">Losing Calls</text>
+        </g>
+      </svg>
       <p class="accent-label">The Problem</p>
       <h2>You're Great at What You Do.<br>Google Just Doesn't Know It Yet.</h2>
       <div class="problem-grid">
@@ -600,7 +676,52 @@
   <!-- ========== INDUSTRIES ========== -->
   <section class="industries" id="industries">
     <div class="container text-center">
-      <img src="illust-industries.png" alt="Local service trade workers connected" class="section-illust fade-up">
+      <svg class="section-illust fade-up" viewBox="0 0 400 200" role="img" aria-label="Local service trade workers connected" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+        <!-- Connecting arc -->
+        <path d="M60,160 Q200,20 340,160" fill="none" stroke="#00B050" stroke-width="2" stroke-opacity="0.3"/>
+        <!-- Spray can (pressure washers) -->
+        <g transform="translate(40,100)">
+          <circle cx="20" cy="20" r="28" fill="#1F4E79" fill-opacity="0.1"/>
+          <rect x="12" y="8" width="16" height="26" rx="3" fill="#1F4E79"/>
+          <rect x="10" y="6" width="20" height="6" rx="2" fill="#00B050"/>
+          <line x1="20" y1="34" x2="20" y2="42" stroke="#1F4E79" stroke-width="2"/>
+          <circle cx="20" cy="44" r="2" fill="#00B050"/>
+        </g>
+        <!-- Wrench (plumbers) -->
+        <g transform="translate(120,70)">
+          <circle cx="20" cy="20" r="28" fill="#1F4E79" fill-opacity="0.1"/>
+          <path d="M10,30 L30,10 M26,6 C30,2 38,6 34,12 L30,10 M14,34 C10,38 2,34 6,28 L10,30" fill="none" stroke="#1F4E79" stroke-width="3" stroke-linecap="round"/>
+        </g>
+        <!-- Fan (HVAC) -->
+        <g transform="translate(190,50)">
+          <circle cx="20" cy="20" r="28" fill="#1F4E79" fill-opacity="0.1"/>
+          <circle cx="20" cy="20" r="4" fill="#00B050"/>
+          <path d="M20,16 C14,8 22,2 26,10 L20,16z" fill="#1F4E79"/>
+          <path d="M24,20 C32,14 38,22 30,26 L24,20z" fill="#1F4E79"/>
+          <path d="M20,24 C26,32 18,38 14,30 L20,24z" fill="#1F4E79"/>
+          <path d="M16,20 C8,26 2,18 10,14 L16,20z" fill="#1F4E79"/>
+        </g>
+        <!-- Squeegee (window cleaners) -->
+        <g transform="translate(260,70)">
+          <circle cx="20" cy="20" r="28" fill="#1F4E79" fill-opacity="0.1"/>
+          <rect x="8" y="8" width="24" height="6" rx="2" fill="#1F4E79"/>
+          <line x1="20" y1="14" x2="20" y2="36" stroke="#1F4E79" stroke-width="3" stroke-linecap="round"/>
+          <line x1="10" y1="14" x2="10" y2="20" stroke="#00B050" stroke-width="1.5" stroke-opacity="0.5"/>
+          <line x1="30" y1="14" x2="30" y2="20" stroke="#00B050" stroke-width="1.5" stroke-opacity="0.5"/>
+        </g>
+        <!-- House (roofers) -->
+        <g transform="translate(340,100)">
+          <circle cx="20" cy="20" r="28" fill="#1F4E79" fill-opacity="0.1"/>
+          <polygon points="20,4 38,20 34,20 34,36 6,36 6,20 2,20" fill="none" stroke="#1F4E79" stroke-width="2.5" stroke-linejoin="round"/>
+          <rect x="15" y="24" width="10" height="12" fill="#00B050" fill-opacity="0.4"/>
+        </g>
+        <!-- Small dots on arc -->
+        <circle cx="60" cy="140" r="4" fill="#00B050"/>
+        <circle cx="140" cy="80" r="4" fill="#00B050"/>
+        <circle cx="210" cy="55" r="4" fill="#00B050"/>
+        <circle cx="280" cy="80" r="4" fill="#00B050"/>
+        <circle cx="360" cy="140" r="4" fill="#00B050"/>
+      </svg>
       <p class="accent-label">Built for Local Service Trades, by a Local Service Trade</p>
       <h2>Google Business Profile Optimization<br>for Local Service Businesses</h2>
       <p class="section-sub">We specialize in helping hands-on, owner-operated service businesses dominate their local Google Maps results and get more calls.</p>
@@ -638,7 +759,39 @@
   <!-- ========== HOW IT WORKS ========== -->
   <section class="how-it-works" id="how-it-works">
     <div class="container text-center">
-      <img src="illust-how-it-works.png" alt="Three step optimization process" class="section-illust fade-up">
+      <svg class="section-illust fade-up" viewBox="0 0 440 140" role="img" aria-label="Three step optimization process" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+        <!-- Step 1: Audit -->
+        <g transform="translate(20,10)">
+          <circle cx="50" cy="50" r="46" fill="#1F4E79" fill-opacity="0.08" stroke="#1F4E79" stroke-width="2"/>
+          <circle cx="50" cy="42" r="16" fill="none" stroke="#1F4E79" stroke-width="2.5"/>
+          <line x1="62" y1="54" x2="72" y2="64" stroke="#1F4E79" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="50" y="42" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" font-weight="700" fill="#00B050" dy="4">1</text>
+          <text x="50" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1F4E79" font-weight="600">Audit</text>
+        </g>
+        <!-- Arrow 1→2 -->
+        <line x1="135" y1="60" x2="165" y2="60" stroke="#00B050" stroke-width="2" stroke-linecap="round"/>
+        <polygon points="168,60 160,55 160,65" fill="#00B050"/>
+        <!-- Step 2: Optimize -->
+        <g transform="translate(170,10)">
+          <circle cx="50" cy="50" r="46" fill="#00B050" fill-opacity="0.08" stroke="#00B050" stroke-width="2"/>
+          <path d="M38,50 L46,58 L66,38" fill="none" stroke="#00B050" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="36" y="62" width="28" height="3" rx="1.5" fill="#00B050" fill-opacity="0.3"/>
+          <rect x="40" y="68" width="20" height="3" rx="1.5" fill="#00B050" fill-opacity="0.2"/>
+          <text x="50" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1F4E79" font-weight="600">Optimize</text>
+        </g>
+        <!-- Arrow 2→3 -->
+        <line x1="285" y1="60" x2="315" y2="60" stroke="#00B050" stroke-width="2" stroke-linecap="round"/>
+        <polygon points="318,60 310,55 310,65" fill="#00B050"/>
+        <!-- Step 3: Results -->
+        <g transform="translate(320,10)">
+          <circle cx="50" cy="50" r="46" fill="#FF6600" fill-opacity="0.08" stroke="#FF6600" stroke-width="2"/>
+          <rect x="32" y="34" width="8" height="30" rx="2" fill="#1F4E79" fill-opacity="0.3"/>
+          <rect x="42" y="28" width="8" height="36" rx="2" fill="#00B050" fill-opacity="0.5"/>
+          <rect x="52" y="22" width="8" height="42" rx="2" fill="#00B050"/>
+          <polygon points="62,20 67,26 57,26" fill="#FF6600"/>
+          <text x="50" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1F4E79" font-weight="600">Results</text>
+        </g>
+      </svg>
       <p class="accent-label">How It Works</p>
       <h2>Three Steps to Dominating Local Search</h2>
       <div class="steps-grid">
@@ -728,7 +881,44 @@
   <!-- ========== PRICING ========== -->
   <section class="pricing" id="pricing">
     <div class="container text-center">
-      <img src="illust-pricing.png" alt="Simple transparent pricing tiers" class="section-illust fade-up">
+      <svg class="section-illust fade-up" viewBox="0 0 360 160" role="img" aria-label="Simple transparent pricing tiers" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+        <!-- Tier 1 -->
+        <g transform="translate(20,30)">
+          <rect width="90" height="110" rx="10" fill="#EEF2F7" stroke="#1F4E79" stroke-width="1.5"/>
+          <rect y="0" width="90" height="28" rx="10" fill="#1F4E79"/>
+          <rect x="0" y="18" width="90" height="10" fill="#1F4E79"/>
+          <text x="45" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#fff" font-weight="600">Starter</text>
+          <text x="45" y="60" text-anchor="middle" font-family="Poppins,sans-serif" font-size="18" fill="#1F4E79" font-weight="700">$297</text>
+          <line x1="20" y1="75" x2="70" y2="75" stroke="#00B050" stroke-width="1" stroke-opacity="0.3"/>
+          <circle cx="28" cy="88" r="3" fill="#00B050"/><rect x="36" y="85" width="34" height="5" rx="2" fill="#1F4E79" fill-opacity="0.15"/>
+          <circle cx="28" cy="100" r="3" fill="#00B050"/><rect x="36" y="97" width="28" height="5" rx="2" fill="#1F4E79" fill-opacity="0.15"/>
+        </g>
+        <!-- Tier 2 (featured) -->
+        <g transform="translate(135,15)">
+          <rect width="90" height="130" rx="10" fill="#fff" stroke="#00B050" stroke-width="2.5"/>
+          <rect y="0" width="90" height="28" rx="10" fill="#00B050"/>
+          <rect x="0" y="18" width="90" height="10" fill="#00B050"/>
+          <text x="45" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#fff" font-weight="600">Growth</text>
+          <text x="45" y="62" text-anchor="middle" font-family="Poppins,sans-serif" font-size="20" fill="#1F4E79" font-weight="700">$397</text>
+          <line x1="20" y1="78" x2="70" y2="78" stroke="#00B050" stroke-width="1" stroke-opacity="0.3"/>
+          <circle cx="28" cy="92" r="3" fill="#00B050"/><rect x="36" y="89" width="34" height="5" rx="2" fill="#1F4E79" fill-opacity="0.15"/>
+          <circle cx="28" cy="104" r="3" fill="#00B050"/><rect x="36" y="101" width="28" height="5" rx="2" fill="#1F4E79" fill-opacity="0.15"/>
+          <circle cx="28" cy="116" r="3" fill="#00B050"/><rect x="36" y="113" width="30" height="5" rx="2" fill="#1F4E79" fill-opacity="0.15"/>
+          <!-- Star badge -->
+          <polygon points="45,-8 48,0 56,0 50,5 52,13 45,8 38,13 40,5 34,0 42,0" fill="#FF6600"/>
+        </g>
+        <!-- Tier 3 -->
+        <g transform="translate(250,30)">
+          <rect width="90" height="110" rx="10" fill="#EEF2F7" stroke="#1F4E79" stroke-width="1.5"/>
+          <rect y="0" width="90" height="28" rx="10" fill="#1F4E79"/>
+          <rect x="0" y="18" width="90" height="10" fill="#1F4E79"/>
+          <text x="45" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#fff" font-weight="600">Dominate</text>
+          <text x="45" y="60" text-anchor="middle" font-family="Poppins,sans-serif" font-size="18" fill="#1F4E79" font-weight="700">$497</text>
+          <line x1="20" y1="75" x2="70" y2="75" stroke="#00B050" stroke-width="1" stroke-opacity="0.3"/>
+          <circle cx="28" cy="88" r="3" fill="#00B050"/><rect x="36" y="85" width="34" height="5" rx="2" fill="#1F4E79" fill-opacity="0.15"/>
+          <circle cx="28" cy="100" r="3" fill="#00B050"/><rect x="36" y="97" width="28" height="5" rx="2" fill="#1F4E79" fill-opacity="0.15"/>
+        </g>
+      </svg>
       <p class="accent-label">Pricing</p>
       <h2>Simple, Transparent Pricing</h2>
       <p class="section-sub">No long-term contracts. No hidden fees. Cancel anytime. Every plan includes Google Business Profile optimization, review strategy, and monthly ranking reports.</p>
@@ -839,6 +1029,10 @@
         <a href="https://cal.com/clearlocaledge/audit" target="_blank" rel="noopener">Book an Audit</a>
         <a href="locations/">Locations</a>
         <a href="blog/">Blog</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://linkedin.com/company/clearlocaledge" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/clearlocaledge" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
       <p>Clear Local Edge &middot; Westlake, OH &middot; Serving Local Businesses Nationwide</p>
       <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge. All rights reserved.</p>
