@@ -168,13 +168,12 @@
     .hero h1 { color: #1F4E79; max-width: 700px; margin-bottom: 1.25rem; }
     .hero h1 em { font-style: normal; color: #00B050; }
     .hero-sub { font-size: 1.2rem; color: #595959; max-width: 580px; margin-bottom: 2.2rem; line-height: 1.7; }
-    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
     .hero-proof {
-      display: flex; align-items: center; gap: 0.6rem; margin-bottom: 2.5rem;
-      font-size: 0.9rem; color: #595959;
+      display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2.5rem;
+      font-size: 0.85rem; color: #595959;
     }
-    .hero-proof i { color: #00B050; font-size: 1rem; }
-    .hero-proof .stars { color: #f5a623; letter-spacing: 1px; }
+    .hero-proof .stars { color: #F5A623; letter-spacing: 2px; font-size: 1rem; }
     .hero-proof strong { color: #1F4E79; }
     .trade-bar {
       padding-top: 2.5rem; border-top: 1px solid rgba(31,78,121,0.1);
@@ -310,6 +309,8 @@
     /* ========== FREE AUDIT TOOL ========== */
     .free-audit-section { background: #F9FAFB; }
     .free-audit-section .audit-content { max-width: 680px; margin: 0 auto; }
+    .free-audit-section .audit-bullets { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; text-align: left; }
+    .free-audit-section .audit-bullets li { font-size: 0.95rem; color: #595959; line-height: 1.5; }
     .free-audit-section .audit-trust { margin-top: 1.25rem; font-size: 0.85rem; color: #595959; }
     .free-audit-section .audit-trust span { margin: 0 0.5rem; }
 
@@ -321,7 +322,7 @@
       padding: 2.5rem 2rem; text-align: center; transition: transform 0.2s; position: relative;
     }
     .price-card:hover { transform: translateY(-4px); }
-    .price-card.featured { border-color: #00B050; box-shadow: 0 8px 40px rgba(0,176,80,0.15); transform: scale(1.04); }
+    .price-card.featured { border-color: #00B050; box-shadow: 0 8px 40px rgba(0,176,80,0.15); transform: scale(1.04); background: #F0FFF4; }
     .price-card.featured:hover { transform: scale(1.04) translateY(-4px); }
     .popular-badge {
       position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
@@ -521,14 +522,15 @@
         <div class="hero-content">
           <p class="accent-label">Google Business Profile Optimization for Local Service Businesses</p>
           <h1>Your Customers Are Searching.<br>Are They <em>Finding You</em>?</h1>
+          <p style="font-size:1.05rem; color:#595959; margin-bottom:1.5rem; max-width:580px; line-height:1.6;">Google Business Profile optimization for pressure washers, roofers, plumbers, HVAC pros, and other local service businesses.</p>
           <p class="hero-sub">We help local service businesses rank higher on Google Maps, generate more 5-star reviews, and turn local searches into real phone calls — without spending a dime on ads.</p>
           <div class="hero-buttons">
             <a href="https://localheatmap.app" class="btn btn-primary btn-large" target="_blank" rel="noopener">See Your Google Ranking Free <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
             <a href="#how-it-works" class="btn btn-secondary">See How It Works <i class="fas fa-arrow-down" style="margin-left:0.4rem"></i></a>
           </div>
           <div class="hero-proof">
-            <i class="fas fa-check-circle"></i>
-            <span>Built on our own business first — <strong>60 five-star Google reviews</strong> <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> and counting</span>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>Built on our own business first — <strong>60 five-star Google reviews</strong> and counting</span>
           </div>
         </div>
         <div class="hero-illustration">
@@ -682,10 +684,13 @@
         <div class="problem-card fade-up">
           <div class="icon"><i class="fas fa-phone-slash"></i></div>
           <h3>You're Losing $5K–$15K/Month</h3>
-          <p>Every day your Google Business Profile isn't optimized, you're losing thousands in potential calls to competitors who simply rank higher in local search results.</p>
+          <p>Every day your Google Business Profile isn't optimized, you're losing thousands in potential calls to competitors who simply rank higher in local search results. For most service businesses averaging $300–$1,500 per job, just 3–5 missed calls per week adds up to $5,000–$15,000 in lost revenue every month.</p>
         </div>
       </div>
       <p class="problem-transition">It's not your fault. Google rewards businesses that optimize their profile.<br>We handle the optimization — you handle the jobs.</p>
+      <div style="margin-top:2rem; text-align:center;">
+        <a href="https://localheatmap.app" class="btn btn-primary" target="_blank" rel="noopener">See Where You Rank Free <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+      </div>
     </div>
   </section>
 
@@ -854,6 +859,9 @@
           </ul>
         </div>
       </div>
+      <div style="margin-top:2.5rem; text-align:center;">
+        <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Strategy Call <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+      </div>
     </div>
   </section>
 
@@ -864,7 +872,10 @@
       <h2>Real Google Maps Results for Real Businesses</h2>
       <div class="case-card fade-up">
         <h3>PressureWays — Pressure Washing, Westlake, OH</h3>
-        <p class="case-label">We used our exact Google Business Profile optimization system on our own company first. Here's what happened.</p>
+        <div style="text-align:left; max-width:700px; margin:1.5rem auto 2rem;">
+          <p style="margin-bottom:1rem;"><strong style="color:#1F4E79;">The Challenge:</strong> <span style="color:#595959;">Like most local service businesses, PressureWays was invisible on Google Maps — buried behind competitors with more reviews and better-optimized profiles.</span></p>
+          <p><strong style="color:#1F4E79;">What We Did:</strong> <span style="color:#595959;">We applied our full Google Business Profile optimization system: category and description overhaul, strategic review generation, weekly Google Posts, citation building, and photo optimization.</span></p>
+        </div>
         <div class="heatmap-grid">
           <div class="heatmap-placeholder" style="border:none; padding:0; overflow:hidden;">
             <span style="font-weight:600; color:#1F4E79; font-size:0.85rem; margin-bottom:0.5rem; display:block; text-align:center;">BEFORE</span>
@@ -878,15 +889,15 @@
         <div class="case-metrics">
           <div class="metric">
             <div class="number">60</div>
-            <div class="label">5-Star Google Reviews</div>
+            <div class="label">Five-Star Google Reviews<br><span style="font-size:0.75rem; color:#999;">(was ~15)</span></div>
           </div>
           <div class="metric">
             <div class="number">3x</div>
-            <div class="label">Google Maps Visibility</div>
+            <div class="label">Google Maps Visibility<br><span style="font-size:0.75rem; color:#999;">Page 2 → Top 3 in map pack</span></div>
           </div>
           <div class="metric">
             <div class="number">+40%</div>
-            <div class="label">Increase in Calls</div>
+            <div class="label">Increase in Calls<br><span style="font-size:0.75rem; color:#999;">Tracked via GBP Insights</span></div>
           </div>
         </div>
         <p class="case-quote">"We built this system for our own service business first. The results spoke for themselves — so we started helping other businesses do the same."</p>
@@ -901,6 +912,11 @@
         <p class="accent-label">Free Tool</p>
         <h2>See Exactly Where You Rank on Google Maps</h2>
         <p class="section-sub">Our free heatmap audit shows your Google Business Profile ranking across your entire service area — in 60 seconds. No call required. No credit card. Just data.</p>
+        <ul class="audit-bullets">
+          <li>&#128202; Google Maps heatmap showing your ranking across your service area</li>
+          <li>&#128064; Side-by-side competitor visibility comparison</li>
+          <li>&#9989; Actionable fixes to start climbing the rankings</li>
+        </ul>
         <svg viewBox="0 0 480 200" role="img" aria-label="Google Maps heatmap audit showing ranking positions across a service area" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;height:auto;margin:0 auto 2rem">
           <rect x="10" y="10" width="460" height="180" rx="14" fill="#EEF2F7" stroke="#1F4E79" stroke-width="1.5"/>
           <line x1="10" y1="60" x2="470" y2="60" stroke="#1F4E79" stroke-opacity="0.06"/>
@@ -991,6 +1007,7 @@
           <h3>Get Found</h3>
           <div class="price-amount">$297<span>/mo</span></div>
           <p class="price-setup">+ $497 one-time setup</p>
+          <p style="font-style:italic; font-size:0.85rem; color:#595959; margin-bottom:1.5rem;">Best for: solo operators who need a solid Google Maps foundation</p>
           <ul class="price-features">
             <li><i class="fas fa-check"></i> Google Business Profile optimization</li>
             <li><i class="fas fa-check"></i> Local citation building</li>
@@ -1006,6 +1023,8 @@
           <h3>Get Chosen</h3>
           <div class="price-amount">$397<span>/mo</span></div>
           <p class="price-setup">+ $697 one-time setup</p>
+          <p style="font-style:italic; font-size:0.85rem; color:#595959; margin-bottom:0.5rem;">Best for: established businesses ready to outrank local competitors</p>
+          <p style="font-size:0.8rem; color:#00B050; font-weight:500; margin-bottom:1.5rem;">Recommended for most local service businesses</p>
           <ul class="price-features">
             <li><i class="fas fa-check"></i> Everything in Starter, plus:</li>
             <li><i class="fas fa-check"></i> Automated review generation system</li>
@@ -1022,9 +1041,12 @@
           <h3>Get Everywhere</h3>
           <div class="price-amount">$497<span>/mo</span></div>
           <p class="price-setup">+ $997 one-time setup</p>
+          <p style="font-style:italic; font-size:0.85rem; color:#595959; margin-bottom:1.5rem;">Best for: ambitious owners who want to own their entire local market</p>
           <ul class="price-features">
             <li><i class="fas fa-check"></i> Everything in Growth, plus:</li>
-            <li><i class="fas fa-check"></i> Professional website (built in 24 hrs)</li>
+            <li><i class="fas fa-check"></i> Professional 1-page website — designed, written, and launched in 24 hours</li>
+            <li><i class="fas fa-check"></i> Includes hosting, mobile optimization, and Google-optimized copy</li>
+            <li><i class="fas fa-check"></i> Connected to your Google Business Profile for maximum local SEO impact</li>
             <li><i class="fas fa-check"></i> 1 local SEO blog post/month</li>
             <li><i class="fas fa-check"></i> Social media cross-posting</li>
             <li><i class="fas fa-check"></i> Quarterly strategy call</li>
@@ -1068,6 +1090,14 @@
         <div class="faq-item">
           <button class="faq-question">Do you work in my area? <i class="fas fa-chevron-down"></i></button>
           <div class="faq-answer"><div class="faq-answer-inner">Yes — we work with local service businesses across the United States. Google Business Profile optimization works the same everywhere. Whether you're in Texas, Florida, Ohio, or California, we can help you rank higher on Google Maps in your local market.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Do you work with my competitors in the same area? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">We limit the number of clients per service category in each local market. If we're already working with a pressure washer in your city, we'll let you know upfront. We never optimize competing businesses against each other — your success is our priority.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What if I don't see results? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">If you're not seeing meaningful ranking improvement within 60 days, we'll review your entire campaign, adjust our strategy, and keep working until you do — at no extra cost. We don't succeed unless you do. And there are never any long-term contracts — you can cancel anytime.</div></div>
         </div>
       </div>
     </div>
