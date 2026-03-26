@@ -27,13 +27,21 @@
   <meta property="og:url" content="https://clearlocaledge.com">
 
 
-  <!-- Fonts -->
+  <!-- Fonts (non-render-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"></noscript>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Font Awesome (non-render-blocking) -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+
+  <!-- Resource hints -->
+  <link rel="preconnect" href="https://cal.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cal.com">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -63,7 +71,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-weight: 400;
       color: #111111;
       background: #FFFFFF;
@@ -75,17 +83,17 @@
     ul { list-style: none; }
 
     /* ========== TYPOGRAPHY ========== */
-    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1, h2, h3, h4 { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 700; line-height: 1.2; }
     h1 { font-size: 2.8rem; }
     h2 { font-size: 2rem; color: #1F4E79; }
     h3 { font-size: 1.25rem; }
     .accent-label {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-weight: 600;
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #00B050;
+      color: #008A3E;
     }
     .section-sub {
       color: #595959;
@@ -213,7 +221,7 @@
     .stat-item { text-align: center; color: #fff; }
     .stat-number {
       font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.5rem;
-      color: #00B050; margin-bottom: 0.25rem;
+      color: #4ADE80; margin-bottom: 0.25rem;
     }
     .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
 
@@ -359,12 +367,12 @@
     .final-cta .urgency { margin-top: 2rem; font-size: 0.85rem; color: rgba(255,255,255,0.6); font-style: italic; }
 
     /* ========== FOOTER ========== */
-    .footer { background: #0e1f2f; color: rgba(255,255,255,0.5); text-align: center; padding: 2.5rem 0; font-size: 0.85rem; }
-    .footer a { color: #00B050; }
+    .footer { background: #0e1f2f; color: rgba(255,255,255,0.65); text-align: center; padding: 2.5rem 0; font-size: 0.85rem; }
+    .footer a { color: #33cc66; }
     .footer-links { margin-bottom: 0.5rem; }
     .footer-links a { margin: 0 0.75rem; }
     .footer-social { margin-bottom: 0.75rem; }
-    .footer-social a { color: #00B050; font-size: 1.4rem; margin: 0 0.5rem; transition: color 0.2s; text-decoration: none; }
+    .footer-social a { color: #33cc66; font-size: 1.4rem; margin: 0 0.5rem; transition: color 0.2s; text-decoration: none; }
     .footer-social a:hover { color: #33cc66; }
 
     /* ========== SCROLL ANIMATIONS ========== */
@@ -411,7 +419,7 @@
       }
       .nav-links.open a {
         padding: 0.75rem 0;
-        min-height: 44px;
+        min-height: 48px;
         display: flex; align-items: center;
         border-bottom: 1px solid #f0f0f0;
       }
@@ -422,7 +430,7 @@
         min-height: 48px;
         border-bottom: none;
       }
-      .hamburger { display: block; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      .hamburger { display: block; min-width: 48px; min-height: 48px; display: flex; align-items: center; justify-content: center; }
       .trade-bar-grid { gap: 1.5rem; }
       .trade-bar-icon { width: 44px; height: 44px; }
       .hero-proof { font-size: 0.8rem; flex-wrap: wrap; }
@@ -441,7 +449,7 @@
       .section-illust-wide { max-width: 100%; max-height: 400px; }
       .stats-illust { display: none; }
       .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
-      .footer-links a { margin: 0; }
+      .footer-links a { margin: 0; min-height: 44px; display: flex; align-items: center; justify-content: center; }
     }
 
     /* --- Small mobile (max-width: 480px) --- */
@@ -470,7 +478,7 @@
       .final-cta h2 { font-size: 1.3rem; }
       .final-cta p { font-size: 0.95rem; }
       .trade-bar-grid { gap: 1rem; }
-      .trade-bar-icon { width: 40px; height: 40px; border-radius: 10px; }
+      .trade-bar-icon { width: 44px; height: 44px; border-radius: 10px; }
       .trade-bar-icon i { font-size: 1rem; }
       .trade-bar-item span { font-size: 0.7rem; }
       .hero-proof { font-size: 0.75rem; }
@@ -482,7 +490,7 @@
   <!-- ========== NAV ========== -->
   <nav class="nav" id="nav">
     <div class="container">
-      <a href="#" class="nav-logo"><img src="CLE_Website_Logo.png" alt="Clear Local Edge" height="42"></a>
+      <a href="#" class="nav-logo"><img src="CLE_Website_Logo.png" alt="Clear Local Edge" height="42" width="140"></a>
       <div class="nav-links" id="navLinks">
         <a href="#industries">Industries</a>
         <a href="#how-it-works">How It Works</a>
@@ -824,7 +832,7 @@
       <h2 class="text-center">Built by a Business Owner, For Business Owners</h2>
       <div class="about-grid fade-up">
         <div class="about-photo" style="border:none; padding:0; overflow:hidden;">
-          <img src="Chris%20Gallagher.jpg" alt="Chris Gallagher, founder of Clear Local Edge" style="width:100%; height:auto; border-radius:12px;">
+          <img src="Chris%20Gallagher.jpg" alt="Chris Gallagher, founder of Clear Local Edge" style="width:100%; height:auto; border-radius:12px;" loading="lazy">
         </div>
         <div class="about-content">
           <p>I'm Chris Gallagher, and I actually run a pressure washing company — PressureWays Power Cleaning in Ohio. I'm not some marketing agency that's never gotten their hands dirty.</p>
@@ -852,11 +860,11 @@
         <div class="heatmap-grid">
           <div class="heatmap-placeholder" style="border:none; padding:0; overflow:hidden;">
             <span style="font-weight:600; color:#1F4E79; font-size:0.85rem; margin-bottom:0.5rem; display:block; text-align:center;">BEFORE</span>
-            <img src="heatmap-before.png" alt="Before: Poor Google Maps rankings showing mostly red and orange positions" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;">
+            <img src="heatmap-before.png" alt="Before: Poor Google Maps rankings showing mostly red and orange positions" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;" loading="lazy">
           </div>
           <div class="heatmap-placeholder" style="border:none; padding:0; overflow:hidden;">
             <span style="font-weight:600; color:#00B050; font-size:0.85rem; margin-bottom:0.5rem; display:block; text-align:center;">AFTER</span>
-            <img src="heatmap-after.png" alt="After: Dominant Google Maps rankings showing top 3 positions across the service area" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;">
+            <img src="heatmap-after.png" alt="After: Dominant Google Maps rankings showing top 3 positions across the service area" style="width:100%; border-radius:8px; border:1px solid #e8ecf0;" loading="lazy">
           </div>
         </div>
         <div class="case-metrics">
