@@ -395,8 +395,23 @@
 
     /* ========== RESPONSIVE ========== */
 
+    /* ========== NEW IMAGE SECTION LAYOUTS ========== */
+    .platform-grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 2.5rem; }
+    .platform-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem; }
+    .platform-grid-2:last-child { margin-bottom: 0; }
+    .platform-grid-2.reverse > :first-child { order: 2; }
+    .platform-grid-2.reverse > :last-child { order: 1; }
+    .platform-grid-2 img { width: 100%; max-width: 400px; border-radius: 12px; }
+    .platform-grid-2.reverse img { margin-left: auto; display: block; }
+    .platform-thumbs { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+
     /* --- Tablet (max-width: 900px) --- */
     @media (max-width: 900px) {
+      .platform-grid-3 { grid-template-columns: 1fr; }
+      .platform-grid-2 { grid-template-columns: 1fr; }
+      .platform-grid-2.reverse > :first-child, .platform-grid-2.reverse > :last-child { order: unset; }
+      .platform-grid-2.reverse img { margin: 0 auto; }
+      .platform-grid-2 img { margin: 0 auto; }
       .hero-grid { grid-template-columns: 1fr; }
       .hero-illustration { order: -1; margin-bottom: 1rem; }
       .hero-illustration img { max-height: 240px; }
@@ -540,40 +555,7 @@
           <p style="font-size:0.85rem; color:#8899AA; margin-bottom:1rem;">No long-term contracts &middot; No Google login required &middot; Works for pressure washing, roofing, plumbing, HVAC &amp; more</p>
         </div>
         <div class="hero-illustration">
-          <svg viewBox="0 0 400 360" role="img" aria-label="Google Maps local search optimization illustration showing map pins, magnifying glass, and growth arrows" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
-            <!-- Map background -->
-            <rect x="40" y="40" width="320" height="240" rx="18" fill="#EEF2F7" stroke="#1F4E79" stroke-width="2"/>
-            <!-- Grid lines -->
-            <line x1="120" y1="40" x2="120" y2="280" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
-            <line x1="200" y1="40" x2="200" y2="280" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
-            <line x1="280" y1="40" x2="280" y2="280" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
-            <line x1="40" y1="120" x2="360" y2="120" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
-            <line x1="40" y1="200" x2="360" y2="200" stroke="#1F4E79" stroke-opacity="0.1" stroke-width="1"/>
-            <!-- Map pin 1 (large, green) -->
-            <path d="M200 80c-16 0-28 12-28 28 0 22 28 44 28 44s28-22 28-44c0-16-12-28-28-28z" fill="#00B050"/>
-            <circle cx="200" cy="108" r="10" fill="#fff"/>
-            <!-- Map pin 2 (small, navy) -->
-            <path d="M120 130c-10 0-18 8-18 18 0 14 18 28 18 28s18-14 18-28c0-10-8-18-18-18z" fill="#1F4E79"/>
-            <circle cx="120" cy="148" r="6" fill="#fff"/>
-            <!-- Map pin 3 (small, orange) -->
-            <path d="M300 110c-10 0-18 8-18 18 0 14 18 28 18 28s18-14 18-28c0-10-8-18-18-18z" fill="#FF6600"/>
-            <circle cx="300" cy="128" r="6" fill="#fff"/>
-            <!-- Magnifying glass -->
-            <circle cx="290" cy="230" r="30" fill="none" stroke="#1F4E79" stroke-width="4"/>
-            <line x1="312" y1="252" x2="340" y2="280" stroke="#1F4E79" stroke-width="5" stroke-linecap="round"/>
-            <text x="290" y="236" text-anchor="middle" font-family="Poppins,sans-serif" font-size="14" font-weight="700" fill="#00B050">#1</text>
-            <!-- Growth arrow -->
-            <polyline points="70,250 130,210 190,230 250,180" fill="none" stroke="#00B050" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <polygon points="250,170 260,185 245,185" fill="#00B050"/>
-            <!-- Stars -->
-            <g transform="translate(140,300)" fill="#FF6600">
-              <polygon points="10,0 12.4,7.6 20,7.6 13.8,12.4 16.2,20 10,15.2 3.8,20 6.2,12.4 0,7.6 7.6,7.6"/>
-              <polygon points="35,0 37.4,7.6 45,7.6 38.8,12.4 41.2,20 35,15.2 28.8,20 31.2,12.4 25,7.6 32.6,7.6"/>
-              <polygon points="60,0 62.4,7.6 70,7.6 63.8,12.4 66.2,20 60,15.2 53.8,20 56.2,12.4 50,7.6 57.6,7.6"/>
-              <polygon points="85,0 87.4,7.6 95,7.6 88.8,12.4 91.2,20 85,15.2 78.8,20 81.2,12.4 75,7.6 82.6,7.6"/>
-              <polygon points="110,0 112.4,7.6 120,7.6 113.8,12.4 116.2,20 110,15.2 103.8,20 106.2,12.4 100,7.6 107.6,7.6"/>
-            </g>
-          </svg>
+          <img src="images/platform/heatmap-before-after.jpg" alt="Before and after local search ranking heatmap showing improvement from not ranking to top positions" loading="lazy" style="border-radius:12px;">
         </div>
       </div>
       <div class="trade-bar">
@@ -696,6 +678,57 @@
       <p class="problem-transition">It's not your fault. Google rewards businesses that optimize their profile.<br>We handle the optimization — you handle the jobs.</p>
       <div style="margin-top:2rem; text-align:center;">
         <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary" target="_blank" rel="noopener">See Where You Rank Free <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHAT WE DO (Services) ========== -->
+  <section style="background:#EEF2F7; padding:5rem 0;">
+    <div class="container">
+      <div class="text-center">
+        <p class="accent-label">What We Do</p>
+        <h2>Everything Your Google Business Profile Needs</h2>
+        <p class="section-sub">We handle every piece of your local search presence — so you can focus on running your business.</p>
+      </div>
+      <!-- Service 1: GBP Optimization -->
+      <div class="platform-grid-2 fade-up">
+        <div>
+          <img src="images/platform/gbp-phone-profile.jpg" alt="Phone mockup showing an optimized Google Business Profile listing" loading="lazy">
+        </div>
+        <div>
+          <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">Google Business Profile Optimization</h3>
+          <p style="color:#595959;line-height:1.7;">We overhaul your entire GBP — categories, description, services, photos, attributes, and Q&A — so Google knows exactly what you do and where you do it. A fully optimized profile is the foundation for ranking in the Maps pack.</p>
+        </div>
+      </div>
+      <!-- Service 2: AI Content & Posts -->
+      <div class="platform-grid-2 reverse fade-up">
+        <div>
+          <img src="images/platform/gbp-phone-posting.jpg" alt="Phone showing automated Google Business Profile posts" loading="lazy">
+        </div>
+        <div>
+          <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">AI-Powered Content & Posts</h3>
+          <p style="color:#595959;line-height:1.7;">We create and publish weekly Google Posts with photos, offers, and updates — keeping your profile active and signaling to Google that your business is engaged. All done for you, automatically.</p>
+        </div>
+      </div>
+      <!-- Service 3: Review Management -->
+      <div class="platform-grid-2 fade-up">
+        <div>
+          <img src="images/platform/gbp-phone-reviews.jpg" alt="Phone showing five-star Google reviews for a local business" loading="lazy">
+        </div>
+        <div>
+          <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">Review Generation & Management</h3>
+          <p style="color:#595959;line-height:1.7;">Automated review requests via SMS and email, plus AI-assisted responses to every review. Build a 5-star reputation on autopilot — more reviews mean higher rankings and more trust from new customers.</p>
+        </div>
+      </div>
+      <!-- Service 4: Local Search Visibility -->
+      <div class="platform-grid-2 reverse fade-up">
+        <div>
+          <img src="images/platform/gbp-search-results.jpg" alt="Google Search results showing a local business ranking prominently" loading="lazy">
+        </div>
+        <div>
+          <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">Local Search Visibility</h3>
+          <p style="color:#595959;line-height:1.7;">Citation building, schema markup, and strategic optimization that pushes your business into the Google Maps 3-pack. We track your ranking across every zip code in your service area with heatmap reports.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -823,16 +856,19 @@
       <h2>Three Steps to Dominating Local Search</h2>
       <div class="steps-grid">
         <div class="step-card fade-up">
+          <img src="images/platform/gbp-phone-map-pins.jpg" alt="Phone showing local map pins for Google Maps audit" loading="lazy" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;">
           <div class="step-number">1</div>
           <h3>Free Google Audit</h3>
           <p>We run a 15-minute Google Maps heatmap analysis showing exactly where your business ranks — and where you're invisible. No cost, no commitment.</p>
         </div>
         <div class="step-card fade-up">
+          <img src="images/platform/heatmap-clean-green.jpg" alt="Clean green ranking grid showing optimized Google Maps positions" loading="lazy" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;">
           <div class="step-number">2</div>
           <h3>We Optimize Your Google Business Profile</h3>
           <p>We optimize every inch of your GBP — categories, description, photos, Google Posts, Q&A, review strategy, and citation building. You don't lift a finger.</p>
         </div>
         <div class="step-card fade-up">
+          <img src="images/platform/gbp-bar-charts.jpg" alt="Dashboard with bar chart reporting showing measurable results" loading="lazy" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;">
           <div class="step-number">3</div>
           <h3>You Get More Calls</h3>
           <p>Within 30–60 days, you'll see measurable improvement in your Google Maps ranking and local search visibility — and more calls from real customers.</p>
@@ -867,6 +903,32 @@
       </div>
       <div style="margin-top:2.5rem; text-align:center;">
         <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Strategy Call <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESULTS SHOWCASE ========== -->
+  <section style="background:#FFFFFF; padding:5rem 0;">
+    <div class="container text-center">
+      <p class="accent-label">What You Get</p>
+      <h2>Real Results for Real Businesses</h2>
+      <p class="section-sub">See the actual platform tools and results our clients get — heatmap rankings, review growth, and star ratings that drive real calls.</p>
+      <div class="platform-grid-3">
+        <div class="fade-up" style="text-align:center;">
+          <img src="images/platform/heatmap-laptop-mockup.jpg" alt="Laptop showing before and after Google Maps ranking heatmap results" loading="lazy" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+          <h3 style="color:#1F4E79;font-size:1.1rem;margin-bottom:0.4rem;">Before & After Rankings</h3>
+          <p style="color:#595959;font-size:0.9rem;">Watch your Google Maps rankings go from red to green across your entire service area.</p>
+        </div>
+        <div class="fade-up" style="text-align:center;">
+          <img src="images/platform/gbp-growth-review.jpg" alt="Growth arrow and five-star review showing upward ranking trend" loading="lazy" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+          <h3 style="color:#1F4E79;font-size:1.1rem;margin-bottom:0.4rem;">Review Growth on Autopilot</h3>
+          <p style="color:#595959;font-size:0.9rem;">Automated review requests that build your 5-star reputation while you focus on jobs.</p>
+        </div>
+        <div class="fade-up" style="text-align:center;">
+          <img src="images/platform/gbp-star-rating-dark.jpg" alt="4.8 star rating displayed on dark background showing strong reputation" loading="lazy" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+          <h3 style="color:#1F4E79;font-size:1.1rem;margin-bottom:0.4rem;">Ratings That Win Clicks</h3>
+          <p style="color:#595959;font-size:0.9rem;">Higher ratings mean more trust, more clicks, and more calls from local customers.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -907,6 +969,10 @@
           </div>
         </div>
         <p class="case-quote">"We built this system for our own service business first. The results spoke for themselves — so we started helping other businesses do the same."</p>
+        <div class="platform-thumbs" style="margin-top:2rem;">
+          <img src="images/platform/product-business-stars.jpg" alt="Business professional with five-star ratings showing strong online reputation" loading="lazy" style="width:200px;border-radius:10px;">
+          <img src="images/platform/product-woman-dashboard.jpg" alt="Client viewing performance dashboard on phone showing rankings and reviews" loading="lazy" style="width:200px;border-radius:10px;">
+        </div>
       </div>
     </div>
   </section>
@@ -957,6 +1023,11 @@
           <circle cx="343" cy="185" r="14" fill="#FF6600"/><text x="343" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">6</text>
           <circle cx="438" cy="185" r="14" fill="#FF6600"/><text x="438" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">10</text>
         </svg>
+        <div class="platform-thumbs" style="margin-bottom:2rem;">
+          <img src="images/platform/gbp-phone-notifications.jpg" alt="Phone with Google Business Profile notifications and alerts" loading="lazy" style="width:140px;border-radius:10px;">
+          <img src="images/platform/gbp-green-dashboard.jpg" alt="Green dashboard showing key Google Business Profile metrics" loading="lazy" style="width:140px;border-radius:10px;">
+          <img src="images/platform/gbp-phone-chat.jpg" alt="Phone with customer chat and business profile engagement" loading="lazy" style="width:140px;border-radius:10px;">
+        </div>
         <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary btn-large" target="_blank" rel="noopener">Run Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
         <p class="audit-trust">Takes 60 seconds <span>&middot;</span> 100% free <span>&middot;</span> No sales call required</p>
         <p style="font-size:0.85rem; color:#8899AA; margin-top:1.5rem; max-width:520px; margin-left:auto; margin-right:auto; line-height:1.6;"><strong style="color:#595959;">What happens next:</strong> We'll generate your Google Maps heatmap, email you a screenshot of your results, and optionally walk you through a free 15-minute video review.</p>
@@ -1009,6 +1080,10 @@
       <h2>Simple, Transparent Pricing</h2>
       <p class="section-sub">No long-term contracts. No hidden fees. Cancel anytime. Every plan includes Google Business Profile optimization, review strategy, and monthly ranking reports.</p>
       <p style="font-size:0.85rem; color:#8899AA; margin-top:-1rem; margin-bottom:2rem;">We take on a maximum of 10 new clients per month. Once a city is full for your trade, we pause intake to avoid working with direct competitors.</p>
+      <div class="fade-up" style="max-width:700px;margin:0 auto 2.5rem;text-align:center;">
+        <img src="images/platform/gbp-laptop-dashboard.jpg" alt="Client dashboard showing Google Business Profile rankings, reviews, and performance metrics" loading="lazy" style="width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(31,78,121,0.1);">
+        <p style="font-size:0.9rem;color:#595959;margin-top:0.75rem;font-style:italic;">Your branded client dashboard — see your rankings, reviews, and performance in real time.</p>
+      </div>
       <div class="pricing-grid">
         <div class="price-card fade-up">
           <p class="price-tier">Maps Foundation</p>
@@ -1127,6 +1202,7 @@
   <!-- ========== FINAL CTA ========== -->
   <section class="final-cta">
     <div class="container">
+      <img src="images/platform/product-woman-ratings.jpg" alt="Client with green five-star dashboard showing successful Google Business Profile results" loading="lazy" style="width:180px;border-radius:50%;margin:0 auto 2rem;border:3px solid rgba(0,176,80,0.3);">
       <h2>Ready to Stop Being Invisible on Google Maps?</h2>
       <p>Get your free Google Maps heatmap audit in 60 seconds. See exactly where you rank, where you're missing, and how to fix it. No pitch. No pressure. Just data.</p>
       <a href="https://audit.app.clearlocaledge.com" class="btn btn-orange btn-large" target="_blank" rel="noopener">Run Your Free Audit Now <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
