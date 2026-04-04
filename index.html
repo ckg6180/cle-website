@@ -15,8 +15,8 @@
     gtag('js', new Date());
     gtag('config', 'G-7HJR71RVT1');
   </script>
-  <title>Clear Local Edge — AI-Powered Google Business Profile Optimization for Local Businesses</title>
-  <meta name="description" content="Clear Local Edge uses AI to optimize your Google Business Profile, automate reviews, publish content, and track rankings with monthly heatmap reports. Serving local service businesses in Southwest Florida and beyond. Free ranking audit available.">
+  <title>Clear Local Edge — AI-Powered GBP Optimization</title>
+  <meta name="description" content="Clear Local Edge uses AI to optimize your Google Business Profile — automated posts, reviews, citations, and rankings. Get your free audit today.">
   <link rel="canonical" href="https://clearlocaledge.com/">
   <meta name="keywords" content="Google Business Profile optimization, local SEO, GBP management, local search ranking, review automation, citation management, heatmap ranking report, AI SEO, local marketing agency, Southwest Florida SEO">
 
@@ -40,10 +40,6 @@
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
   <!-- Resource hints -->
-  <link rel="preconnect" href="https://cal.com" crossorigin>
-  <link rel="dns-prefetch" href="https://cal.com">
-  <link rel="preconnect" href="https://audit.app.clearlocaledge.com" crossorigin>
-  <link rel="dns-prefetch" href="https://audit.app.clearlocaledge.com">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -72,11 +68,27 @@
   </script>
 
   <style>
+    /* ========== FONT FALLBACKS (prevent CLS) ========== */
+    @font-face {
+      font-family: 'Poppins Fallback';
+      src: local('Arial');
+      ascent-override: 105%;
+      descent-override: 35%;
+      line-gap-override: 10%;
+    }
+    @font-face {
+      font-family: 'Inter Fallback';
+      src: local('Arial');
+      ascent-override: 100%;
+      descent-override: 25%;
+      line-gap-override: 9%;
+    }
+
     /* ========== RESET & BASE ========== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Inter', 'Inter Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-weight: 400;
       color: #111111;
       background: #FFFFFF;
@@ -88,7 +100,7 @@
     ul { list-style: none; }
 
     /* ========== TYPOGRAPHY ========== */
-    h1, h2, h3, h4 { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1, h2, h3, h4 { font-family: 'Poppins', 'Poppins Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 700; line-height: 1.2; }
     h1 { font-size: 2.8rem; }
     h2 { font-size: 2rem; color: #1F4E79; }
     h3 { font-size: 1.25rem; }
@@ -98,7 +110,7 @@
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #008A3E;
+      color: #006B30;
     }
     .section-sub {
       color: #595959;
@@ -156,6 +168,7 @@
     /* ========== HERO ========== */
     .hero {
       padding: 9rem 0 4rem;
+      min-height: 600px;
       background: linear-gradient(160deg, #EEF2F7 0%, #DAE3F3 40%, #FFFFFF 100%);
       position: relative; overflow: hidden;
     }
@@ -462,7 +475,7 @@
       h1 { font-size: 2rem; }
       h2 { font-size: 1.6rem; }
       section { padding: 4rem 0; }
-      .hero { padding: 6rem 0 2.5rem; }
+      .hero { padding: 6rem 0 2.5rem; min-height: 500px; }
       .hero-illustration img { max-height: 200px; }
       .nav-links {
         display: flex; flex-direction: column; position: absolute;
@@ -552,7 +565,7 @@
   <!-- ========== NAV ========== -->
   <nav class="nav" id="nav">
     <div class="container">
-      <a href="#" class="nav-logo"><img src="CLE_Website_Logo.png" alt="Clear Local Edge" height="42" width="140"></a>
+      <a href="#" class="nav-logo"><picture><source srcset="CLE_Website_Logo.webp" type="image/webp"><img src="CLE_Website_Logo.png" alt="Clear Local Edge" width="140" height="87"></picture></a>
       <div class="nav-links" id="navLinks">
         <a href="#services">Services</a>
         <a href="#how-it-works">How It Works</a>
@@ -586,7 +599,7 @@
           <p style="font-size:0.85rem; color:#8899AA; margin-bottom:1rem;">AI-Powered GBP Optimization &middot; Results in 30 Days &middot; No Long-Term Contracts</p>
         </div>
         <div class="hero-illustration">
-          <img src="images/platform/heatmap-before-after.jpg" alt="Before and after local search ranking heatmap showing improvement from not ranking to top positions" loading="lazy" style="border-radius:12px;">
+          <picture><source srcset="images/platform/heatmap-before-after.webp" type="image/webp"><img src="images/platform/heatmap-before-after.webp" alt="Before and after local search ranking heatmap showing improvement from not ranking to top positions" fetchpriority="high" width="800" height="730" style="border-radius:12px;"></picture>
         </div>
       </div>
       <div class="trade-bar">
@@ -662,7 +675,7 @@
           <p style="color:#595959; line-height:1.8;">The businesses that dominate local search aren't necessarily better at their craft. They just have better Google presence. That's where we come in.</p>
         </div>
         <div>
-          <img src="images/platform/gbp-phone-map-pins.jpg" alt="Phone showing local Google Maps pins illustrating local search visibility" loading="lazy">
+          <picture><source srcset="images/platform/gbp-phone-map-pins.webp" type="image/webp"><img src="images/platform/gbp-phone-map-pins.webp" alt="Phone showing local Google Maps pins illustrating local search visibility" loading="lazy" width="800" height="730"></picture>
         </div>
       </div>
     </div>
@@ -675,7 +688,7 @@
         <p style="font-size:1.1rem; color:#595959; margin-bottom:1.5rem;">See how it works in 30 seconds:</p>
         <div class="video-wrapper">
           <!-- REPLACE_WITH_VIDEO_URL: Chris will provide the Merchynt partner explainer video URL -->
-          <iframe id="cle-explainer-video" src="about:blank" allowfullscreen loading="lazy"></iframe>
+          <iframe id="cle-explainer-video" src="about:blank" title="CLE explainer video" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -692,7 +705,7 @@
       <!-- Service 1: GBP Optimization -->
       <div class="platform-grid-2 fade-up">
         <div>
-          <img src="images/platform/gbp-phone-profile.jpg" alt="Phone showing a fully optimized Google Business Profile listing" loading="lazy">
+          <picture><source srcset="images/platform/gbp-phone-profile.webp" type="image/webp"><img src="images/platform/gbp-phone-profile.webp" alt="Phone showing a fully optimized Google Business Profile listing" loading="lazy" width="800" height="730"></picture>
         </div>
         <div>
           <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">Complete Google Business Profile Optimization</h3>
@@ -702,7 +715,7 @@
       <!-- Service 2: AI Content & Automated Posts -->
       <div class="platform-grid-2 reverse fade-up">
         <div>
-          <img src="images/platform/gbp-phone-posting.jpg" alt="Phone showing AI-written Google Business Profile posts published automatically" loading="lazy">
+          <picture><source srcset="images/platform/gbp-phone-posting.webp" type="image/webp"><img src="images/platform/gbp-phone-posting.webp" alt="Phone showing AI-written Google Business Profile posts published automatically" loading="lazy" width="800" height="730"></picture>
         </div>
         <div>
           <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">AI-Written Posts Published Automatically</h3>
@@ -712,7 +725,7 @@
       <!-- Service 3: Review Generation & Management -->
       <div class="platform-grid-2 fade-up">
         <div>
-          <img src="images/platform/gbp-phone-reviews.jpg" alt="Phone showing keyword-rich five-star Google reviews for a local business" loading="lazy">
+          <picture><source srcset="images/platform/gbp-phone-reviews.webp" type="image/webp"><img src="images/platform/gbp-phone-reviews.webp" alt="Phone showing keyword-rich five-star Google reviews for a local business" loading="lazy" width="800" height="730"></picture>
         </div>
         <div>
           <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">More Reviews, Better Reviews, On Autopilot</h3>
@@ -722,7 +735,7 @@
       <!-- Service 4: Local Search Visibility & AI Search -->
       <div class="platform-grid-2 reverse fade-up">
         <div>
-          <img src="images/platform/gbp-search-results.jpg" alt="Google Search results showing local business ranking in Maps and AI search answers" loading="lazy">
+          <picture><source srcset="images/platform/gbp-search-results.webp" type="image/webp"><img src="images/platform/gbp-search-results.webp" alt="Google Search results showing local business ranking in Maps and AI search answers" loading="lazy" width="800" height="730"></picture>
         </div>
         <div>
           <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">Show Up on Google, Google Maps, AND AI Search</h3>
@@ -732,7 +745,7 @@
       <!-- Service 5: Heatmap Ranking Reports -->
       <div class="platform-grid-2 fade-up">
         <div>
-          <img src="images/platform/heatmap-clean-green.jpg" alt="Local ranking heatmap showing green top positions across service area" loading="lazy">
+          <picture><source srcset="images/platform/heatmap-clean-green.webp" type="image/webp"><img src="images/platform/heatmap-clean-green.webp" alt="Local ranking heatmap showing green top positions across service area" loading="lazy" width="800" height="730"></picture>
         </div>
         <div>
           <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">See Exactly Where You Rank — Every Month</h3>
@@ -742,7 +755,7 @@
       <!-- Service 6: Video Creation & YouTube SEO -->
       <div class="platform-grid-2 reverse fade-up">
         <div>
-          <img src="images/platform/gbp-growth-review.jpg" alt="Growth chart and five-star review showing video SEO impact on rankings" loading="lazy">
+          <picture><source srcset="images/platform/gbp-growth-review.webp" type="image/webp"><img src="images/platform/gbp-growth-review.webp" alt="Growth chart and five-star review showing video SEO impact on rankings" loading="lazy" width="800" height="730"></picture>
         </div>
         <div>
           <h3 style="color:#1F4E79;margin-bottom:0.6rem;font-size:1.2rem;">AI Video Creation for Google & YouTube</h3>
@@ -760,20 +773,20 @@
       <h2>Three Steps to Dominating Local Search</h2>
       <div class="steps-grid">
         <div class="step-card fade-up">
-          <img src="images/platform/gbp-phone-map-pins.jpg" alt="Phone showing local map pins for comprehensive Google Maps ranking audit" loading="lazy" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;">
+          <picture><source srcset="images/platform/gbp-phone-map-pins.webp" type="image/webp"><img src="images/platform/gbp-phone-map-pins.webp" alt="Phone showing local map pins for comprehensive Google Maps ranking audit" loading="lazy" width="800" height="730" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;"></picture>
           <div class="step-number">1</div>
           <h3>Free Ranking Audit</h3>
           <p>We run a comprehensive heatmap audit of your Google Business Profile. You'll see exactly where you rank for your top keywords across your service area — and where your competitors are beating you. Takes 60 seconds. No credit card. No commitment.</p>
           <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1rem;">Run Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.4rem"></i></a>
         </div>
         <div class="step-card fade-up">
-          <img src="images/platform/gbp-laptop-dashboard.jpg" alt="Laptop dashboard showing AI optimization engine connected to Google Business Profile" loading="lazy" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;">
+          <picture><source srcset="images/platform/gbp-laptop-dashboard.webp" type="image/webp"><img src="images/platform/gbp-laptop-dashboard.webp" alt="Laptop dashboard showing AI optimization engine connected to Google Business Profile" loading="lazy" width="800" height="730" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;"></picture>
           <div class="step-number">2</div>
           <h3>AI Optimization Begins</h3>
           <p>We connect your Google Business Profile to our AI optimization engine. Within the first week, your profile is fully audited and optimized — categories, services, descriptions, photos, schema markup, citations, and more. Posts start publishing. Review requests start going out. The engine is running.</p>
         </div>
         <div class="step-card fade-up">
-          <img src="images/platform/gbp-bar-charts.jpg" alt="Bar charts and analytics dashboard showing real-time ranking and call tracking results" loading="lazy" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;">
+          <picture><source srcset="images/platform/gbp-bar-charts.webp" type="image/webp"><img src="images/platform/gbp-bar-charts.webp" alt="Bar charts and analytics dashboard showing real-time ranking and call tracking results" loading="lazy" width="800" height="730" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;"></picture>
           <div class="step-number">3</div>
           <h3>Track Your Results in Real Time</h3>
           <p>You get your own branded dashboard showing everything — rankings, reviews, posts, calls, and monthly heatmap reports. Watch your visibility grow month over month. No guessing, no "trust us" — you see the data.</p>
@@ -790,23 +803,23 @@
       <p class="section-sub">This is what happens when AI optimization runs on your Google Business Profile every single day.</p>
       <div class="platform-grid-3">
         <div class="fade-up" style="text-align:center;">
-          <img src="images/platform/heatmap-laptop-mockup.jpg" alt="Laptop showing before and after Google Maps ranking heatmap with red zones turning green" loading="lazy" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+          <picture><source srcset="images/platform/heatmap-laptop-mockup.webp" type="image/webp"><img src="images/platform/heatmap-laptop-mockup.webp" alt="Laptop showing before and after Google Maps ranking heatmap with red zones turning green" loading="lazy" width="800" height="730" style="width:100%;border-radius:12px;margin-bottom:1rem;"></picture>
           <h3 style="color:#1F4E79;font-size:1.1rem;margin-bottom:0.4rem;">Before/After Ranking Improvement</h3>
           <p style="color:#595959;font-size:0.9rem;">Businesses see measurable ranking improvements within the first 30 days. Our heatmap reports track every keyword, every month — so you can see the red zones turn green in real time.</p>
         </div>
         <div class="fade-up" style="text-align:center;">
-          <img src="images/platform/gbp-star-rating-dark.jpg" alt="Strong star rating on dark background showing review velocity and keyword-rich reviews" loading="lazy" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+          <picture><source srcset="images/platform/gbp-star-rating-dark.webp" type="image/webp"><img src="images/platform/gbp-star-rating-dark.webp" alt="Strong star rating on dark background showing review velocity and keyword-rich reviews" loading="lazy" width="800" height="730" style="width:100%;border-radius:12px;margin-bottom:1rem;"></picture>
           <h3 style="color:#1F4E79;font-size:1.1rem;margin-bottom:0.4rem;">Review Velocity That Compounds</h3>
           <p style="color:#595959;font-size:0.9rem;">Our review generation system consistently produces keyword-rich reviews that directly impact rankings. Businesses using our platform maintain 4+ new reviews per month with 50%+ keyword mention rates.</p>
         </div>
         <div class="fade-up" style="text-align:center;">
-          <img src="images/platform/product-woman-ratings.jpg" alt="Woman viewing ratings across Google Maps, AI search, and 40+ directories" loading="lazy" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+          <picture><source srcset="images/platform/product-woman-ratings.webp" type="image/webp"><img src="images/platform/product-woman-ratings.webp" alt="Woman viewing ratings across Google Maps, AI search, and 40+ directories" loading="lazy" width="800" height="730" style="width:100%;border-radius:12px;margin-bottom:1rem;"></picture>
           <h3 style="color:#1F4E79;font-size:1.1rem;margin-bottom:0.4rem;">Visibility Across Every Platform</h3>
           <p style="color:#595959;font-size:0.9rem;">Google Maps, Google Search, ChatGPT, Gemini, Perplexity, Apple Maps, Yelp, and 40+ directories — your optimized business information is everywhere customers are looking.</p>
         </div>
       </div>
       <div style="margin-top:2.5rem;">
-        <img src="images/platform/product-business-stars.jpg" alt="Business professional with five-star ratings showing strong online reputation built through review generation" loading="lazy" style="max-width:400px;margin:0 auto;border-radius:12px;">
+        <picture><source srcset="images/platform/product-business-stars.webp" type="image/webp"><img src="images/platform/product-business-stars.webp" alt="Business professional with five-star ratings showing strong online reputation built through review generation" loading="lazy" width="800" height="730" style="max-width:400px;margin:0 auto;border-radius:12px;"></picture>
       </div>
     </div>
   </section>
@@ -917,11 +930,11 @@
       <h2>Your Rankings. Your Reviews. Your Results. One Dashboard.</h2>
       <p class="section-sub">Every client gets a branded dashboard where you can see everything happening with your Google presence — rankings, review activity, posts published, calls tracked, and monthly heatmap reports. No logging into five different tools. No deciphering spreadsheets. Just open your dashboard and see what's working.</p>
       <div class="dashboard-grid fade-up">
-        <img src="images/platform/product-woman-dashboard.jpg" alt="Client viewing branded performance dashboard showing rankings, reviews, and call tracking" loading="lazy">
-        <img src="images/platform/gbp-green-dashboard.jpg" alt="Green analytics dashboard showing Google Business Profile optimization metrics and results" loading="lazy">
+        <picture><source srcset="images/platform/product-woman-dashboard.webp" type="image/webp"><img src="images/platform/product-woman-dashboard.webp" alt="Client viewing branded performance dashboard showing rankings, reviews, and call tracking" loading="lazy" width="800" height="730"></picture>
+        <picture><source srcset="images/platform/gbp-green-dashboard.webp" type="image/webp"><img src="images/platform/gbp-green-dashboard.webp" alt="Green analytics dashboard showing Google Business Profile optimization metrics and results" loading="lazy" width="800" height="730"></picture>
       </div>
       <div style="margin-top:2rem;">
-        <img src="images/platform/gbp-phone-notifications.jpg" alt="Phone showing Google Business Profile notifications and account management alerts" loading="lazy" style="max-width:280px;margin:0 auto;border-radius:12px;">
+        <picture><source srcset="images/platform/gbp-phone-notifications.webp" type="image/webp"><img src="images/platform/gbp-phone-notifications.webp" alt="Phone showing Google Business Profile notifications and account management alerts" loading="lazy" width="800" height="730" style="max-width:280px;margin:0 auto;border-radius:12px;"></picture>
       </div>
     </div>
   </section>
@@ -931,7 +944,7 @@
     <div class="container text-center">
       <p class="accent-label">FAQ</p>
       <h2>Questions? We've Got Answers.</h2>
-      <img src="images/platform/gbp-phone-chat.jpg" alt="Phone showing customer engagement and business chat through Google Business Profile" loading="lazy" style="max-width:220px;margin:1rem auto 0;border-radius:12px;">
+      <picture><source srcset="images/platform/gbp-phone-chat.webp" type="image/webp"><img src="images/platform/gbp-phone-chat.webp" alt="Phone showing customer engagement and business chat through Google Business Profile" loading="lazy" width="800" height="730" style="max-width:220px;margin:1rem auto 0;border-radius:12px;"></picture>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-question">How quickly will I see results? <i class="fas fa-chevron-down"></i></button>
@@ -972,7 +985,7 @@
   <!-- ========== FINAL CTA ========== -->
   <section class="final-cta">
     <div class="container">
-      <img src="images/platform/heatmap-before-after.jpg" alt="Before and after heatmap showing local search ranking transformation" loading="lazy" style="width:280px;border-radius:12px;margin:0 auto 2rem;border:3px solid rgba(0,176,80,0.3);">
+      <picture><source srcset="images/platform/heatmap-before-after.webp" type="image/webp"><img src="images/platform/heatmap-before-after.webp" alt="Before and after heatmap showing local search ranking transformation" loading="lazy" width="800" height="730" style="width:280px;border-radius:12px;margin:0 auto 2rem;border:3px solid rgba(0,176,80,0.3);"></picture>
       <h2>Stop Losing Customers to Competitors Who Aren't Better Than You</h2>
       <p>Every day you're not optimized is a day your competitors are getting the calls, the clicks, and the customers that should be yours. The free audit takes 60 seconds and shows you exactly where you stand.</p>
       <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
