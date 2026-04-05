@@ -15,8 +15,8 @@
     gtag('js', new Date());
     gtag('config', 'G-7HJR71RVT1');
   </script>
-  <title>Clear Local Edge — AI-Powered GBP Optimization</title>
-  <meta name="description" content="Clear Local Edge uses AI to optimize your Google Business Profile — automated posts, reviews, citations, and rankings. Get your free audit today.">
+  <title>Clear Local Edge — SWFL Google Maps Optimization</title>
+  <meta name="description" content="AI-powered Google Business Profile optimization for service businesses in Naples, Fort Myers, Bonita Springs & Estero. Get your free ranking audit today.">
   <link rel="canonical" href="https://clearlocaledge.com/">
   <meta name="keywords" content="Google Business Profile optimization, local SEO, GBP management, local search ranking, review automation, citation management, heatmap ranking report, AI SEO, local marketing agency, Southwest Florida SEO">
 
@@ -110,7 +110,8 @@
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #006B30;
+      color: #005525;
+      font-weight: 700;
     }
     .section-sub {
       color: #595959;
@@ -163,6 +164,19 @@
     .nav-links a:hover { color: #1F4E79; }
     .nav-links a.nav-cta { font-size: 0.85rem; padding: 0.5rem 1.5rem; color: #fff; }
     .nav-links a.nav-cta:hover { color: #fff; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a::after { content: ' \25BE'; font-size: 0.7rem; }
+    .nav-dropdown-menu {
+      display: none; position: absolute; top: 100%; left: 0; background: #fff;
+      border: 1px solid #e8ecf0; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 180px; padding: 0.5rem 0; z-index: 1001;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: block; padding: 0.5rem 1.2rem; font-size: 0.85rem; color: #595959;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-dropdown-menu a:hover { background: #EEF2F7; color: #1F4E79; }
     .hamburger { display: none; background: none; border: none; font-size: 1.5rem; color: #1F4E79; cursor: pointer; }
 
     /* ========== HERO ========== */
@@ -281,6 +295,28 @@
     .industry-icon i { font-size: 1.5rem; color: #fff; }
     .industry-card h3 { font-size: 1rem; color: #1F4E79; margin-bottom: 0.4rem; }
     .industry-card p { font-size: 0.8rem; color: #595959; line-height: 1.4; }
+
+    /* ========== BUILT FOR TRADES ========== */
+    .trades-section { background: #FFFFFF; padding: 5rem 0; }
+    .trades-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem;
+      margin-top: 2.5rem; margin-bottom: 2rem;
+    }
+    .trade-card {
+      text-align: center; padding: 1.5rem 1rem; background: #EEF2F7;
+      border-radius: 12px; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .trade-card:hover { transform: translateY(-3px); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .trade-card .trade-emoji { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
+    .trade-card span { font-size: 0.9rem; color: #1F4E79; font-weight: 600; }
+    @media (max-width: 900px) { .trades-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 480px) { .trades-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ========== FOUNDER STORY ========== */
+    .founder-section { background: #EEF2F7; }
+    .founder-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; align-items: center; margin-top: 2.5rem; }
+    .founder-grid p { color: #595959; margin-bottom: 1.2rem; line-height: 1.7; }
+    @media (max-width: 900px) { .founder-grid { grid-template-columns: 1fr; } }
 
     /* ========== HOW IT WORKS ========== */
     .how-it-works { background: #EEF2F7; }
@@ -505,6 +541,9 @@
         border-bottom: none;
       }
       .hamburger { display: block; min-width: 48px; min-height: 48px; display: flex; align-items: center; justify-content: center; }
+      .nav-dropdown-menu { position: static; display: none; box-shadow: none; border: none; padding: 0 0 0 1rem; min-width: auto; }
+      .nav-links.open .nav-dropdown-menu { display: block; }
+      .nav-dropdown-menu a { padding: 0.5rem 0; min-height: 44px; display: flex; align-items: center; border-bottom: 1px solid #f0f0f0; }
       .trade-bar-grid { gap: 1.5rem; }
       .trade-bar-icon { width: 44px; height: 44px; }
       .hero-proof { font-size: 0.8rem; flex-wrap: wrap; }
@@ -570,7 +609,16 @@
         <a href="#services">Services</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
+        <span class="nav-dropdown">
+          <a href="locations/">Service Areas</a>
+          <div class="nav-dropdown-menu">
+            <a href="naples.html">Naples</a>
+            <a href="fort-myers.html">Fort Myers</a>
+            <a href="bonita-springs.html">Bonita Springs</a>
+            <a href="estero.html">Estero</a>
+            <a href="cape-coral.html">Cape Coral</a>
+          </div>
+        </span>
         <a href="blog/">Blog</a>
         <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Free Audit</a>
       </div>
@@ -585,9 +633,9 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <p class="accent-label">AI-Powered Google Business Profile Optimization</p>
-          <h1>Your Customers Are Searching Google Right Now.<br>Are They Finding <em>You</em> — or Your Competitor?</h1>
-          <p class="hero-sub">We use AI to optimize your Google Business Profile so you show up first — in the Map Pack, in local search, and in AI answers from ChatGPT and Gemini. See exactly where you rank with a free audit.</p>
+          <p class="accent-label">AI-Powered GBP Optimization for Service Businesses</p>
+          <h1>We Help Service Businesses Dominate Google Maps in <em>Southwest Florida</em></h1>
+          <p class="hero-sub">Plumbers. Roofers. HVAC. Pool Service. Lawn Care. If your customers find you on Google — we make sure they find YOU first.</p>
           <div class="hero-buttons">
             <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Ranking Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
             <a href="#how-it-works" class="btn btn-secondary">See How It Works <i class="fas fa-arrow-down" style="margin-left:0.4rem"></i></a>
@@ -666,13 +714,14 @@
     <div class="container">
       <div class="text-center">
         <p class="accent-label">The Problem</p>
-        <h2>Most Local Businesses Are Invisible on Google</h2>
+        <h2>Your Competitors Are Getting Your Calls</h2>
       </div>
       <div class="platform-grid-2 fade-up" style="margin-top:3rem;">
         <div>
-          <p style="color:#595959; line-height:1.8; margin-bottom:1.2rem;">You're great at what you do. But when someone in your area searches Google for your service, they see your competitors — not you.</p>
-          <p style="color:#595959; line-height:1.8; margin-bottom:1.2rem;">Here's what's actually happening: Google ranks local businesses based on hundreds of signals — your profile completeness, review quality, posting frequency, citation consistency, schema markup, image freshness, and more. Most business owners don't have time to manage all of that. So they don't. And they lose customers every single day because of it.</p>
-          <p style="color:#595959; line-height:1.8;">The businesses that dominate local search aren't necessarily better at their craft. They just have better Google presence. That's where we come in.</p>
+          <p style="color:#595959; line-height:1.8; margin-bottom:1.2rem;">Right now, someone in Naples is searching "plumber near me." Someone in Fort Myers just Googled "best HVAC company." A homeowner in Bonita Springs needs their pool cleaned yesterday.</p>
+          <p style="color:#595959; line-height:1.8; margin-bottom:1.2rem;">The question is: are they finding YOU — or the guy down the street?</p>
+          <p style="color:#595959; line-height:1.8; margin-bottom:1.2rem;">If your Google Business Profile isn't optimized, you're invisible. No calls. No jobs. No growth. Meanwhile, the companies showing up in that top 3 on Google Maps? They're not necessarily better than you. They just have better Google presence.</p>
+          <p style="color:#595959; line-height:1.8;">That's where we come in.</p>
         </div>
         <div>
           <picture><source srcset="images/platform/gbp-phone-map-pins.webp" type="image/webp"><img src="images/platform/gbp-phone-map-pins.webp" alt="Phone showing local Google Maps pins illustrating local search visibility" loading="lazy" width="800" height="730"></picture>
@@ -699,8 +748,8 @@
     <div class="container">
       <div class="text-center">
         <p class="accent-label">What We Actually Do</p>
-        <h2>Everything Your Google Business Profile Needs — Automated by AI, Managed by Humans</h2>
-        <p class="section-sub">We don't just "do SEO." We run a full AI-powered optimization engine on your Google Business Profile — the single most important asset for any local business. Here's what that means:</p>
+        <h2>Everything Your Google Business Profile Needs — Automated by AI</h2>
+        <p class="section-sub">We don't do "a little bit of everything." We do one thing and we do it better than anyone: get your business to the top of Google Maps in your service area. Our AI optimization platform runs 24/7 — writing posts, managing reviews, syncing your business info across 40+ directories, and tracking your rankings in real time.</p>
       </div>
       <!-- Service 1: GBP Optimization -->
       <div class="platform-grid-2 fade-up">
@@ -766,6 +815,28 @@
   </section>
 
 
+  <!-- ========== BUILT FOR TRADES ========== -->
+  <section class="trades-section" id="trades">
+    <div class="container text-center">
+      <p class="accent-label">Who We Serve</p>
+      <h2>Built for the Businesses That Built Southwest Florida</h2>
+      <p class="section-sub">We specialize in service businesses because we ARE service business owners. Our founder runs a pressure washing company. We know what it's like when the phone stops ringing — and we know exactly what it takes to make it ring again.</p>
+      <div class="trades-grid fade-up">
+        <div class="trade-card"><span class="trade-emoji">🔧</span><span>Plumbing</span></div>
+        <div class="trade-card"><span class="trade-emoji">❄️</span><span>HVAC</span></div>
+        <div class="trade-card"><span class="trade-emoji">🏠</span><span>Roofing</span></div>
+        <div class="trade-card"><span class="trade-emoji">🏊</span><span>Pool Service</span></div>
+        <div class="trade-card"><span class="trade-emoji">🌿</span><span>Lawn Care</span></div>
+        <div class="trade-card"><span class="trade-emoji">💦</span><span>Pressure Washing</span></div>
+        <div class="trade-card"><span class="trade-emoji">🐜</span><span>Pest Control</span></div>
+        <div class="trade-card"><span class="trade-emoji">⚡</span><span>Electrical</span></div>
+        <div class="trade-card"><span class="trade-emoji">🎨</span><span>Painting</span></div>
+        <div class="trade-card"><span class="trade-emoji">🧹</span><span>Cleaning Services</span></div>
+      </div>
+      <p style="color:#595959; font-size:1.05rem;">If your customers find you on Google, we can help. <a href="https://audit.app.clearlocaledge.com" target="_blank" rel="noopener" style="color:#00B050; font-weight:600;">Get your free ranking audit &rarr;</a></p>
+    </div>
+  </section>
+
   <!-- ========== HOW IT WORKS ========== -->
   <section class="how-it-works" id="how-it-works">
     <div class="container text-center">
@@ -776,20 +847,20 @@
           <picture><source srcset="images/platform/gbp-phone-map-pins.webp" type="image/webp"><img src="images/platform/gbp-phone-map-pins.webp" alt="Phone showing local map pins for comprehensive Google Maps ranking audit" loading="lazy" width="800" height="730" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;"></picture>
           <div class="step-number">1</div>
           <h3>Free Ranking Audit</h3>
-          <p>We run a comprehensive heatmap audit of your Google Business Profile. You'll see exactly where you rank for your top keywords across your service area — and where your competitors are beating you. Takes 60 seconds. No credit card. No commitment.</p>
+          <p>We run a comprehensive audit of your Google Business Profile and show you exactly where you're losing customers. You'll see your rankings, your competitors, and the gaps in your profile — all in one report.</p>
           <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1rem;">Run Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.4rem"></i></a>
         </div>
         <div class="step-card fade-up">
           <picture><source srcset="images/platform/gbp-laptop-dashboard.webp" type="image/webp"><img src="images/platform/gbp-laptop-dashboard.webp" alt="Laptop dashboard showing AI optimization engine connected to Google Business Profile" loading="lazy" width="800" height="730" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;"></picture>
           <div class="step-number">2</div>
-          <h3>AI Optimization Begins</h3>
-          <p>We connect your Google Business Profile to our AI optimization engine. Within the first week, your profile is fully audited and optimized — categories, services, descriptions, photos, schema markup, citations, and more. Posts start publishing. Review requests start going out. The engine is running.</p>
+          <h3>AI Optimization Goes Live</h3>
+          <p>Our AI platform takes over your GBP — writing keyword-rich posts, responding to reviews, optimizing your profile, and syncing your info across 40+ directories. All on autopilot.</p>
         </div>
         <div class="step-card fade-up">
           <picture><source srcset="images/platform/gbp-bar-charts.webp" type="image/webp"><img src="images/platform/gbp-bar-charts.webp" alt="Bar charts and analytics dashboard showing real-time ranking and call tracking results" loading="lazy" width="800" height="730" style="width:100%;max-width:280px;border-radius:10px;margin:0 auto 1.2rem;"></picture>
           <div class="step-number">3</div>
-          <h3>Track Your Results in Real Time</h3>
-          <p>You get your own branded dashboard showing everything — rankings, reviews, posts, calls, and monthly heatmap reports. Watch your visibility grow month over month. No guessing, no "trust us" — you see the data.</p>
+          <h3>Watch Your Rankings Climb</h3>
+          <p>Track everything from your personal dashboard. See your rankings improve, your calls increase, and your reviews grow. Real results, updated in real time.</p>
         </div>
       </div>
     </div>
@@ -799,8 +870,8 @@
   <section style="background:#FFFFFF; padding:5rem 0;" id="results">
     <div class="container text-center">
       <p class="accent-label">Results</p>
-      <h2>Real Results for Real Businesses</h2>
-      <p class="section-sub">This is what happens when AI optimization runs on your Google Business Profile every single day.</p>
+      <h2>Real Results for Real Service Businesses</h2>
+      <p class="section-sub">This is what happens when AI optimization meets a service business that's ready to grow. These aren't vanity metrics — they're phone calls, booked jobs, and revenue.</p>
       <div class="platform-grid-3">
         <div class="fade-up" style="text-align:center;">
           <picture><source srcset="images/platform/heatmap-laptop-mockup.webp" type="image/webp"><img src="images/platform/heatmap-laptop-mockup.webp" alt="Laptop showing before and after Google Maps ranking heatmap with red zones turning green" loading="lazy" width="800" height="730" style="width:100%;border-radius:12px;margin-bottom:1rem;"></picture>
@@ -820,6 +891,27 @@
       </div>
       <div style="margin-top:2.5rem;">
         <picture><source srcset="images/platform/product-business-stars.webp" type="image/webp"><img src="images/platform/product-business-stars.webp" alt="Business professional with five-star ratings showing strong online reputation built through review generation" loading="lazy" width="800" height="730" style="max-width:400px;margin:0 auto;border-radius:12px;"></picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOUNDER STORY ========== -->
+  <section class="founder-section" id="story">
+    <div class="container">
+      <div class="text-center">
+        <p class="accent-label">Our Story</p>
+        <h2>Built by a Business Owner, for Business Owners</h2>
+      </div>
+      <div class="founder-grid fade-up">
+        <div style="text-align:center;">
+          <img src="Chris Gallagher.jpg" alt="Chris Gallagher, founder of Clear Local Edge" loading="lazy" width="400" height="400" style="border-radius:12px; max-width:100%;">
+        </div>
+        <div>
+          <p>I'm Chris Gallagher. I run a pressure washing company in Ohio called PressureWays. I know what it's like to depend on Google for your next job. I know the frustration of watching competitors rank above you when you know your work is better.</p>
+          <p>That's why I built Clear Local Edge. I wanted to give every service business owner the same tools the big companies use — without the big company price tag. Our AI does in minutes what a marketing agency charges thousands to do in months.</p>
+          <p>If you're a plumber, roofer, HVAC tech, pool guy, or any other service pro who needs more calls from Google — you're exactly who we built this for.</p>
+          <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1rem;">Let's See Where You Stand &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -855,7 +947,7 @@
     <div class="container text-center">
       <p class="accent-label">Pricing</p>
       <h2>Transparent Pricing. No Contracts. Cancel Anytime.</h2>
-      <p class="section-sub">Every plan includes our full AI optimization engine. The difference is how much automation and how many channels we activate.</p>
+      <p class="section-sub">Every plan includes AI-powered Google Business Profile optimization built specifically for service businesses. Pick the plan that fits your business and start seeing results within 30 days.</p>
       <div class="pricing-grid">
         <div class="price-card fade-up">
           <p class="price-tier">Maps Foundation</p>
@@ -978,6 +1070,14 @@
           <button class="faq-question">What does the $297 setup fee cover? <i class="fas fa-chevron-down"></i></button>
           <div class="faq-answer"><div class="faq-answer-inner">Your complete GBP overhaul (categories, services, descriptions, attributes), call tracking number activation, dashboard configuration, citation submissions to 40+ directories, schema markup installation, and review system setup. It covers 2-3 hours of hands-on setup work so your optimization engine launches fully configured.</div></div>
         </div>
+        <div class="faq-item">
+          <button class="faq-question">Do you only work with service businesses? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">We specialize in service businesses because that's where Google Business Profile optimization has the biggest impact — plumbers, roofers, HVAC companies, pool services, lawn care, pressure washers, and more. If your customers find you through Google, we can help. If you're not sure, grab a free audit and we'll tell you honestly whether we're the right fit.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Do you work with businesses outside Southwest Florida? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Right now we're focused on helping service businesses dominate in the Naples, Fort Myers, Bonita Springs, Estero, and Cape Coral markets. If you're in SWFL and you need more calls from Google, you're in the right place.</div></div>
+        </div>
       </div>
     </div>
   </section>
@@ -1009,8 +1109,10 @@
         <a href="https://linkedin.com/company/clearlocaledge" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://facebook.com/clearlocaledge" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
       </div>
+      <p style="margin-bottom:0.5rem; font-size:0.8rem;">Naples | Fort Myers | Bonita Springs | Estero | Cape Coral</p>
       <p>Clear Local Edge &middot; Southwest Florida's AI-Powered Local Marketing Agency</p>
-      <p style="margin-top:0.3rem"><a href="tel:+12392561277" style="color:#33cc66;">(239) 256-1277</a> &middot; <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a></p>
+      <p style="margin-top:0.3rem; max-width:500px; margin-left:auto; margin-right:auto; font-size:0.8rem; line-height:1.5;">Clear Local Edge is a Southwest Florida-based digital marketing agency specializing in Google Business Profile optimization for local service businesses.</p>
+      <p style="margin-top:0.5rem"><a href="tel:+12392561277" style="color:#33cc66;">(239) 256-1277</a> &middot; <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a></p>
       <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge. All rights reserved.</p>
     </div>
   </footer>

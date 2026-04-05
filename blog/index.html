@@ -99,6 +99,19 @@
     .nav-links a.active { color: #1F4E79; font-weight: 600; }
     .nav-links a.nav-cta { font-size: 0.85rem; padding: 0.55rem 1.3rem; color: #fff; }
     .nav-links a.nav-cta:hover { color: #fff; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a::after { content: ' \25BE'; font-size: 0.7rem; }
+    .nav-dropdown-menu {
+      display: none; position: absolute; top: 100%; left: 0; background: #fff;
+      border: 1px solid #e8ecf0; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 180px; padding: 0.5rem 0; z-index: 1001;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: block; padding: 0.5rem 1.2rem; font-size: 0.85rem; color: #595959;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-dropdown-menu a:hover { background: #EEF2F7; color: #1F4E79; }
     .hamburger { display: none; background: none; border: none; font-size: 1.5rem; color: #1F4E79; cursor: pointer; }
 
     /* ========== BLOG HERO ========== */
@@ -202,6 +215,9 @@
     .footer a { color: #00B050; }
     .footer-links { margin-bottom: 0.5rem; }
     .footer-links a { margin: 0 0.75rem; }
+    .footer-social { margin: 0.75rem 0; }
+    .footer-social a { color: rgba(255,255,255,0.5); font-size: 1.2rem; margin: 0 0.5rem; transition: color 0.2s; }
+    .footer-social a:hover { color: #00B050; }
 
     /* ========== RESPONSIVE ========== */
     @media (max-width: 900px) {
@@ -218,7 +234,7 @@
         transition: max-height 0.35s ease, padding 0.35s ease;
       }
       .nav-links.open { padding: 0 1.5rem; }
-      .nav-links.animating { max-height: 400px; padding: 1rem 1.5rem; }
+      .nav-links.animating { max-height: 500px; padding: 1rem 1.5rem; }
       .nav-links.open a {
         padding: 0.75rem 0; min-height: 44px;
         display: flex; align-items: center;
@@ -227,6 +243,9 @@
       .nav-links.open a:last-child { border-bottom: none; }
       .nav-links.open a.nav-cta { margin-top: 0.5rem; justify-content: center; min-height: 48px; border-bottom: none; }
       .hamburger { display: block; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      .nav-dropdown-menu { position: static; display: none; box-shadow: none; border: none; padding: 0 0 0 1rem; min-width: auto; }
+      .nav-links.open .nav-dropdown-menu { display: block; }
+      .nav-dropdown-menu a { padding: 0.5rem 0; min-height: 44px; display: flex; align-items: center; border-bottom: 1px solid #f0f0f0; }
       .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
       .footer-links a { margin: 0; }
     }
@@ -248,13 +267,22 @@
     <div class="container">
       <a href="../" class="nav-logo"><img src="../CLE_Website_Logo.png" alt="Clear Local Edge" height="42"></a>
       <div class="nav-links" id="navLinks">
-        <a href="../#industries">Industries</a>
+        <a href="../#services">Services</a>
         <a href="../#how-it-works">How It Works</a>
-        <a href="../#about">About</a>
         <a href="../#pricing">Pricing</a>
-        <a href="../#faq">FAQ</a>
+        <span class="nav-dropdown">
+          <a href="../locations/">Service Areas</a>
+          <div class="nav-dropdown-menu">
+            <a href="../naples.html">Naples</a>
+            <a href="../fort-myers.html">Fort Myers</a>
+            <a href="../bonita-springs.html">Bonita Springs</a>
+            <a href="../estero.html">Estero</a>
+            <a href="../cape-coral.html">Cape Coral</a>
+          </div>
+        </span>
+        <a href="../#about">About</a>
         <a href="./" class="active">Blog</a>
-        <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Free Audit</a>
+        <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Free Audit</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <i class="fas fa-bars"></i>
@@ -279,77 +307,84 @@
         <!-- Article 1 -->
         <a href="what-is-google-business-profile.html" class="blog-card">
           <div class="blog-card-img">
-            <img src="blog-card-1-gbp-basics.png" alt="What Is Google Business Profile">
+            <img src="blog-card-1-gbp-basics.png" alt="How to Optimize Your Google Business Profile">
             <span class="blog-card-tag">GBP Basics</span>
           </div>
           <div class="blog-card-body">
-            <h3>What Is Google Business Profile and Why It Matters for Local Service Businesses</h3>
-            <p>Your Google Business Profile is the single most important tool for getting found by local customers. Here's what it is, why it matters, and what most businesses get wrong.</p>
+            <h3>How to Optimize Your Google Business Profile in 2026: The Complete SWFL Guide</h3>
+            <p>Step-by-step guide to optimize your GBP for local SEO. Works for plumbers, roofers, HVAC, pressure washers & all service trades.</p>
+            <div class="blog-card-meta">
+              <span><i class="fas fa-user"></i> Chris Gallagher</span>
+              <span><i class="fas fa-calendar"></i> Apr 5, 2026</span>
+            </div>
             <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
           </div>
         </a>
 
         <!-- Article 2 -->
+        <a href="google-maps-ranking-not-showing-up.html" class="blog-card">
+          <div class="blog-card-img">
+            <img src="blog-card-3-maps-ranking.png" alt="Why Your Plumbing Company Doesn't Show Up on Google Maps">
+            <span class="blog-card-tag">Rankings</span>
+          </div>
+          <div class="blog-card-body">
+            <h3>Why Your Plumbing Company Doesn't Show Up on Google Maps — And How to Fix It</h3>
+            <p>Common mistakes that make your business invisible on Google Maps, and how to fix each one today.</p>
+            <div class="blog-card-meta">
+              <span><i class="fas fa-user"></i> Chris Gallagher</span>
+              <span><i class="fas fa-calendar"></i> Apr 5, 2026</span>
+            </div>
+            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Article 3 -->
         <a href="how-to-get-more-google-reviews.html" class="blog-card">
           <div class="blog-card-img">
             <img src="blog-card-2-reviews.png" alt="How to Get More Google Reviews">
             <span class="blog-card-tag">Reviews</span>
           </div>
           <div class="blog-card-body">
-            <h3>How to Get More Google Reviews (Without Begging)</h3>
-            <p>Reviews are the #1 factor in local search ranking. Here's a simple, repeatable system to generate more 5-star reviews from your happiest customers.</p>
-            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </a>
-
-        <!-- Article 3 -->
-        <a href="google-maps-ranking-not-showing-up.html" class="blog-card">
-          <div class="blog-card-img">
-            <img src="blog-card-3-maps-ranking.png" alt="Google Maps Ranking Guide">
-            <span class="blog-card-tag">Rankings</span>
-          </div>
-          <div class="blog-card-body">
-            <h3>Google Maps Ranking: Why You're Not Showing Up and How to Fix It</h3>
-            <p>If you're not in the top 3 on Google Maps, you're invisible to local customers. Here are the most common reasons — and exactly how to fix each one.</p>
+            <h3>How to Get More Google Reviews for Your Service Business (Without Being Annoying)</h3>
+            <p>Proven tactics to get more Google reviews. No fake reviews, no tricks — just smart systems that work.</p>
+            <div class="blog-card-meta">
+              <span><i class="fas fa-user"></i> Chris Gallagher</span>
+              <span><i class="fas fa-calendar"></i> Apr 5, 2026</span>
+            </div>
             <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
           </div>
         </a>
 
         <!-- Article 4 -->
-        <a href="google-business-profile-mistakes.html" class="blog-card">
-          <div class="blog-card-img">
-            <img src="blog-card-4-mistakes.png" alt="Google Business Profile Mistakes">
-            <span class="blog-card-tag">Mistakes</span>
-          </div>
-          <div class="blog-card-body">
-            <h3>5 Google Business Profile Mistakes Killing Your Local Visibility</h3>
-            <p>Most local businesses make the same GBP mistakes without realizing it. These five errors are costing you rankings, reviews, and real revenue.</p>
-            <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </a>
-
-        <!-- Article 5 -->
         <a href="local-seo-vs-paid-ads.html" class="blog-card">
           <div class="blog-card-img">
             <img src="blog-card-5-seo-vs-ads.png" alt="Local SEO vs Paid Ads">
             <span class="blog-card-tag">Strategy</span>
           </div>
           <div class="blog-card-body">
-            <h3>Local SEO vs. Paid Ads: Which One Gets You More Calls?</h3>
-            <p>Should you invest in Google Ads or organic local SEO? We break down the cost, timeline, and ROI of each approach for local service businesses.</p>
+            <h3>Local SEO vs. Paid Ads: What Actually Works for SWFL Service Businesses</h3>
+            <p>Cost breakdown comparing local SEO vs Google Ads for plumbers, HVAC, roofers & more.</p>
+            <div class="blog-card-meta">
+              <span><i class="fas fa-user"></i> Chris Gallagher</span>
+              <span><i class="fas fa-calendar"></i> Apr 5, 2026</span>
+            </div>
             <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <!-- Article 6 -->
-        <a href="too-good-for-diy-too-smart-for-agency.html" class="blog-card">
+        <!-- Article 5 -->
+        <a href="google-business-profile-mistakes.html" class="blog-card">
           <div class="blog-card-img">
-            <img src="blog-card-6-diy-vs-agency.png" alt="Too Good for DIY, Too Smart for a Big Agency">
-            <span class="blog-card-tag">Positioning</span>
+            <img src="blog-card-4-mistakes.png" alt="The Pressure Washer's Guide to Dominating Google Maps">
+            <span class="blog-card-tag">Case Study</span>
           </div>
           <div class="blog-card-body">
-            <h3>Too Good for DIY, Too Smart for a Big Agency</h3>
-            <p>Stuck between doing your own Google marketing and hiring an expensive agency? There's a better option for local service businesses.</p>
+            <h3>The Pressure Washer's Guide to Dominating Google Maps</h3>
+            <p>How I went from invisible to 5-10 calls/week from Google. The exact playbook for any service business.</p>
+            <div class="blog-card-meta">
+              <span><i class="fas fa-user"></i> Chris Gallagher</span>
+              <span><i class="fas fa-calendar"></i> Apr 5, 2026</span>
+            </div>
             <span class="read-link">Read Article <i class="fas fa-arrow-right"></i></span>
           </div>
         </a>
@@ -362,8 +397,8 @@
   <section class="blog-cta">
     <div class="container">
       <h2>Want to See Where You Rank on Google Maps?</h2>
-      <p>Get a free 15-minute Google Business Profile audit. We'll show you exactly where you stand — and what to fix first.</p>
-      <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
+      <p>Get a free Google Business Profile audit. We'll show you exactly where you stand — and what to fix first.</p>
+      <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i></a>
     </div>
   </section>
 
@@ -372,10 +407,18 @@
     <div class="container">
       <div class="footer-links">
         <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a>
-        <a href="https://cal.com/clearlocaledge/audit" target="_blank" rel="noopener">Book an Audit</a>
+        <a href="https://audit.app.clearlocaledge.com" target="_blank" rel="noopener">Free Audit</a>
+        <a href="../locations/">Locations</a>
         <a href="../">Home</a>
       </div>
-      <p>Clear Local Edge &middot; Westlake, OH &middot; Serving Local Businesses Nationwide</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/company/clearlocaledge" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/clearlocaledge" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p style="margin-bottom:0.5rem; font-size:0.8rem;">Naples | Fort Myers | Bonita Springs | Estero | Cape Coral</p>
+      <p>Clear Local Edge &middot; Southwest Florida's AI-Powered Local Marketing Agency</p>
+      <p style="margin-top:0.3rem; max-width:500px; margin-left:auto; margin-right:auto; font-size:0.8rem; line-height:1.5;">Clear Local Edge is a Southwest Florida-based digital marketing agency specializing in Google Business Profile optimization for local service businesses.</p>
+      <p style="margin-top:0.5rem"><a href="tel:+12392561277" style="color:#33cc66;">(239) 256-1277</a> &middot; <a href="mailto:chris@clearlocaledge.com">chris@clearlocaledge.com</a></p>
       <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge. All rights reserved.</p>
     </div>
   </footer>

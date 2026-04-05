@@ -1,0 +1,9 @@
+# City page clean URLs
+/naples    /naples.html    200
+/fort-myers    /fort-myers.html    200
+/bonita-springs    /bonita-springs.html    200
+/estero    /estero.html    200
+/cape-coral    /cape-coral.html    200
+
+# Blog clean URLs
+/blog    /blog/index.html    200
