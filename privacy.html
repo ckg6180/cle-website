@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HJR71RVT1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HJR71RVT1');
+  </script>
+  <title>Privacy Policy — Clear Local Edge</title>
+  <meta name="description" content="Privacy policy for Clear Local Edge. Learn how we collect, use, and protect your information including SMS communications.">
+  <link rel="canonical" href="https://clearlocaledge.com/privacy">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — Clear Local Edge">
+  <meta property="og:description" content="Privacy policy for Clear Local Edge. Learn how we collect, use, and protect your information including SMS communications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clearlocaledge.com/privacy">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="CLE_Icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif; font-weight: 400;
+      color: #111111; background: #FFFFFF; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; object-fit: contain; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1 { font-size: 2.4rem; color: #1F4E79; }
+    h2 { font-size: 1.6rem; color: #1F4E79; margin-top: 2.5rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.25rem; color: #1F4E79; margin-top: 2rem; margin-bottom: 0.75rem; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      display: inline-block; font-family: 'Inter', sans-serif; font-weight: 600;
+      font-size: 1rem; padding: 0.9rem 2rem; border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .btn-primary { background: #00B050; color: #fff; }
+    .btn-primary:hover { background: #009a45; }
+    .btn-secondary { background: transparent; color: #1F4E79; border: 2px solid #1F4E79; }
+    .btn-secondary:hover { background: #1F4E79; color: #fff; }
+    .btn-large { font-size: 1.15rem; padding: 1.1rem 2.8rem; }
+
+    /* ========== NAV ========== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e8ecf0; padding: 0.9rem 0; transition: box-shadow 0.3s;
+    }
+    .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo img { height: 42px; width: auto; }
+    .nav-links { display: flex; gap: 1.8rem; align-items: center; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: #595959; transition: color 0.2s; }
+    .nav-links a:hover { color: #1F4E79; }
+    .nav-links a.nav-cta { font-size: 0.85rem; padding: 0.5rem 1.5rem; color: #fff; }
+    .nav-links a.nav-cta:hover { color: #fff; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a::after { content: ' \25BE'; font-size: 0.7rem; }
+    .nav-dropdown-menu {
+      display: none; position: absolute; top: 100%; left: 0; background: #fff;
+      border: 1px solid #e8ecf0; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 180px; padding: 0.5rem 0; z-index: 1001;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: block; padding: 0.5rem 1.2rem; font-size: 0.85rem; color: #595959;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-dropdown-menu a:hover { background: #EEF2F7; color: #1F4E79; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.5rem; color: #1F4E79; cursor: pointer; }
+
+    /* ========== FOOTER ========== */
+    .footer { background: #0e1f2f; color: rgba(255,255,255,0.65); text-align: center; padding: 2.5rem 0; font-size: 0.85rem; }
+    .footer a { color: #33cc66; }
+    .footer-links { margin-bottom: 0.5rem; }
+    .footer-links a { margin: 0 0.75rem; }
+    .footer-social { margin-bottom: 0.75rem; }
+    .footer-social a { color: #33cc66; font-size: 1.4rem; margin: 0 0.5rem; transition: color 0.25s ease, transform 0.2s ease; text-decoration: none; }
+    .footer-social a:hover { transform: translateY(-2px); color: #33cc66; }
+
+    /* ========== POLICY CONTENT ========== */
+    .policy-content { max-width: 800px; margin: 0 auto; padding: 6rem 1.25rem 4rem; }
+    .policy-content h1 { margin-bottom: 0.5rem; }
+    .policy-content .policy-meta { color: #595959; font-size: 0.9rem; margin-bottom: 2rem; }
+    .policy-content h2 { font-size: 1.3rem; margin-top: 2.5rem; margin-bottom: 0.75rem; color: #1F4E79; }
+    .policy-content p, .policy-content li { color: #333; line-height: 1.8; margin-bottom: 1rem; }
+    .policy-content ul { padding-left: 1.5rem; list-style: disc; margin-bottom: 1rem; }
+    .policy-content ul li { margin-bottom: 0.5rem; }
+    .sms-notice { background: #f0f7ff; border: 2px solid #1F4E79; border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 0; }
+    .sms-notice h3 { color: #1F4E79; font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .sms-notice p { margin-bottom: 0.75rem; }
+    .sms-notice ul { margin-bottom: 0.5rem; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      .nav-links {
+        display: flex; flex-direction: column; position: absolute;
+        top: 100%; left: 0; right: 0; background: #fff;
+        border-bottom: 1px solid #e8ecf0; box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        gap: 0; max-height: 0; overflow: hidden; padding: 0 1.5rem;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+      }
+      .nav-links.open { padding: 0 1.5rem; }
+      .nav-links.animating { max-height: 500px; padding: 1rem 1.5rem; }
+      .nav-links.open a {
+        padding: 0.75rem 0; min-height: 44px;
+        display: flex; align-items: center; border-bottom: 1px solid #f0f0f0;
+      }
+      .nav-links.open a:last-child { border-bottom: none; }
+      .nav-links.open a.nav-cta { margin-top: 0.5rem; justify-content: center; min-height: 48px; border-bottom: none; }
+      .hamburger { display: block; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      .nav-dropdown-menu { position: static; display: none; box-shadow: none; border: none; padding: 0 0 0 1rem; min-width: auto; }
+      .nav-links.open .nav-dropdown-menu { display: block; }
+      .nav-dropdown-menu a { padding: 0.5rem 0; min-height: 44px; display: flex; align-items: center; border-bottom: 1px solid #f0f0f0; }
+      .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+      .footer-links a { margin: 0; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      .container { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="./" class="nav-logo"><img src="CLE_Website_Logo.png" alt="Clear Local Edge" height="42"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="./#services">Services</a>
+        <a href="./#how-it-works">How It Works</a>
+        <a href="./#pricing">Pricing</a>
+        <span class="nav-dropdown">
+          <a href="locations/">Service Areas</a>
+          <div class="nav-dropdown-menu">
+            <a href="naples.html">Naples</a>
+            <a href="fort-myers.html">Fort Myers</a>
+            <a href="bonita-springs.html">Bonita Springs</a>
+            <a href="estero.html">Estero</a>
+            <a href="cape-coral.html">Cape Coral</a>
+          </div>
+        </span>
+        <a href="blog/">Blog</a>
+        <a href="https://cal.com/clearlocaledge/audit" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Free Audit</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== PRIVACY POLICY ========== -->
+  <div class="policy-content">
+    <div style="margin-bottom:1.5rem; font-size:0.85rem; color:#595959;">
+      <a href="./" style="color:#00B050;">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;color:#999"></i>
+      Privacy Policy
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="policy-meta">Last updated: May 19, 2026</p>
+
+    <!-- Information We Collect -->
+    <h2>Information We Collect</h2>
+    <p>We collect the following types of information:</p>
+    <ul>
+      <li>Name, email address, phone number, and business information submitted through forms, chat widgets, and booking tools</li>
+      <li>Automatic data: IP address, browser type, device information, pages visited via Google Analytics</li>
+    </ul>
+
+    <!-- How We Use Your Information -->
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Provide and improve our services</li>
+      <li>Send appointment reminders and service updates</li>
+      <li>Send marketing communications (with your consent)</li>
+      <li>Respond to inquiries and support requests</li>
+      <li>Analyze website usage and improve user experience</li>
+    </ul>
+
+    <!-- SMS/Text Message Communications -->
+    <h2>SMS/Text Message Communications</h2>
+    <div class="sms-notice">
+      <h3><i class="fas fa-mobile-alt" style="margin-right:0.5rem;"></i> SMS/Text Message Communications</h3>
+      <p>By providing your phone number and opting in, you consent to receive text messages from Clear Local Edge. These messages may include appointment reminders, service updates, and marketing communications.</p>
+      <ul>
+        <li>Message frequency varies</li>
+        <li>Message and data rates may apply</li>
+        <li>Reply <strong>STOP</strong> to any message to unsubscribe</li>
+        <li>Reply <strong>HELP</strong> for assistance</li>
+        <li><strong>Consent to receive text messages is not a condition of any purchase</strong></li>
+      </ul>
+      <p>We use GoHighLevel to send text messages. Your phone number will not be shared with third parties for their marketing purposes.</p>
+    </div>
+
+    <!-- Third-Party Services -->
+    <h2>Third-Party Services</h2>
+    <p>We use the following third-party services that may process your data:</p>
+    <ul>
+      <li><strong>GoHighLevel</strong> — CRM, SMS communications, and email marketing</li>
+      <li><strong>Google Analytics</strong> (G-7HJR71RVT1) — website analytics</li>
+      <li><strong>Cal.com</strong> — appointment scheduling</li>
+      <li><strong>Stripe</strong> — payment processing</li>
+    </ul>
+    <p>Each processes data per their own privacy policies.</p>
+
+    <!-- Cookies and Tracking -->
+    <h2>Cookies and Tracking</h2>
+    <p>We use Google Analytics cookies to analyze site usage. We also use essential cookies for site functionality. You can disable cookies through your browser settings at any time.</p>
+
+    <!-- Data Retention -->
+    <h2>Data Retention</h2>
+    <p>We retain your personal information as long as needed to provide our services or as required by law. You may request deletion of your data at any time by contacting us.</p>
+
+    <!-- Your Rights -->
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to your personal data</li>
+      <li>Request deletion of your personal data</li>
+      <li>Opt out of marketing communications</li>
+      <li>Opt out of SMS messages (reply STOP)</li>
+    </ul>
+    <p><strong>California Residents:</strong> Under the CCPA, you have the right to know what personal information we collect, request deletion, and opt out of the sale of personal information. We do not sell your personal information.</p>
+    <p><strong>Florida Residents:</strong> The Florida Digital Bill of Rights provides additional privacy protections for qualifying consumers.</p>
+
+    <!-- Data Security -->
+    <h2>Data Security</h2>
+    <p>We implement industry-standard security measures including SSL encryption to protect your information. However, no method of transmission over the internet is 100% secure.</p>
+
+    <!-- Children's Privacy -->
+    <h2>Children's Privacy</h2>
+    <p>Our services are not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <!-- Changes to This Policy -->
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy periodically. Changes will be posted on this page with an updated effective date.</p>
+
+    <!-- Contact Us -->
+    <h2>Contact Us</h2>
+    <p>If you have questions about this privacy policy, contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:info@clearlocaledge.com" style="color:#00B050;">info@clearlocaledge.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+12392561277" style="color:#00B050;">(239) 256-1277</a></li>
+      <li><strong>Address:</strong> Clear Local Edge LLC, 3823 Tamiami Trl E #199, Naples, FL 34112</li>
+    </ul>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:info@clearlocaledge.com">info@clearlocaledge.com</a>
+        <a href="https://cal.com/clearlocaledge/audit" target="_blank" rel="noopener">Book an Audit</a>
+        <a href="locations/">Locations</a>
+        <a href="blog/">Blog</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://linkedin.com/company/clearlocaledge" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/clearlocaledge" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p style="margin-bottom:0.5rem; font-size:0.8rem;">Naples | Fort Myers | Bonita Springs | Estero | Cape Coral</p>
+      <p>Clear Local Edge &middot; Southwest Florida's AI-Powered Local Marketing Agency</p>
+      <p style="margin-top:0.3rem; max-width:500px; margin-left:auto; margin-right:auto; font-size:0.8rem; line-height:1.5;">Clear Local Edge is a Southwest Florida-based digital marketing agency specializing in Google Business Profile optimization for local service businesses.</p>
+      <p style="margin-top:0.5rem"><a href="tel:+12392561277" style="color:#33cc66;">(239) 256-1277</a> &middot; <a href="mailto:info@clearlocaledge.com">info@clearlocaledge.com</a></p>
+      <p style="margin-top:0.3rem; font-size:0.8rem;">3823 Tamiami Trl E #199, Naples, FL 34112</p>
+      <p style="margin-top:0.3rem">&copy; 2026 Clear Local Edge LLC. All rights reserved.</p>
+      <p style="margin-top:0.3rem; font-size:0.75rem;"><a href="privacy.html" style="color:#33cc66;">Privacy Policy</a> &middot; <a href="terms.html" style="color:#33cc66;">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.contains('open');
+      if (isOpen) {
+        navLinks.classList.remove('animating');
+        setTimeout(() => navLinks.classList.remove('open'), 350);
+      } else {
+        navLinks.classList.add('open');
+        requestAnimationFrame(() => navLinks.classList.add('animating'));
+      }
+    });
+  </script>
+</body>
+</html>
