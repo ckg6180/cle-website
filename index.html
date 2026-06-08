@@ -370,16 +370,98 @@
     .free-audit-section .audit-trust span { margin: 0 0.5rem; }
 
     /* ========== PRICING ========== */
-    .pricing { background: #FFFFFF; }
+    .pricing { background: linear-gradient(180deg, #FFFFFF 0%, #EEF2F7 100%); }
     .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; align-items: start; }
+
+    /* --- Core Package Card --- */
+    .core-card-wrap { max-width: 600px; margin: 3rem auto 0; }
+    .core-card {
+      background: #FFFFFF; border-radius: 20px; overflow: hidden; position: relative;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.04), 0 10px 30px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,176,80,0.12);
+    }
+    .core-card-header {
+      background: linear-gradient(135deg, #1F4E79 0%, #163a5c 50%, #1F4E79 100%);
+      padding: 2.5rem 2rem 2rem; text-align: center; position: relative; overflow: hidden;
+    }
+    .core-card-header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, #00B050, #4ADE80, #00B050);
+    }
+    .core-card-header .price-tier {
+      font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px;
+      color: #4ADE80; margin-bottom: 0.6rem; display: block;
+    }
+    .core-card-header .price-amount {
+      font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 3.5rem;
+      color: #FFFFFF; line-height: 1; margin-bottom: 0.3rem;
+    }
+    .core-card-header .price-amount span { font-size: 1.2rem; font-weight: 500; color: rgba(255,255,255,0.7); }
+    .core-card-header .price-setup {
+      font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 0;
+    }
+    .core-card-header .price-setup strong { color: #4ADE80; font-weight: 600; }
+    .core-card-body { padding: 2rem 2.5rem 2.5rem; }
+    .core-card-body h3 {
+      color: #1F4E79; font-size: 1.15rem; margin-bottom: 1.5rem; text-align: center; line-height: 1.4;
+    }
+    .core-features { text-align: left; margin-bottom: 2rem; }
+    .core-features li {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      padding: 0.65rem 0; font-size: 0.95rem; color: #333;
+      border-bottom: 1px solid #f0f2f5;
+    }
+    .core-features li:last-child { border-bottom: none; }
+    .core-features li i {
+      color: #00B050; margin-top: 0.2rem; flex-shrink: 0; font-size: 0.85rem;
+      width: 20px; height: 20px; background: rgba(0,176,80,0.1);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    }
+    .core-features li strong { color: #1F4E79; }
+    .core-card-ctas { display: flex; flex-direction: column; gap: 0.6rem; }
+    .core-card-ctas .btn { width: 100%; font-size: 1.05rem; }
+    .core-card-ctas .btn-primary { padding: 1.1rem 2rem; font-size: 1.1rem; }
+    .core-card-ctas .btn-secondary { padding: 0.85rem 2rem; font-size: 0.95rem; }
+    .core-card-territory {
+      display: flex; align-items: center; gap: 0.75rem;
+      background: linear-gradient(135deg, rgba(0,176,80,0.08), rgba(0,176,80,0.04));
+      border: 1px solid rgba(0,176,80,0.15); border-radius: 12px;
+      padding: 1rem 1.2rem; margin-bottom: 1.5rem;
+    }
+    .core-card-territory i {
+      color: #00B050; font-size: 1.2rem; flex-shrink: 0;
+    }
+    .core-card-territory span { font-size: 0.9rem; color: #1F4E79; font-weight: 600; line-height: 1.4; }
+
+    /* --- Add-On Table --- */
+    .addon-section { max-width: 720px; margin: 4rem auto 0; }
+    .addon-section h3 { color: #1F4E79; margin-bottom: 0.3rem; font-size: 1.5rem; }
+    .addon-section .addon-sub { color: #595959; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .addon-table-wrap {
+      background: #FFFFFF; border-radius: 16px; overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.06);
+      border: 1px solid #e8ecf0;
+    }
+    .addon-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; }
+    .addon-table thead tr { background: linear-gradient(135deg, #1F4E79, #163a5c); }
+    .addon-table th {
+      padding: 0.9rem 1.25rem; color: #fff; font-weight: 600; font-size: 0.85rem;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .addon-table th:last-child { text-align: right; }
+    .addon-table td { padding: 0.85rem 1.25rem; color: #333; border-bottom: 1px solid #f0f2f5; }
+    .addon-table td:last-child { text-align: right; white-space: nowrap; font-weight: 600; color: #1F4E79; }
+    .addon-table tbody tr { transition: background 0.15s ease; }
+    .addon-table tbody tr:hover { background: #f8fafb; }
+    .addon-table tbody tr:last-child td { border-bottom: none; }
+    .addon-table .addon-icon { color: #FF6600; margin-right: 0.5rem; font-size: 0.8rem; }
+
+    /* Legacy price-card rules (kept for any remaining usage) */
     .price-card {
       background: #FFFFFF; border: 2px solid #e8ecf0; border-radius: 16px;
       padding: 2.5rem 2rem; text-align: center; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; position: relative;
       box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04);
     }
-    .price-card:hover { transform: translateY(-4px); box-shadow: 0 4px 8px rgba(0,0,0,0.06), 0 16px 40px rgba(0,0,0,0.08), 0 0 0 1px rgba(31,78,121,0.08); border-color: #b8c4d0; }
-    .price-card.featured { border-color: #00B050; box-shadow: 0 4px 12px rgba(0,176,80,0.1), 0 12px 40px rgba(0,176,80,0.15); transform: scale(1.04); background: #F0FFF4; }
-    .price-card.featured:hover { transform: scale(1.04) translateY(-4px); box-shadow: 0 4px 12px rgba(0,176,80,0.12), 0 20px 48px rgba(0,176,80,0.18), 0 0 0 1px rgba(0,176,80,0.15); }
+    .price-card:hover { transform: translateY(-4px); box-shadow: 0 4px 8px rgba(0,0,0,0.06), 0 16px 40px rgba(0,0,0,0.08); }
     .popular-badge {
       position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
       background: #00B050; color: #fff; font-size: 0.75rem; font-weight: 600;
@@ -504,6 +586,8 @@
       .about-photo { max-width: 100%; margin: 0 auto; }
       .price-card.featured { transform: none; }
       .price-card.featured:hover { transform: translateY(-4px); }
+      .core-card-body { padding: 1.5rem 1.5rem 2rem; }
+      .core-card-header .price-amount { font-size: 3rem; }
     }
 
     /* --- Mobile (max-width: 768px) --- */
@@ -584,6 +668,10 @@
       .stat-number { font-size: 1.8rem; margin-bottom: 0; }
       .stat-label { font-size: 0.8rem; text-align: left; }
       .price-amount { font-size: 2rem; }
+      .core-card-header .price-amount { font-size: 2.5rem; }
+      .core-card-body { padding: 1.25rem 1rem 1.5rem; }
+      .core-features li { font-size: 0.9rem; padding: 0.5rem 0; }
+      .addon-table td, .addon-table th { padding: 0.7rem 0.8rem; font-size: 0.88rem; }
       .case-card { padding: 1.5rem 1rem; }
       .case-metrics { gap: 0.75rem; }
       .metric .number { font-size: 1.4rem; }
@@ -952,57 +1040,66 @@
       <p class="section-sub">$397/month &middot; cancel anytime &middot; no contracts. Add only what you need, when you need it.</p>
 
       <!-- Single Core Package Card -->
-      <div style="max-width:520px; margin:2.5rem auto 0;">
-        <div class="price-card featured fade-up">
-          <p class="price-tier">The Core Package</p>
-          <h3>Everything you need to dominate Google Maps in your area.</h3>
-          <div class="price-amount">$397<span>/mo</span></div>
-          <p class="price-setup">$297 setup &mdash; waived when you start on your call</p>
-          <ul class="price-features">
-            <li><i class="fas fa-check"></i> Google Business Profile full optimization &amp; build-out</li>
-            <li><i class="fas fa-check"></i> <strong>20 real Google reviews to start</strong> (from your past customers) + ongoing review requests with AI review replies</li>
-            <li><i class="fas fa-check"></i> AI posting to <strong>Google + Facebook</strong> (keyword-optimized, weekly)</li>
-            <li><i class="fas fa-check"></i> Image automation (rename, geotag, meta) &mdash; a top ranking factor</li>
-            <li><i class="fas fa-check"></i> <strong>Monthly heatmap report</strong> &mdash; watch the map turn green</li>
-            <li><i class="fas fa-check"></i> AI search visibility tracking (ChatGPT, Gemini, Perplexity) + branded client dashboard</li>
-            <li><i class="fas fa-lock" style="color:#00B050"></i> <strong>Exclusive territory: ONE business per trade per area (5-mile radius)</strong></li>
-          </ul>
-          <a href="tel:+12392561277" class="btn btn-primary" style="margin-bottom:0.75rem;">Claim Your Territory &mdash; (239) 256-1277</a>
-          <a href="https://audit.app.clearlocaledge.com" class="btn btn-secondary" target="_blank" rel="noopener">Get Your Free Ranking Audit <i class="fas fa-arrow-right"></i></a>
+      <div class="core-card-wrap fade-up">
+        <div class="core-card">
+          <div class="core-card-header">
+            <span class="price-tier">The Core Package</span>
+            <div class="price-amount">$397<span>/mo</span></div>
+            <p class="price-setup">$297 setup &mdash; <strong>waived when you start on your call</strong></p>
+          </div>
+          <div class="core-card-body">
+            <h3>Everything you need to dominate Google Maps in your area.</h3>
+            <ul class="core-features">
+              <li><i class="fas fa-check"></i> <span>Google Business Profile full optimization &amp; build-out</span></li>
+              <li><i class="fas fa-check"></i> <span><strong>20 real Google reviews to start</strong> (from your past customers) + ongoing review requests with AI review replies</span></li>
+              <li><i class="fas fa-check"></i> <span>AI posting to <strong>Google + Facebook</strong> (keyword-optimized, weekly)</span></li>
+              <li><i class="fas fa-check"></i> <span>Image automation (rename, geotag, meta) &mdash; a top ranking factor</span></li>
+              <li><i class="fas fa-check"></i> <span><strong>Monthly heatmap report</strong> &mdash; watch the map turn green</span></li>
+              <li><i class="fas fa-check"></i> <span>AI search visibility tracking (ChatGPT, Gemini, Perplexity) + branded client dashboard</span></li>
+            </ul>
+            <div class="core-card-territory">
+              <i class="fas fa-shield-halved"></i>
+              <span>Exclusive territory: ONE business per trade per area (5-mile radius)</span>
+            </div>
+            <div class="core-card-ctas">
+              <a href="tel:+12392561277" class="btn btn-primary">Claim Your Territory &mdash; (239) 256-1277</a>
+              <a href="https://audit.app.clearlocaledge.com" class="btn btn-secondary" target="_blank" rel="noopener">Get Your Free Ranking Audit <i class="fas fa-arrow-right" style="margin-left:0.3rem"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Add-On Menu -->
-      <div style="max-width:780px; margin:3.5rem auto 0;">
-        <h3 style="color:#1F4E79; margin-bottom:0.5rem; font-size:1.4rem;">Add-Ons &mdash; Build It Your Way</h3>
-        <p style="color:#595959; margin-bottom:1.5rem; font-size:0.95rem;">Only pay for what you need. Add or drop any time.</p>
-        <div style="overflow-x:auto;">
-          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:0.95rem;">
+      <div class="addon-section fade-up">
+        <h3>Add-Ons &mdash; Build It Your Way</h3>
+        <p class="addon-sub">Only pay for what you need. Add or drop any time.</p>
+        <div class="addon-table-wrap">
+          <table class="addon-table">
             <thead>
-              <tr style="background:#1F4E79; color:#fff;">
-                <th style="padding:0.75rem 1rem; border-radius:8px 0 0 0;">Add-On</th>
-                <th style="padding:0.75rem 1rem; border-radius:0 8px 0 0; text-align:right;">Price</th>
+              <tr>
+                <th>Add-On</th>
+                <th>Price</th>
               </tr>
             </thead>
             <tbody>
-              <tr style="background:#f8f9fa;"><td style="padding:0.65rem 1rem;">Citation building &mdash; 40+ directories (Yelp, Apple Maps, etc.)</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$97/mo</td></tr>
-              <tr><td style="padding:0.65rem 1rem;">4-platform posting (adds Instagram + LinkedIn)</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$100/mo</td></tr>
-              <tr style="background:#f8f9fa;"><td style="padding:0.65rem 1rem;">Before/after video creation (GBP + YouTube)</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$150/mo</td></tr>
-              <tr><td style="padding:0.65rem 1rem;">50 review requests/month (high-volume engine)</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$100/mo</td></tr>
-              <tr style="background:#f8f9fa;"><td style="padding:0.65rem 1rem;">CompanyCam field photo integration</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$75/mo</td></tr>
-              <tr><td style="padding:0.65rem 1rem;">Missed-call text-back + speed-to-lead</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$150/mo</td></tr>
-              <tr style="background:#f8f9fa;"><td style="padding:0.65rem 1rem;">Full CRM + pipeline setup</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$300/mo</td></tr>
-              <tr><td style="padding:0.65rem 1rem;">AI voice agent / 24-7 call answering</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$400/mo</td></tr>
-              <tr style="background:#f8f9fa;"><td style="padding:0.65rem 1rem;">Website schema + FAQ widget</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap;">$75/mo</td></tr>
-              <tr><td style="padding:0.65rem 1rem; border-radius:0 0 0 8px;">Database reactivation (re-engage past customers)</td><td style="padding:0.65rem 1rem; text-align:right; white-space:nowrap; border-radius:0 0 8px 0;">$500 one-time</td></tr>
+              <tr><td><i class="fas fa-sitemap addon-icon"></i>Citation building &mdash; 40+ directories (Yelp, Apple Maps, etc.)</td><td>$97/mo</td></tr>
+              <tr><td><i class="fab fa-instagram addon-icon"></i>4-platform posting (adds Instagram + LinkedIn)</td><td>$100/mo</td></tr>
+              <tr><td><i class="fas fa-video addon-icon"></i>Before/after video creation (GBP + YouTube)</td><td>$150/mo</td></tr>
+              <tr><td><i class="fas fa-star addon-icon"></i>50 review requests/month (high-volume engine)</td><td>$100/mo</td></tr>
+              <tr><td><i class="fas fa-camera addon-icon"></i>CompanyCam field photo integration</td><td>$75/mo</td></tr>
+              <tr><td><i class="fas fa-phone-volume addon-icon"></i>Missed-call text-back + speed-to-lead</td><td>$150/mo</td></tr>
+              <tr><td><i class="fas fa-chart-line addon-icon"></i>Full CRM + pipeline setup</td><td>$300/mo</td></tr>
+              <tr><td><i class="fas fa-robot addon-icon"></i>AI voice agent / 24-7 call answering</td><td>$400/mo</td></tr>
+              <tr><td><i class="fas fa-code addon-icon"></i>Website schema + FAQ widget</td><td>$75/mo</td></tr>
+              <tr><td><i class="fas fa-database addon-icon"></i>Database reactivation (re-engage past customers)</td><td>$500 one-time</td></tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <div style="margin-top:2.5rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-        <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary" target="_blank" rel="noopener">Get Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.4rem"></i></a>
-        <a href="tel:+12392561277" class="btn btn-secondary">Call Us &mdash; (239) 256-1277</a>
+      <div style="margin-top:3rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="https://audit.app.clearlocaledge.com" class="btn btn-primary btn-large" target="_blank" rel="noopener">Get Your Free Audit <i class="fas fa-arrow-right" style="margin-left:0.4rem"></i></a>
+        <a href="tel:+12392561277" class="btn btn-secondary btn-large">Call Us &mdash; (239) 256-1277</a>
       </div>
     </div>
   </section>
